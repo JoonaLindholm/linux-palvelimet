@@ -1,4 +1,4 @@
-# h1 - Moikkamoi!
+# Moikkamoi!
 
 Tervetuloa sivuilleni :)
 
