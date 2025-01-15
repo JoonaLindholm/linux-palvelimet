@@ -17,11 +17,14 @@ Komponentteina minulla on:
 
 Aloitin asentelun Tero Karvisen ohjeiden mukaan: https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual-machine
 Latasin Virtualboxin virallisilta sivuilta https://www.virtualbox.org/wiki/Downloads
+
 <img width="317" alt="image" src="https://github.com/user-attachments/assets/bee8265d-57a8-4f8e-a373-4139ba8854b4" />
 
 Tietokoneessani on Win 11 pro, joten päädyin lataamaan "Windows hosts" version.
 
 Tämän jälkeen siirryin lataamaan Teron ohjeiden mukaan "Debian ISO image" tiedostoa. Versio oli tuolloin 12.9.0.
+
+https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
 
 <img width="716" alt="image" src="https://github.com/user-attachments/assets/a3778afe-2912-47f8-9c9f-a60ca2e27101" />
 
@@ -89,6 +92,7 @@ Lopulta käyttöjärjestelmä avautui.
 Ohjeissa käsketään seuraavaksi testaamaan, että kaikki toimii.
 
 Hiiri ainakin toimii mainiosti. Menin "Applications" kohtaan ja klikkasin "Web browser".
+
 <img width="206" alt="image" src="https://github.com/user-attachments/assets/7d892068-a253-4120-83bf-31bbde0c4e8b" />
 
 Skippailin kaikki Firefoxin stepit ja painoin "Start browsing".
@@ -141,4 +145,107 @@ Tämän jälkeen tuli yhteenveto kohta, jossa painoin install.
 <img width="633" alt="image" src="https://github.com/user-attachments/assets/834b33b5-3a33-47d7-9fa8-3a29023050c1" />
 
 <img width="632" alt="image" src="https://github.com/user-attachments/assets/23855778-9115-4536-a1f8-9c5d5746171a" />
+
+Lopulta asennus valmistui. Asennukseen meni noin 5 minuuttia. Aika käynnistää kone uudelleen.
+
+<img width="515" alt="image" src="https://github.com/user-attachments/assets/47b7c884-8926-4470-a9b9-a871a811d92c" />
+
+Lopulta pääsin kirjautumiskohtaan, johon laitoin asennuksen yhteydessä kysytyt tiedot.
+<img width="641" alt="image" src="https://github.com/user-attachments/assets/ed2b4cb9-601a-417f-a3fe-42e394039458" />
+
+Kirjautumisen jälkeen pääsin työpöydälle.
+
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/19302cc2-9f55-4714-98e0-859cc39f043a" />
+
+Menin taas web browseriin ja youtubeen. Skandit ja äänet toimivat.
+
+<img width="641" alt="image" src="https://github.com/user-attachments/assets/7a72c17b-2fd4-433f-92ad-ef3368723f07" />
+
+#Päivitys
+
+Jatkoin ohjeiden mukaisesti ja avasin työpöydältä terminalin (punainen ympyrä).
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/03086e4c-cae7-4b1c-9f48-4810b412f9f8" />
+
+kirjoitin terminalin kenttään "sudo apt-get update", jonka jälkeen se pyysi salasanaani.
+
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/3d47d5ea-c881-45b8-b1cd-4de1f2d51640" />
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/8b267d94-741e-49fe-a97e-026351e8b83d" />
+
+Tämän jälkeen terminaaliin päivittyi kaikki mahdolliset päivitykset, jotka voin asentaa.
+
+<img width="598" alt="image" src="https://github.com/user-attachments/assets/42019f61-58a4-4662-afae-fc0327be0fb3" />
+
+Tämän jälkeen asennetaan kaikki päivityksen kuvassa olevalla komennolla.
+
+<img width="257" alt="image" src="https://github.com/user-attachments/assets/368f9930-c396-49a7-94d1-c3edadee7a06" />
+
+Päivitykset näyttivät onnistuvan.
+
+<img width="580" alt="image" src="https://github.com/user-attachments/assets/884cc58c-21a9-465f-a655-19f30783df02" />
+
+Seuraavaksi ohjeissa asennetaan palomuuri.
+
+<img width="242" alt="image" src="https://github.com/user-attachments/assets/026dbb61-4c10-42b1-b016-c714062957cb" />
+<img width="421" alt="image" src="https://github.com/user-attachments/assets/ea911e1e-9965-4225-864b-9f55f793e955" />
+
+Ja laitetaan se päälle.
+
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/1c2b50d4-3ea1-4e5e-a92c-ad38e87baa12" />
+<img width="464" alt="image" src="https://github.com/user-attachments/assets/301872b6-fcbd-4e21-9ff4-6f90f0841577" />
+
+Tämän jälkeen on rebootin aika.
+
+<img width="604" alt="image" src="https://github.com/user-attachments/assets/f73fddfb-ac2d-47bd-b947-7bcea66b561f" />
+<img width="580" alt="image" src="https://github.com/user-attachments/assets/c3bd91f4-096c-4201-a195-a7746a2a7200" />
+
+Tämän jälkeen pääsin taas login valikkoon ja kirjauduin sisään.
+
+Lopuksi ohjeissa mainitaan VirtualBoxin pieni resoluutio. 
+Haluan, että voin kasvattaa ruudun kokoa yms., joten päätän tehdä vielä tämän viimeisen asennuksen.
+
+Ohjeissa avataan yläriviltä "Devices" valikko ja sieltä valitaan "Insert Guest Additions CD image..."
+
+<img width="166" alt="image" src="https://github.com/user-attachments/assets/0fc031b1-81bf-4e44-baaf-6cfebe52b90a" />
+
+Tämän jälkeen klikkasin Applications valikosta File manager ja pääsin seuraavaan ruutuun.
+
+<img width="581" alt="image" src="https://github.com/user-attachments/assets/e8830c1a-9116-4331-a997-869807d55882" />
+
+Tämän jälkeen ohjeissa pyydetää klikkamaan levyn kuvaa ja avaamaan Applications valikosta "Terminal Emulator".
+
+<img width="617" alt="image" src="https://github.com/user-attachments/assets/548f72cd-5345-457a-a017-be33213e0ec6" />
+
+Ohjeissa käsketään avaaman levyn kansio ja listata sen sisältö. Käyttämällä seuraavaa komentoa.
+
+<img width="169" alt="image" src="https://github.com/user-attachments/assets/220a9332-62ab-4642-a926-dec0e63e1f25" />
+
+Komennon jälkeen terminaaliin ilmestyi seuraavat tiedot.
+
+<img width="610" alt="image" src="https://github.com/user-attachments/assets/dfc31fb7-e91c-4c95-b3eb-876e7c0dbaca" />
+
+Sitten asennetaan.
+
+<img width="623" alt="image" src="https://github.com/user-attachments/assets/abbe98ef-6045-484e-9699-e2cd6cad078e" />
+<img width="596" alt="image" src="https://github.com/user-attachments/assets/ad6521a4-a67f-48e2-a13d-85404752c6b8" />
+
+Asennuksen jälkeen ohjeissa sanotaan, että on aika taas rebootille :)
+
+Kone käynnistyi normaalisti ja kuva skaalautuu hienosti ruudun koon mukaan.
+
+<img width="939" alt="image" src="https://github.com/user-attachments/assets/e2646c8e-788d-4f46-bfdc-8f8eb5d9fb2f" /> 
+
+Laitetaan vielä shared clipboard päälle ja kokeillaan sitä :)
+
+Ylävalikosta Devices ja shared clipboard (Bidirectional).
+
+Löysin Applications -> Accessories -> Mousepad, johon voi kirjoittaa tai kopsata tekstiä pääkoneesta.
+
+<img width="197" alt="image" src="https://github.com/user-attachments/assets/87b96141-05d5-47c4-ba98-245b4d293649" />
+
+<img width="1770" alt="image" src="https://github.com/user-attachments/assets/ede84ce9-3d62-4aa3-a886-e14dc1f09df5" />
+
+Näyttäisi kaikki toimivan :)
+
 
