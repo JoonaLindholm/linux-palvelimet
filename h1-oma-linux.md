@@ -99,7 +99,7 @@ Kaikki näyttäisi toimivan. Pystyin kirjoittamaan youtuben hakuun "sql".
 
 <img width="629" alt="image" src="https://github.com/user-attachments/assets/8714f939-e272-461e-8beb-b2e92777836b" />
 
-Sitten muisitn, että tunnilla laitettiin suomenkielinen näppäimistö. Tämmöistä kohtaa en ollut nähnyt asennuksessa.
+Sitten muistin, että tunnilla laitettiin suomenkielinen näppäimistö. Tämmöistä kohtaa en ollut nähnyt asennuksessa.
 Kokeilin hakukenttään skandeja, mutta ne eivät toimineet.
 
 Aloin tutkimaan VirtualBoxin ylävalikkoa. Sieltä löysin "Input" kohdasta "keyboard" asetukset.
@@ -112,7 +112,7 @@ Pääsin seuraavaan valikkoon, josta menin "Language" kohtaan. Sieltä ei kuiten
 
 Lueskelin ohjeita eteenpäin ja huomasin, että kieli valitaankin vasta myöhemmin Debianin asennuksen yhteydessä. Onneksi tähän ei kulunut paljoa aikaa :)
 
-Seuraavaksi asennetaan siis Debian. Kello oli tällöin 13:47. Tunti oli siis kulunut asenuksiin.
+Seuraavaksi asennetaan siis Debian. Kello oli tällöin 13:47. Tunti oli siis kulunut asennuksiin.
 
 <img width="654" alt="image" src="https://github.com/user-attachments/assets/d5e43190-cd03-4e26-867a-01d1df5189dd" />
 
@@ -124,10 +124,21 @@ Alueeksi laitoin Helsingin.
 
 <img width="517" alt="image" src="https://github.com/user-attachments/assets/f4531b78-6689-46f5-afc6-4fb0e7414070" />
 
-Vihdoin pääsin valitsemaan näppäimistön kielen. Finnish ja deafult, sitten next.
+Vihdoin pääsin valitsemaan näppäimistön kielen. Finnish ja default, sitten next.
 
 <img width="837" alt="image" src="https://github.com/user-attachments/assets/b1ce2ab3-4b6b-42d1-9d78-4826da2e4fb5" />
 
-Partitions kohdassa muistan Teron sanoneen oppitunnilla, että ainoa oikea vaihtoehto tällä kertaa on painaa "Erase disk", sitten next. En siis tehnyt muuta.
+Partitions kohdassa valitsin ohjeiden mukaiset valinnat eli "Erase disk" ja boot loaderiin "Master Boot Record" sitten next.
 
 <img width="515" alt="image" src="https://github.com/user-attachments/assets/476d9b19-6592-42e1-a611-2d8f691ef904" />
+
+Users kohdassa noudatin edelleen ohjeita ja täytin kentät kuvanmukaisesti.
+
+<img width="632" alt="image" src="https://github.com/user-attachments/assets/1afa4d0f-c043-43dd-8ccf-216817702419" />
+
+Tämän jälkeen tuli yhteenveto kohta, jossa painoin install.
+
+<img width="633" alt="image" src="https://github.com/user-attachments/assets/834b33b5-3a33-47d7-9fa8-3a29023050c1" />
+
+<img width="632" alt="image" src="https://github.com/user-attachments/assets/23855778-9115-4536-a1f8-9c5d5746171a" />
+
