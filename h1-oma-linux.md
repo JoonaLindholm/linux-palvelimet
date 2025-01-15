@@ -1,4 +1,4 @@
-#Oman Linuxin asentaminen virtuaalikoneelle.
+#LINUXIN ASENTAMINEN VIRTUAALIKONEELLE
 
 Aloitin h1 kotitehtävän teon 15.1. töiden jälkeen klo 12:40.
 Päätin asentaa virtuaalikoneen itse rakentamaani tietokoneeseen.
@@ -28,7 +28,7 @@ https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
 
 <img width="716" alt="image" src="https://github.com/user-attachments/assets/a3778afe-2912-47f8-9c9f-a60ca2e27101" />
 
-#Asennus
+#ASENNUKSIA
 
 Aloitin asentamalla VirtualBoxin.
 
@@ -164,7 +164,7 @@ Menin taas web browseriin ja youtubeen. Skandit ja äänet toimivat.
 
 <img width="641" alt="image" src="https://github.com/user-attachments/assets/7a72c17b-2fd4-433f-92ad-ef3368723f07" />
 
-#Päivitys
+#PÄIVITYKSET
 
 Jatkoin ohjeiden mukaisesti ja avasin työpöydältä terminalin (punainen ympyrä).
 
@@ -251,7 +251,7 @@ Löysin Applications -> Accessories -> Mousepad, johon voi kirjoittaa tai kopsat
 
 Näyttäisi kaikki toimivan :)
 
-## BONUS TEHTÄVÄ
+## BONUSTEHTÄVÄ
 
 Lisätehtävässä pyydetään tekemään joku yksinkertainen toimenpide haluamallani Linux-ohjelmalla.
 Aiemmin, kun halusin liittää tekstiä isäntäkoneesta virtuaalikoneeseen käyttäen shared clipboardia, niin huomasin etsiväni jotain Wordin kaltaista tekstiohjelmaa.
