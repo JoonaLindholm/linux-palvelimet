@@ -303,3 +303,7 @@ Pakko vielä kokeilla "Libreoffice Calc", mitäköhän hienoa tällä voi tehdä
 <img width="909" alt="image" src="https://github.com/user-attachments/assets/2e530af8-470a-49af-9b3b-1d845a18b18b" />
 
 Kyllä, 1+1 on tosiaan 2. Hienoa.
+
+<img width="260" alt="image" src="https://github.com/user-attachments/assets/11b55d70-fa62-40cc-87e6-9833b9cd5ab7" />
+
+Täytyy myöntää, että nämä Microsoftin kanssa ulkoasultaaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti. On helppoa aloittaa työskentely tutussa ympäristössä.
