@@ -251,4 +251,55 @@ Löysin Applications -> Accessories -> Mousepad, johon voi kirjoittaa tai kopsat
 
 Näyttäisi kaikki toimivan :)
 
+## BONUS TEHTÄVÄ
 
+Lisätehtävässä pyydetään tekemään joku yksinkertainen toimenpide haluamallani Linux-ohjelmalla.
+Aiemmin, kun halusin liittää tekstiä isäntäkoneesta virtuaalikoneeseen käyttäen shared clipboardia, niin huomasin etsiväni jotain Wordin kaltaista tekstiohjelmaa.
+
+Tästä sain idean tutkia, mitä ohjelmia Linuxille on saatavilla, jotka ajaisivat saman asian kuin Word tai muut Microsoftin ohjelmat.
+
+Chatgpt ehdotti seuraavaa:
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/6e6d806f-6d61-4a2f-b93c-50b36a1ae966" />
+
+Asennetaan libreoffice käyttäen terminaalia.
+
+sudo apt install libreoffice
+
+Asennus alkoi:
+
+<img width="403" alt="image" src="https://github.com/user-attachments/assets/8b9dfda1-cf5f-4308-aadc-e96b2302c954" />
+
+Painoin y, kun kysyttiin haluanko jatkaa.
+
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/c3ca94e3-adca-4294-a295-5fae00732944" />
+
+<img width="480" alt="image" src="https://github.com/user-attachments/assets/937eac2a-567e-4047-b78e-f40271bfc7cc" />
+
+Applications -> Office, löytyi nyt erilaisia LibreOffice ohjelmia:
+
+<img width="945" alt="image" src="https://github.com/user-attachments/assets/e3e4ee89-7293-47a4-b87d-ed3239c7a6e0" />
+
+Kokeillaan draw ohjelmaa.
+
+<img width="630" alt="image" src="https://github.com/user-attachments/assets/a32a3e37-2c0a-4e69-9c50-a744e7e7f665" />
+
+Avautui allaoleva ikkuna:
+
+<img width="913" alt="image" src="https://github.com/user-attachments/assets/64cab264-26d1-4eb0-bb91-706c25791ab6" />
+
+Painoin OK ja aloin taiteilemaan.
+
+<img width="943" alt="image" src="https://github.com/user-attachments/assets/4a5d6893-caab-474b-b703-19674b133327" />
+
+Ehkä voimme jättää taiteilun jollekin toiselle ;)
+
+Kokeilin vielä Writer ohjelmaa. Avautui hyvin tutunnäköinen tekstinkäsittely ohjelma.
+
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/be14fbe4-caa9-4612-92ea-0650145db409" />
+
+Pakko vielä kokeilla "Libreoffice Calc", mitäköhän hienoa tällä voi tehdä. Ajattelin nimestä, että aukeaisi laskin, mutta avautuikin taas hyvin tutunnäköinen ruutu ;)
+
+<img width="909" alt="image" src="https://github.com/user-attachments/assets/2e530af8-470a-49af-9b3b-1d845a18b18b" />
+
+Kyllä, 1+1 on tosiaan 2. Hienoa.
