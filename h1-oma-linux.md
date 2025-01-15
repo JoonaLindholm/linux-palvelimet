@@ -69,6 +69,7 @@ Seuraavaksi siirryin "Hardware" kohtaan. En ollut varma miten paljon kannattaisi
 En ollut varma mihin kaikkeen tulen tulevaisuudessa tätä virtuaalikonetta käyttämään, joten päädyin varautumaan myös raskaaseen käyttöön. Tutkin myös internetin keskutelupalstoilta asiaa ja siellä oli hyvin paljon eri mielipiteitä asiasta. Lopulta päädyin kuitenkin tekoälyn ehdotukseen. Ainahan voi lisätä tai vähentää resursseja tarpeen mukaan.
 
 Allaolevilla asetuksilla eteenpäin "Hard Disk" kohtaan.
+
 <img width="558" alt="image" src="https://github.com/user-attachments/assets/07788b1a-bdb2-4143-b7d2-66fb3a53bc28" />
 
 Valitsin 80 GB tilaa virtuaalikoneen kovalevylle ja vaihdoin oletus kovalevyä sekä kansiota, joka oli oletuksena.
