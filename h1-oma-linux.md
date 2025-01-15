@@ -85,3 +85,49 @@ Tämän jälkeen tuli vähäksi aikaa Debian logo, jonka jälkeen musta ruutu. J
 Lopulta käyttöjärjestelmä avautui.
 
 <img width="635" alt="image" src="https://github.com/user-attachments/assets/1bb3f5e8-8d05-40f3-8ec8-012dedd05922" />
+
+Ohjeissa käsketään seuraavaksi testaamaan, että kaikki toimii.
+
+Hiiri ainakin toimii mainiosti. Menin "Applications" kohtaan ja klikkasin "Web browser".
+<img width="206" alt="image" src="https://github.com/user-attachments/assets/7d892068-a253-4120-83bf-31bbde0c4e8b" />
+
+Skippailin kaikki Firefoxin stepit ja painoin "Start browsing".
+
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/a34163ee-28f1-4996-b0c6-c1d8e071ffd5" />
+
+Kaikki näyttäisi toimivan. Pystyin kirjoittamaan youtuben hakuun "sql".
+
+<img width="629" alt="image" src="https://github.com/user-attachments/assets/8714f939-e272-461e-8beb-b2e92777836b" />
+
+Sitten muisitn, että tunnilla laitettiin suomenkielinen näppäimistö. Tämmöistä kohtaa en ollut nähnyt asennuksessa.
+Kokeilin hakukenttään skandeja, mutta ne eivät toimineet.
+
+Aloin tutkimaan VirtualBoxin ylävalikkoa. Sieltä löysin "Input" kohdasta "keyboard" asetukset.
+
+<img width="218" alt="image" src="https://github.com/user-attachments/assets/b31f37e3-59ff-4081-8e3c-c1258465a184" />
+
+Pääsin seuraavaan valikkoon, josta menin "Language" kohtaan. Sieltä ei kuitenkaan löytynyt Suomea :(
+
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/216c2877-9108-4638-bb05-8af6768acdd3" />
+
+Lueskelin ohjeita eteenpäin ja huomasin, että kieli valitaankin vasta myöhemmin Debianin asennuksen yhteydessä. Onneksi tähän ei kulunut paljoa aikaa :)
+
+Seuraavaksi asennetaan siis Debian. Kello oli tällöin 13:47. Tunti oli siis kulunut asenuksiin.
+
+<img width="654" alt="image" src="https://github.com/user-attachments/assets/d5e43190-cd03-4e26-867a-01d1df5189dd" />
+
+Klikkasin kuvaketta ja pääsin seuraavaan ruutuun. Valitsin ohjeiden mukaisesti "American English" ja next.
+
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/94e196b4-5b28-4bb3-bf24-40d4c61a7771" />
+
+Alueeksi laitoin Helsingin.
+
+<img width="517" alt="image" src="https://github.com/user-attachments/assets/f4531b78-6689-46f5-afc6-4fb0e7414070" />
+
+Vihdoin pääsin valitsemaan näppäimistön kielen. Finnish ja deafult, sitten next.
+
+<img width="837" alt="image" src="https://github.com/user-attachments/assets/b1ce2ab3-4b6b-42d1-9d78-4826da2e4fb5" />
+
+Partitions kohdassa muistan Teron sanoneen oppitunnilla, että ainoa oikea vaihtoehto tällä kertaa on painaa "Erase disk", sitten next. En siis tehnyt muuta.
+
+<img width="515" alt="image" src="https://github.com/user-attachments/assets/476d9b19-6592-42e1-a611-2d8f691ef904" />
