@@ -39,10 +39,12 @@ En muuttanut allaolevan kuvan valintoja. Painoin vain "Next".
 Sain varoituksen internet yhteyden katkeamisesta. Hyväksyin painamalla "Yes" ja seuraavassa kohdassa en muuttanut mitään oletuksia, painoin "Next". Tämän jälkeen sain vihdoin painaa "Install".
 
 <img width="380" alt="image" src="https://github.com/user-attachments/assets/82dcb61d-34c2-4d94-b2c5-789b2954b24d" />
+
 <img width="374" alt="image" src="https://github.com/user-attachments/assets/f6887ec7-7230-49fa-9d65-4709de62abfe" />
 
 Asennus kesti noin 5 sekuntia.
 Käynnistin VirtualBoxin suoraan asennuksesta.
+
 <img width="385" alt="image" src="https://github.com/user-attachments/assets/f05dad7c-fec8-40bc-b42c-e4b53e2f58f1" />
 
 
