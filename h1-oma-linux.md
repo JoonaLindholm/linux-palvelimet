@@ -9,7 +9,8 @@ Komponentteina minulla on:
 
 <img width="526" alt="image" src="https://github.com/user-attachments/assets/c5d5de30-85ed-477f-9c09-0f77abd7cc18" />
 
--Vajaa 2 tb ssd levytilaa
+
+-Noin 2 tb ssd levytilaa
 
 -3060ti näytönohjain
 
