@@ -89,7 +89,8 @@ Ohjeiden mukaisesti valitsin valikosta ylimmän vaihtoehdon "Live system (amd64)
 
 <img width="317" alt="image" src="https://github.com/user-attachments/assets/f04acde5-3cc7-4773-a55f-ab53b6437dc2" />
 
-Tämän jälkeen tuli vähäksi aikaa Debian logo, jonka jälkeen musta ruutu. Jatkoin odottelua tekemättä mitään.
+Tämän jälkeen tuli vähäksi aikaa Debian logo, jonka jälkeen musta ruutu.  
+Jatkoin odottelua tekemättä mitään.
 
 Lopulta käyttöjärjestelmä avautui.
 
@@ -247,7 +248,7 @@ Laitetaan vielä shared clipboard päälle ja kokeillaan sitä :)
 
 Ylävalikosta Devices ja shared clipboard (Bidirectional).
 
-Löysin Applications -> Accessories -> Mousepad, johon voi kirjoittaa tai kopsata tekstiä pääkoneesta.
+Löysin Applications -> Accessories -> Mousepad, johon voi kirjoittaa tai kopioida tekstiä pääkoneesta.
 
 <img width="197" alt="image" src="https://github.com/user-attachments/assets/87b96141-05d5-47c4-ba98-245b4d293649" />
 
