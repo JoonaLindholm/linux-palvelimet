@@ -1,4 +1,4 @@
-#LINUXIN ASENTAMINEN VIRTUAALIKONEELLE
+# LINUXIN ASENTAMINEN VIRTUAALIKONEELLE
 
 Aloitin h1 kotitehtävän teon 15.1. töiden jälkeen klo 12:40.
 Päätin asentaa virtuaalikoneen itse rakentamaani tietokoneeseen.
@@ -29,7 +29,7 @@ https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
 
 <img width="716" alt="image" src="https://github.com/user-attachments/assets/a3778afe-2912-47f8-9c9f-a60ca2e27101" />
 
-#ASENNUKSIA
+## ASENNUKSIA
 
 Aloitin asentamalla VirtualBoxin.
 
@@ -67,7 +67,9 @@ Seuraavaksi siirryin "Hardware" kohtaan. En ollut varma miten paljon kannattaisi
 
 <img width="524" alt="image" src="https://github.com/user-attachments/assets/eb80334d-9e05-4329-889d-c21f1e66894c" />
 
-En ollut varma mihin kaikkeen tulen tulevaisuudessa tätä virtuaalikonetta käyttämään, joten päädyin varautumaan myös raskaaseen käyttöön. Tutkin myös internetin keskutelupalstoilta asiaa ja siellä oli hyvin paljon eri mielipiteitä asiasta. Lopulta päädyin kuitenkin tekoälyn ehdotukseen. Ainahan voi lisätä tai vähentää resursseja tarpeen mukaan.
+En ollut varma mihin kaikkeen tulen tulevaisuudessa tätä virtuaalikonetta käyttämään, joten päädyin varautumaan myös raskaaseen käyttöön.  
+Tutkin myös internetin keskutelupalstoilta asiaa ja siellä oli hyvin paljon eri mielipiteitä asiasta.  
+Lopulta päädyin kuitenkin tekoälyn ehdotukseen. Ainahan voi lisätä tai vähentää resursseja tarpeen mukaan.
 
 Allaolevilla asetuksilla eteenpäin "Hard Disk" kohtaan.
 
@@ -107,7 +109,8 @@ Kaikki näyttäisi toimivan. Pystyin kirjoittamaan youtuben hakuun "sql".
 
 <img width="629" alt="image" src="https://github.com/user-attachments/assets/8714f939-e272-461e-8beb-b2e92777836b" />
 
-Sitten muistin, että tunnilla laitettiin suomenkielinen näppäimistö. Tämmöistä kohtaa en ollut nähnyt asennuksessa.
+Sitten muistin, että tunnilla laitettiin suomenkielinen näppäimistö.  
+Tämmöistä kohtaa en ollut nähnyt asennuksessa.
 Kokeilin hakukenttään skandeja, mutta ne eivät toimineet.
 
 Aloin tutkimaan VirtualBoxin ylävalikkoa. Sieltä löysin "Input" kohdasta "keyboard" asetukset.
@@ -165,7 +168,7 @@ Menin taas web browseriin ja youtubeen. Skandit ja äänet toimivat.
 
 <img width="641" alt="image" src="https://github.com/user-attachments/assets/7a72c17b-2fd4-433f-92ad-ef3368723f07" />
 
-#PÄIVITYKSET
+## PÄIVITYKSET
 
 Jatkoin ohjeiden mukaisesti ja avasin työpöydältä terminalin (punainen ympyrä).
 
@@ -307,4 +310,5 @@ Kyllä, 1+1 on tosiaan 2. Hienoa.
 
 <img width="260" alt="image" src="https://github.com/user-attachments/assets/11b55d70-fa62-40cc-87e6-9833b9cd5ab7" />
 
-Täytyy myöntää, että nämä Microsoftin kanssa ulkoasultaaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti. On helppoa aloittaa työskentely tutussa ympäristössä.
+Täytyy myöntää, että nämä Microsoftin kanssa ulkoasultaaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti.  
+On helppoa aloittaa työskentely tutussa ympäristössä.
