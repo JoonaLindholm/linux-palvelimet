@@ -15,9 +15,11 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 Tiivistelmät  
 -Raportin kirjoittaminen  
 -What is Free Software?  
+
 Linuxin asentaminen virtuaalikoneelle
 -Asennuksia  
--Päivitykset
+-Päivitykset  
+
 Bonustehtävä
 
 
