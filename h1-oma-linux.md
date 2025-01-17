@@ -28,7 +28,7 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 
 ## Raportin kirjoittaminen
 
-**Raportin pitää olla seuraavia asioita:**  
+**Raportissa pitää olla seuraavia asioita:**  
 
 - Tiivistelmä tai sisällysluettelo raportin alkuun itse raportin sisällöstä.
 - Toistettava eli joku muu pystyy saamaan raportin avulla täysin samat tulokset.  
@@ -50,7 +50,28 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 
 ## What is Free Software?
 
+Teksti käsittelee vapaata ohjelmistoa, joka ei tarkoita hintaa, vaan erilaisia käyttäjän oikeuksia ja vapauksia.  
+Nämä jaetaan neljään keskeiseen vapauteen.
 
+0. Vapaus käyttää ohjelmistoa, mihin tahansa tarkoitukseen.
+1. Vapaus tutkia ohjelmiston toimintaa ja muokata sitä oman tarpeen mukaan.
+   Tähän tarvitaan siis myös pääsy lähdekoodiin.
+2. Vapaus jakaa kopioita ohjelmistosta ja samalla auttaa muita käyttäjiä.
+3. Vapaus jakaa muokattuja versioita ohjelmistosta, jotta muutkin yhteisön jäsenet hyötyvät tekemistäsi muutoksista.
+
+Ohjelmiston on tajottava kaikki nämä vapaudet kaikille käyttäjille ilman rajoituksia tai lisämaksuja ollakseen vapaata ohjelmistoa.  
+Tässä pitää huomioida myös ohjelmistot, jotka liittyvät tai käynnistävät toisen ohjelman vapaan ohjelman kautta eli myös niiden täytyy täyttää vapaan ohjelmiston kriteerit.  
+
+### Vapaan ohjelmiston ominaisuuksia  
+Vapaan ohjelmiston käyttöä ei tarvitse perustella kenellekkään ja käyttäjä saa käyttää ohjelmistoa miten haluaa välittämättä tekijän alkuperäisestä ohjelmiston käyttötarkoituksesta.
+
+
+
+
+Vapaa ohjelmisto on 
+- Kaupallista
+- Kaikille käyttäjille (yritykset, yksityiset, julkiset)
+- 
 
 # Linuxin asentaminen virtuaalikoneelle
 
