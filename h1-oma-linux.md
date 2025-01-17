@@ -394,5 +394,5 @@ Kyllä, 1+1 on tosiaan 2. Hienoa.
 
 <img width="260" alt="image" src="https://github.com/user-attachments/assets/11b55d70-fa62-40cc-87e6-9833b9cd5ab7" />
 
-Täytyy myöntää, että nämä Microsoftin kanssa ulkoasultaaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti.  
+Täytyy myöntää, että nämä Microsoftin Office-ohjelmien kanssa ulkoasultaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti.  
 On helppoa aloittaa työskentely tutussa ympäristössä.
