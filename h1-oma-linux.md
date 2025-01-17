@@ -58,7 +58,7 @@ Nämä jaetaan neljään keskeiseen vapauteen.
 2. Vapaus jakaa kopioita ohjelmistosta ja samalla auttaa muita käyttäjiä.
 3. Vapaus jakaa muokattuja versioita ohjelmistosta, jotta muutkin yhteisön jäsenet hyötyvät tekemistäsi muutoksista.
 
-Ohjelmiston on tajottava kaikki nämä vapaudet kaikille käyttäjille ilman rajoituksia tai lisämaksuja ollakseen vapaata ohjelmistoa.  
+Ohjelmiston on tarjottava kaikki nämä vapaudet kaikille käyttäjille ilman rajoituksia tai lisämaksuja ollakseen vapaata ohjelmistoa.  
 Tässä pitää huomioida myös ohjelmistot, jotka liittyvät tai käynnistävät toisen ohjelman vapaan ohjelman kautta eli myös niiden täytyy täyttää vapaan ohjelmiston kriteerit.  
 
 ### Vapaan ohjelmiston ominaisuuksia  
