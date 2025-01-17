@@ -2,25 +2,25 @@
 
 Kotitehtävänä oli tiivistää pääkohdat seuraavista teksteistä:
 
-Raportin kirjoittaminen (bold)
+**Raportin kirjoittaminen**  
 https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
 
-What is Free Software? (bold)
+**What is Free Software?**  
 https://www.gnu.org/philosophy/free-sw.html
 
 Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtävä täytyy myös raportoida toisen kotitehtävän mukaisesti.
 
 # Sisällysluettelo
 
-Tiivistelmät  
+**Tiivistelmät**  
 -Raportin kirjoittaminen  
 -What is Free Software?  
 
-Linuxin asentaminen virtuaalikoneelle  
+**Linuxin asentaminen virtuaalikoneelle**  
 -Asennuksia  
 -Päivitykset  
 
-Bonustehtävä
+**Bonustehtävä**
 
 
 
