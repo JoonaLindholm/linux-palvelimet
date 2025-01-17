@@ -23,7 +23,6 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 **Bonustehtävä**
 - Libreoffice
 
-
 # Tiivistelmät
 
 ## Raportin kirjoittaminen
@@ -42,10 +41,10 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 - Helppolukuinen ja selkeä rakenne.  
 - Väliotsikot ja kirjoitusvirheet kuntoon.  
 - Onko tyyli virallista vai rennompaa?  
-  Pitää miettiä, mikä tyyli sopii julkaisuympäristöön.
+  Raportin tekijän täytyy miettiä, mikä tyyli sopii julkaisuympäristöön.
 
 ### Miksi raportoidaan?
-- Raportointi helpottaa myöhempää käyttöä ja säästää aikaa.  
+- Raportointi auttaa ja helpottaa myöhempää käyttöä sekä säästää aikaa.  
 - Hyvä raportti toimii pohjana ohjeiden laatimiseen ja ongelmien dokumentointiin.
 
 ## What is Free Software?
@@ -63,16 +62,24 @@ Ohjelmiston on tajottava kaikki nämä vapaudet kaikille käyttäjille ilman raj
 Tässä pitää huomioida myös ohjelmistot, jotka liittyvät tai käynnistävät toisen ohjelman vapaan ohjelman kautta eli myös niiden täytyy täyttää vapaan ohjelmiston kriteerit.  
 
 ### Vapaan ohjelmiston ominaisuuksia  
-Vapaan ohjelmiston käyttöä ei tarvitse perustella kenellekkään ja käyttäjä saa käyttää ohjelmistoa miten haluaa välittämättä tekijän alkuperäisestä ohjelmiston käyttötarkoituksesta.
 
-
-
-
-Vapaa ohjelmisto on 
-- Kaupallista
-- Kaikille käyttäjille (yritykset, yksityiset, julkiset)
-- 
-
+- Vapaan ohjelmiston käyttöä ei tarvitse perustella kenellekkään ja käyttäjä saa käyttää ohjelmistoa miten haluaa välittämättä tekijän 
+  alkuperäisestä ohjelmiston käyttötarkoituksesta.
+- Lähdekoodi on saatavilla ja muokattavissa ymmärrettävässä muodossa.
+- Ohjelmistoon täytyy saada yhdistää moduuleita ja kaikki ohjelmiston muutokset hyväksytään.
+- Mitkään lisenssit eivät saa rajoittaa ohjelmiston käyttöä tai vapaan ohjelmiston vapauksia.
+- Muokattua ohjelmistoa saa käyttää alkuperäisen tilalla.
+- Vapaa ohjelmisto voi olla myös kaupallista.
+- Vapaa ohjelmisto on tosiaan kaikille mahdollisille käyttäjille (yritykset,yksityiset,julkiset yms.)
+- Voit muokata ohjelmistoa ja myydä tai jakaa omaa versiotasi siitä, ilmoittamatta kenellekkään.
+- Jos jaat vapaan ohjelmiston, niin jakamasi version täytyy myös olla vapaata ohjelmistoa eli se ei saa sisältää rajoituksia.
+  Tämä on "Copyleft" sääntö.
+- Jakelusäännöt voidaan hyväksyä, kunhan ne eivät rajoita vapauksia.
+- Muokatun version voi nimetä ja sen tunnistettavuus voi muuttua, mutta se ei estä jakamista.
+- Ohjelmistolla voi olla lisenssi, että muokattu versio jaetaan alkuperäiselle kehittäjälle, mutta se ei voi estää vapauksia.
+- Vapaalla ohjelmistolla ei voi olla vientirajoituksia.
+- Vapaan ohjelmiston ohjeet ja dokumentit ovat myös osa vapaata ohjelmistoa.
+  
 # Linuxin asentaminen virtuaalikoneelle
 
 Aloitin asentelun 15.1. töiden jälkeen klo 12:40.
@@ -80,8 +87,8 @@ Päätin asentaa virtuaalikoneen itse rakentamaani tietokoneeseen.
 
 Komponentteina minulla on:
 
--Amd Ryzen 7 5800X3D
-
+-Amd Ryzen 7 5800X3D  
+Nämä prosessorin resurssit pitäisi sitten jakaa virtuaalikoneelle.
 <img width="526" alt="image" src="https://github.com/user-attachments/assets/c5d5de30-85ed-477f-9c09-0f77abd7cc18" />
 
 
