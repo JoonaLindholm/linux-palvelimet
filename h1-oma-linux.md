@@ -39,7 +39,7 @@ Raportin pitää olla seuraavia asioita:
 - Raportilla pitää tuoda ilmi kaikki käytetyt komennot ja työkalut.  
   Myös kuinka niitä käytetään.
 - Virheiden raportointi eteenpäin ohjelmistokehitykselle tai muulle vastuuhenkilölle.  
-- Helppolukuinen ja selkeä rakenne  
+- Helppolukuinen ja selkeä rakenne.  
 - Väliotsikot ja kirjoitusvirheet kuntoon.  
 - Onko tyyli virallista vai rennompaa?  
   Pitää miettiä, mikä tyyli sopii julkaisuympäristöön.
