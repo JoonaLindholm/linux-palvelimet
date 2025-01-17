@@ -1,4 +1,43 @@
-# LINUXIN ASENTAMINEN VIRTUAALIKONEELLE
+# Kotitehtävät h1
+
+Kotitehtävänä oli tiivistää pääkohdat seuraavista teksteistä:
+
+Raportin kirjoittaminen (bold)
+https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+
+What is Free Software? (bold)
+https://www.gnu.org/philosophy/free-sw.html
+
+Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtävä täytyy myös raportoida toisen kotitehtävän mukaisesti.
+
+# Tähän tulee tiivistelmä
+
+# Tiivistelmät
+
+## Raportin kirjoittaminen
+
+Raportin pitää olla seuraavia asioita:
+
+Tiivistelmä raportista alkuun
+• Toistettava eli joku muu pystyy saamaan raportin avulla täysin samat tulokset.
+• Toistettavuudessa on tärkeää ilmoittaa myös ympäristö, aika ja laitteet.
+• Raportin täytyy olla tarkka ja huolellinen.
+• Raportin pitää kulkea johdonmukaisesti. Ajankäyttö on tärkeää myös raportoida.
+• Kaikki yksityiskohdat pitää olla raportilla (klikkaukset, valinnat ja virheet yms.)
+• Raportilla pitää tuoda ilmi kaikki käytetyt komennot ja työkalut.  
+  Myös kuinka niitä käytetään.
+• Virheiden raportointi eteenpäin ohjelmistokehitykselle tai muulle vastuuhenkilölle.
+• Helppolukuinen ja selkeä rakenne
+• Väliotsikot ja kirjoitusvirheet kuntoon.
+• Onko tyyli virallista vai rennompaa?  
+  Pitää miettiä sopiiko se julkaisuympäristöön.
+
+
+### Miksi raportoidaan?
+• Raportointi helpottaa myöhempää käyttöä ja säästää aikaa.
+• Hyvä raportti toimii pohjana ohjeiden laatimiseen ja ongelmien dokumentointiin.
+
+# Linuxin asentaminen virtuaalikoneelle
 
 Aloitin h1 kotitehtävän teon 15.1. töiden jälkeen klo 12:40.
 Päätin asentaa virtuaalikoneen itse rakentamaani tietokoneeseen.
