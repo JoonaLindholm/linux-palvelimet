@@ -18,7 +18,7 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 
 Raportin pitää olla seuraavia asioita:
 
-Tiivistelmä raportista alkuun
+  Tiivistelmä raportista alkuun  
 • Toistettava eli joku muu pystyy saamaan raportin avulla täysin samat tulokset.  
 • Toistettavuudessa on tärkeää ilmoittaa myös ympäristö, aika ja laitteet.  
 • Raportin täytyy olla tarkka ja huolellinen.  
