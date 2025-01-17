@@ -10,7 +10,17 @@ https://www.gnu.org/philosophy/free-sw.html
 
 Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtävä täytyy myös raportoida toisen kotitehtävän mukaisesti.
 
-# Tähän tulee tiivistelmä
+# Sisällysluettelo
+
+Tiivistelmät  
+-Raportin kirjoittaminen  
+-What is Free Software?  
+Linuxin asentaminen virtuaalikoneelle
+-Asennuksia  
+-Päivitykset
+Bonustehtävä
+
+
 
 # Tiivistelmät
 
