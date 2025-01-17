@@ -16,7 +16,7 @@ Tiivistelmät
 -Raportin kirjoittaminen  
 -What is Free Software?  
 
-Linuxin asentaminen virtuaalikoneelle
+Linuxin asentaminen virtuaalikoneelle  
 -Asennuksia  
 -Päivitykset  
 
@@ -42,7 +42,7 @@ Raportin pitää olla seuraavia asioita:
 • Helppolukuinen ja selkeä rakenne  
 • Väliotsikot ja kirjoitusvirheet kuntoon.  
 • Onko tyyli virallista vai rennompaa?  
-  Pitää miettiä sopiiko se julkaisuympäristöön.
+  Pitää miettiä, mikä tyyli sopii julkaisuympäristöön.
 
 
 ### Miksi raportoidaan?
