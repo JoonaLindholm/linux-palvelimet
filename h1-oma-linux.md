@@ -28,7 +28,7 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 
 ## Raportin kirjoittaminen
 
-Raportin pitää olla seuraavia asioita:  
+**Raportin pitää olla seuraavia asioita:**  
 
 - Tiivistelmä tai sisällysluettelo raportin alkuun itse raportin sisällöstä.
 - Toistettava eli joku muu pystyy saamaan raportin avulla täysin samat tulokset.  
@@ -44,10 +44,13 @@ Raportin pitää olla seuraavia asioita:
 - Onko tyyli virallista vai rennompaa?  
   Pitää miettiä, mikä tyyli sopii julkaisuympäristöön.
 
-
 ### Miksi raportoidaan?
 - Raportointi helpottaa myöhempää käyttöä ja säästää aikaa.  
 - Hyvä raportti toimii pohjana ohjeiden laatimiseen ja ongelmien dokumentointiin.
+
+## What is Free Software?
+
+
 
 # Linuxin asentaminen virtuaalikoneelle
 
