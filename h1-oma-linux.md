@@ -88,7 +88,8 @@ Päätin asentaa virtuaalikoneen itse rakentamaani tietokoneeseen.
 Komponentteina minulla on:
 
 -Amd Ryzen 7 5800X3D  
-Nämä prosessorin resurssit pitäisi sitten jakaa virtuaalikoneelle.
+Nämä prosessorin resurssit pitäisi sitten jakaa virtuaalikoneelle.  
+
 <img width="526" alt="image" src="https://github.com/user-attachments/assets/c5d5de30-85ed-477f-9c09-0f77abd7cc18" />
 
 
