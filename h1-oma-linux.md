@@ -13,15 +13,15 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 # Sisällysluettelo
 
 **Tiivistelmät**  
--Raportin kirjoittaminen  
--What is Free Software?  
+- Raportin kirjoittaminen  
+- What is Free Software?  
 
 **Linuxin asentaminen virtuaalikoneelle**  
--Asennuksia  
--Päivitykset  
+- Asennuksia  
+- Päivitykset  
 
 **Bonustehtävä**
-
+- Libreoffice
 
 
 # Tiivistelmät
@@ -323,7 +323,7 @@ Chatgpt ehdotti seuraavaa:
 
 Asennetaan libreoffice käyttäen terminaalia.
 
-sudo apt install libreoffice
+Komento: sudo apt install libreoffice
 
 Asennus alkoi:
 
