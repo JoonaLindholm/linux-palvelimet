@@ -97,7 +97,7 @@ Komponentteina minulla on:
 
 - 3060ti näytönohjain
   
-Nämä resurssit pitäisi sitten jakaa virtuaalikoneelle.  
+Yllä olevat resurssit pitäisi sitten jakaa virtuaalikoneelle.  
 
 Aloitin asentelun Tero Karvisen ohjeiden mukaan:  
 https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual-machine  
