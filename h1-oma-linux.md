@@ -87,20 +87,23 @@ Päätin asentaa virtuaalikoneen itse rakentamaani tietokoneeseen.
 
 Komponentteina minulla on:
 
--Amd Ryzen 7 5800X3D  
-Nämä prosessorin resurssit pitäisi sitten jakaa virtuaalikoneelle.  
+- Amd Ryzen 7 5800X3D. Alla kuva prosessorin ominaisuuksista.
+ 
+<img width="526" alt="image" src="https://github.com/user-attachments/assets/c5d5de30-85ed-477f-9c09-0f77abd7cc18" />  
 
-<img width="526" alt="image" src="https://github.com/user-attachments/assets/c5d5de30-85ed-477f-9c09-0f77abd7cc18" />
+- 32 gb ram muistia  
 
+- Noin 2 tb ssd levytilaa  
 
--Noin 2 tb ssd levytilaa
+- 3060ti näytönohjain
+  
+Nämä resurssit pitäisi sitten jakaa virtuaalikoneelle.  
 
--3060ti näytönohjain
+Aloitin asentelun Tero Karvisen ohjeiden mukaan:  
+https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual-machine  
 
--32 gb ram muistia
-
-Aloitin asentelun Tero Karvisen ohjeiden mukaan: https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual-machine
-Latasin Virtualboxin virallisilta sivuilta https://www.virtualbox.org/wiki/Downloads
+Latasin Virtualboxin virallisilta sivuilta  
+https://www.virtualbox.org/wiki/Downloads  
 
 <img width="317" alt="image" src="https://github.com/user-attachments/assets/bee8265d-57a8-4f8e-a373-4139ba8854b4" />
 
