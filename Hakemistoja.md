@@ -51,7 +51,8 @@ joona@Kone:~/viikonpaivat/pe$ touch kissa.txt koira.txt kala.txt
 joona@Kone:~/viikonpaivat/pe$ cd ..  
 
 joona@Kone:~/viikonpaivat$ ls  
-ke  ma  pe  ti  to
+ke  ma  pe  ti  to  
+
 joona@Kone:~/viikonpaivat$ ls viikonpaivat  
 ls: cannot access 'viikonpaivat': No such file or directory  
 
@@ -83,6 +84,7 @@ joona@Kone:~/viikonpaivat$ cd to
 
 joona@Kone:~/viikonpaivat/to$ ls  
 kala.txt  kissa.txt  koira.txt  
+
 joona@Kone:~/viikonpaivat/to$ cd ..  
 
 joona@Kone:~/viikonpaivat$ cd pe  
