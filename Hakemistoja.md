@@ -1,16 +1,27 @@
-joona@Kone:~$ mkdir viikonpaivat
-joona@Kone:~$ cd viikonpaivat
-joona@Kone:~/viikonpaivat$ mkdir ma ti ke to pe
-joona@Kone:~/viikonpaivat$ cd ma
-joona@Kone:~/viikonpaivat/ma$ touch kissa.txt koira.txt kala.txt
-joona@Kone:~/viikonpaivat/ma$ ls
-kala.txt  kissa.txt  koira.txt
-joona@Kone:~/viikonpaivat/ma$ cd
-joona@Kone:~$ ls
-Desktop    Downloads  Pictures  Templates  viikonpaivat
-Documents  Music      Public    Videos
-joona@Kone:~$ cd viikonpaivat/
-joona@Kone:~/viikonpaivat$ ls
+joona@Kone:~$ mkdir viikonpaivat  
+
+joona@Kone:~$ cd viikonpaivat  
+
+joona@Kone:~/viikonpaivat$ mkdir ma ti ke to pe  
+
+joona@Kone:~/viikonpaivat$ cd ma  
+
+joona@Kone:~/viikonpaivat/ma$ touch kissa.txt koira.txt kala.txt  
+
+joona@Kone:~/viikonpaivat/ma$ ls  
+
+kala.txt  kissa.txt  koira.txt  
+
+joona@Kone:~/viikonpaivat/ma$ cd  
+
+joona@Kone:~$ ls  
+
+Desktop    Downloads  Pictures  Templates  viikonpaivat  
+Documents  Music      Public    Videos  
+
+joona@Kone:~$ cd viikonpaivat/  
+
+joona@Kone:~/viikonpaivat$ ls  
 ke  ma  pe  ti  to
 joona@Kone:~/viikonpaivat$ cd ti
 joona@Kone:~/viikonpaivat/ti$ touch kissa.txt koira.txt kala.txt
