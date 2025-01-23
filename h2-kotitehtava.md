@@ -72,7 +72,7 @@ Valitsin videon ohjelmista seuraavat.
 
 btop  
 ranger  
-neofetch  
+neofetch/hollywood  
 
 Tehtävänannossa kysytään komentoa, jolla asennetaan kaikki nuo kerralla.  
 Kokeillaan yksinkertaisesti laittaa nuo nimet peräkkäin eli komento olisi:  
@@ -134,7 +134,7 @@ Kokeilin kirjoittaa ranger komentoriville ja se tuotti heti tulosta.
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/328818cd-ab15-4f14-86aa-8efabe420445" />  
 
-Menin tietenkin sotkemaan niitä. Ranger-ohjelmassa pystyy liikkumaan nuolinäppäimiä ja hiirtä käyttäen kansioista toiseen.  
+Ranger-ohjelmassa pystyy liikkumaan nuolinäppäimiä ja hiirtä käyttäen kansioista toiseen.  
 
 <img width="2506" alt="image" src="https://github.com/user-attachments/assets/874ab44e-28d6-4675-8afb-7abe11c2a3c5" />  
 
@@ -152,6 +152,7 @@ Ruudun alaosassa oli kuitenkin ctrl-g : help, joten painoin sitä.
 
 <img width="524" alt="image" src="https://github.com/user-attachments/assets/b3d301b7-cb43-45f6-905d-2b1e2f3d86fc" />  
 
+
 <img width="789" alt="image" src="https://github.com/user-attachments/assets/13d6a14d-1203-4377-b572-775e32c5d873" />  
 
 Tallennetaan tärkeä kirjoitus ctrl-s ja sitten suljetaan editori ctrl-q.  
@@ -159,6 +160,42 @@ Tämä palautti minut takaisin kansionäkymään, johon oli ilmestynyt mahtava k
 Nähtävästi ranger ei ymmärrä skandeja.  
 
 <img width="629" alt="image" src="https://github.com/user-attachments/assets/66e69379-672d-4569-9221-24d6311f84ca" />  
+
+## neofetch  
+
+Tämän ohjelman tarkoituksena on listata nätisti kaikki järjestelmäntiedot.  
+Aloitetaan kirjoittamalla neofetch komentoriville.  
+
+<img width="379" alt="image" src="https://github.com/user-attachments/assets/493f9252-ee40-4004-88e5-b6e0e219686e" />  
+
+No tämä olikin aika yksinkertainen ohjelma ja toiminnot jäivät tähän.  
+
+Kokeillaan vielä asentaa yksi ohjelma. Videolla oli myös maininta hauskannäköisestä ohjelmasta nimeltä hollywood.
+
+sudo apt-get install hollywood  
+Tämän jälkeen tuli pitkät rivit komentorivejä.  
+Kokeillaan ohjelmaa.  
+
+<img width="790" alt="image" src="https://github.com/user-attachments/assets/f7261d53-f652-42dc-8f8b-72026d308153" />  
+
+Mitä tästä nyt sanoisi. Ohjelma on nimensä mukainen ja pyörittää ruudulla vilisevää dataa, joka ei ilmeisesti kuitenkaan tarkoita mitään.  
+Aika hauska "lelu".  
+
+Kokeillaan laittaa tämä koko näytön levyiseksi spektaakkeliksi.  
+
+<img width="2559" alt="image" src="https://github.com/user-attachments/assets/2ec2c80f-4aef-4e22-a81c-a9f4815a4572" />  
+
+Kuvassa olevat "tiedot" liikkuvat ja vaihtuvat.  
+Tällä voi varmaankin esittää neroa vaimolle tms...  
+
+
+
+
+
+
+
+
+
 
 
 
