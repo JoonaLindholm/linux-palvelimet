@@ -38,6 +38,20 @@ VM Linuxin resurssit ja asetukset:
 <img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />
 
 
-Virtual linux auki ja Applications -> Terminal Emulator  
+Virtual linuxin käynnistys -> salasana -> työpöydältä Applications -> Terminal Emulator  
+
 <img width="628" alt="image" src="https://github.com/user-attachments/assets/b1ca6d91-a252-49d6-b6f0-50629a4f2c7b" />  
+
+Tässä vaiheessa muistin, että olen asentanut jo tuon Micro-ohjelman.  
+Voisin siis harjoituksen vuoksi ensin poistaa sen. Lähdin googlailemaan kuinka ohjelmia voi poistaa.  
+Googlesta löytyi joku keskustelu aiheesta:  
+https://support.google.com/chromebook/thread/211306991/uninstall-linux-apps-using-terminal?hl=en  
+Kokeillaan "sudo apt-get remove $package-name" komentoa. Package namen tilalle tulisi micro.  
+
+<img width="239" alt="image" src="https://github.com/user-attachments/assets/31a23680-6867-4e69-8790-04924cf5720c" />  
+Komentorivin mukaan homma meni maaliin.  
+
+<img width="413" alt="image" src="https://github.com/user-attachments/assets/db9ab217-e326-42dc-b45f-b5a307e1dcf6" />
+
+
 
