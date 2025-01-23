@@ -124,7 +124,52 @@ Painetaan taas "yes".
 <img width="899" alt="image" src="https://github.com/user-attachments/assets/3f68bc29-6bec-47aa-9cec-792927ba5b6f" />  
 
 Tämä sulki koko terminaalin ja palasimme takaisin työpöydälle.  
-Ehkä btopille löytyy vielä oikeaa käyttöä eikä tämmöistä leikkimielistä testailua.  
+Ehkä btopille löytyy vielä oikeaa käyttöä tulevaisuudessa eikä tämmöistä leikkimielistä testailua.  
+
+## ranger  
+
+Tämän ohjelman tarkoituksena on tarjota tehokas, intuitiivinen ja helppokäyttöinen käyttöliittymä tiedostonhallintaan.  
+
+Kokeilin kirjoittaa ranger komentoriville ja se tuotti heti tulosta.  
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/328818cd-ab15-4f14-86aa-8efabe420445" />  
+
+Menin tietenkin sotkemaan niitä. Ranger-ohjelmassa pystyy liikkumaan nuolinäppäimiä ja hiirtä käyttäen kansioista toiseen.  
+
+<img width="2506" alt="image" src="https://github.com/user-attachments/assets/874ab44e-28d6-4675-8afb-7abe11c2a3c5" />  
+
+Viikonpaivat kansiossa näytti olevan tiedostoja, jotka loimme tunnilla.  
+
+<img width="2506" alt="image" src="https://github.com/user-attachments/assets/ec180da9-bdf5-4623-a976-0c88918a4e6f" />  
+
+Valitsin yhdestä kansiosta tektitiedoston ja painoin entteriä.  
+Avautui editor ohjelman valinta kohta. Valitsin micron.  
+
+<img width="323" alt="image" src="https://github.com/user-attachments/assets/b2d6b752-f877-4a25-9206-30d4a57648ba" />  
+
+Kirjoittelin tiedostoon jotain testiksi ja tämän jälkeen en tiennyt miten pääsen takaisin kansionäkymään.  
+Ruudun alaosassa oli kuitenkin ctrl-g : help, joten painoin sitä.
+
+<img width="524" alt="image" src="https://github.com/user-attachments/assets/b3d301b7-cb43-45f6-905d-2b1e2f3d86fc" />  
+
+<img width="789" alt="image" src="https://github.com/user-attachments/assets/13d6a14d-1203-4377-b572-775e32c5d873" />  
+
+Tallennetaan tärkeä kirjoitus ctrl-s ja sitten suljetaan editori ctrl-q.  
+Tämä palautti minut takaisin kansionäkymään, johon oli ilmestynyt mahtava kirjoitukseni.  
+Nähtävästi ranger ei ymmärrä skandeja.  
+
+<img width="629" alt="image" src="https://github.com/user-attachments/assets/66e69379-672d-4569-9221-24d6311f84ca" />  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
