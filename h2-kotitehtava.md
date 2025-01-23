@@ -117,9 +117,19 @@ Haluan kokeilla vielä, mitä terminate tekee btopille.
 
 <img width="241" alt="image" src="https://github.com/user-attachments/assets/9bbff5c4-5d2a-4ad3-8516-46ea0d72e81c" />  
 
-<img width="247" alt="image" src="https://github.com/user-attachments/assets/2ce2168f-af5d-48a6-a179-34f64375cfe5" />
+<img width="247" alt="image" src="https://github.com/user-attachments/assets/2ce2168f-af5d-48a6-a179-34f64375cfe5" />  
 
-<img width="247" alt="image" src="https://github.com/user-attachments/assets/53773dbb-b949-464c-bfff-edd206e045d1" />
+Painetaan taas "yes".  
+
+<img width="899" alt="image" src="https://github.com/user-attachments/assets/3f68bc29-6bec-47aa-9cec-792927ba5b6f" />  
+
+Tämä sulki koko terminaalin ja palasimme takaisin työpöydälle.  
+Ehkä btopille löytyy vielä oikeaa käyttöä eikä tämmöistä leikkimielistä testailua.  
+
+
+
+
+
 
 
 
