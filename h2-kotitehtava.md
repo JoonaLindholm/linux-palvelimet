@@ -188,6 +188,11 @@ Kokeillaan laittaa tämä koko näytön levyiseksi spektaakkeliksi.
 Kuvassa olevat "tiedot" liikkuvat ja vaihtuvat.  
 Tällä voi varmaankin esittää neroa vaimolle tms...  
 
+## c) FHS. Kansioiden esittely.  
+
+
+
+
 
 
 
@@ -231,10 +236,14 @@ Tällä voi varmaankin esittää neroa vaimolle tms...
 
 
 ## Lähdeluettelo  
-- Tero Karvinen 2020
-https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited  
 
-- Google support -keskustelu
-  https://support.google.com/chromebook/thread/211306991/uninstall-linux-apps-using-terminal?hl=en
+- Tero Karvinen 2020  
+https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited 
+  
+- Google support -keskustelu  
+  https://support.google.com/chromebook/thread/211306991/uninstall-linux-apps-using-terminal?hl=en  
 
-- 
+- Youtube video linux ohjelmista.  
+  https://www.youtube.com/watch?v=FXu428tLhdE  
+
+  
