@@ -1,6 +1,6 @@
 # Kotitehtävä h2 raportti  
 
-## Sisällys 
+## Sisällys ja tehtävät  
 
 x) Lue ja tiivistä Karvinen 2020: Command line basics revisited.  
 https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited  
@@ -27,9 +27,14 @@ h) Micro-editorin plugin.
 ## a) Micro editorin asennus  
 Aloitin asennuksen 23.1. klo 13:30.  
 
-Tietokoneen resurssit:
+Tietokoneen resurssit:  
+- B550M-ITX/ac -emolevy  
+- Amd Ryzen 7 5800X3D -prosessori  
+- 32 gb ram muistia  
+- Noin 2 tb ssd levytilaa  
+- 3060ti 8GB GDDR6 -näytönohjain  
 
-VM Linuxin resurssit:  
+VM Linuxin resurssit ja asetukset:  
 <img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />
 
 
