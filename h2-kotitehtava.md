@@ -190,6 +190,195 @@ Tällä voi varmaankin esittää neroa vaimolle tms...
 
 ## c) FHS. Kansioiden esittely.  
 
+Aloitin tehtävän 24.1. klo 16.  
+Tehtävänantona oli esitellä tärkeitä linuxin kansioita opettajan materiaalin avulla.  
+
+https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited  
+
+Aloitin kirjoittamalla dir terminaaliin.  
+
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/4e8ca137-65d3-43bf-93b3-7fa3373e957f" />  
+
+Käytin cd .. kehotetta ja siirryin ylöspäin kunnes olin root kansiossa.  
+Kokeilin, mitä käy jos yritän vielä enemmän siirtyä kansioissa ylöspäin, mutta mitään ei tapahtunut.  
+Root kansio oli ylin kansio, johon pääsin. Listasin sen sisällön ls komennolla.  
+
+<img width="409" alt="image" src="https://github.com/user-attachments/assets/7cc1e3cf-172b-4ebf-9229-f35f9317e1c1" />  
+
+Tästä juurikansiosta voi navigoida muihin kansioihin. Siirrytään home kansioon tutkimaan, mitä sieltä löytyy.  
+cd home komennolla eteenpäin.  
+
+<img width="419" alt="image" src="https://github.com/user-attachments/assets/09f1761a-825e-409c-b4d6-9337bde45158" />  
+
+Home kansiossa oli käyttäjän kansiot. Sieltä löytyi vain omani tällä kertaa.  
+Jatkoin matkaa joona kansioon.  
+
+cd joona komennolla siirryin joona kansioon, jossa oli käyttäjäni tiedostot. Esimerkiksi aiemmin luotu viikonpaiva kansio.  
+
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/9f7ed86e-fdba-4735-b78f-d030a5064e4e" />  
+
+Palasin takaisin juurikansioon käyttämällä kaksi kertaa cd .. komentoa.  
+
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/85d8d769-6d04-4d38-94b1-f428795a4145" />  
+
+Seuraavaksi menin tutkimaan, mitä etc kansiosta löytyy. Tämä kansio oli juurikansiossa.  
+
+Käytin cd etc komentoa ja listasin tiedostot ls komennolla.  
+
+etc kansiossa oli hyvin paljon tiedostoja yms.  
+
+<img width="449" alt="image" src="https://github.com/user-attachments/assets/e8984571-4461-4b1d-a247-9d81d1a07e0e" />  
+
+Kokeilin voinko tehdä jotain gimp nimiselle tiedostolle.  
+Selvisi, että kyseessä oli ilmeisesti gimp ohjelman kansio, jossa oli siihen liittyviä tiedostoja.  
+
+<img width="374" alt="image" src="https://github.com/user-attachments/assets/28812d1e-d856-4597-8baf-5d0e6873d698" />  
+
+Etc kansiossa oli Teron ohjeiden mukaan kaikki järjestelmän asetukset tekstitiedostoina.  
+Ihmisille luettavassa muodossa.  
+
+Seuraavaksi palasin takaisin juurikansioon cd .. komennolla ja sieltä media kansioon cd media komennolla. Tämän jälkeen piti vielä valita käyttäjäkansioni joona.  
+Media kansiossa ei ollut mitään, koska minulla ei ollut irroitettavaa mediaa kiinni virtual tietokoneessani. Siellä olisi voinut olla vaikka usb-tikun sisältö.  
+
+<img width="154" alt="image" src="https://github.com/user-attachments/assets/757e4215-c554-4869-ab04-4946f13e7bc1" />  
+
+Palasin taas juurikansioon etsimään seuraavaa tehtävänannon kansiota.  
+Siellä näkyi var kansio. Navigoin sinne cd var komennolla ja listasin kansion sisällön ls komennolla. 
+   
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/e2db2eea-acd8-44e7-9eaa-ff1cd83f8c14" />  
+
+var kansiosta jatkoin navigointia log kansioon. cd log komennolla.  
+
+<img width="463" alt="image" src="https://github.com/user-attachments/assets/fc25d134-2200-4e3a-b026-7d8e7bd8049a" />  
+
+Tässä kansiossa oli lokitiedostoja.  
+Kokeillaan avata README tiedosto.  
+
+<img width="389" alt="image" src="https://github.com/user-attachments/assets/911676fd-7805-4f41-b88e-f9c39022ce70" />  
+
+README avautui.  
+
+<img width="695" alt="image" src="https://github.com/user-attachments/assets/dd0ad584-fc0b-43fe-ba0d-74217fef64db" />  
+
+Sain READMEsta selville, että lokitiedostot ovatkin journalctrl journalissa, joka on ilmeisesti päivitetty versio Syslogista.  
+
+## d) grep-komennon esittely  
+
+Seuraavaksi tehtävänäni oli esitellä grep-komentoa.  
+Kysyin googlelta, mikä on grep, koska en enää muistanut tarkalleen, mistä siinä olikaan kyse.  
+
+https://www.google.com/search?q=what+is+linux+grep&oq=what+is+linux+grep&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINDk4NmowajGoAgiwAgE&sourceid=chrome&ie=UTF-8  
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/67a49c72-6fb9-4d02-9c11-9ea6a4c30d9c" />  
+
+Eli kyseessä on vähän kuin hakukone terminaaliin.  
+Seuraavaksi kokeilin grepin käyttöä.  
+Heitin juurikansioon suoraan vain grep error ihan vain testiksi, mitä käy.  
+No koko terminaali jäätyi..  hups.  
+
+<img width="330" alt="image" src="https://github.com/user-attachments/assets/7e6bd4e5-3674-4a3d-bc7d-0c2608b3c210" />  
+
+Terminaali ei ollutkaan jäätynyt. Pystyin kirjoittelemaan kaikenlaista komentoriville, mutta mitään ei kuitenkaan tapahtunut.  
+
+<img width="269" alt="image" src="https://github.com/user-attachments/assets/c045749f-5414-4647-aaff-16cdc0aee599" />  
+
+Suljin terminaalin kokonaan yläkulman x näppäimestä.  
+En oikeastaan tiedä, mitä aiemmin tapahtui.  
+Menin tutkimaan tarkempia ohjeita ja löysinkin niitä.  
+
+https://linux-tips.us/lets-learn-about-grep/  
+
+Komentoni oli väärä. Seuraavaksi kokeilin eri komentoa.  
+grep "error" /var/log/syslog  
+
+# KESKEN!! JATKA GREP!  
+
+## e) Pipe  
+
+
+## f) Rauta  
+Tässä tehtävässä minun piti listata tietokoneeni rauta käyttäen komentoa.  
+Yritin ensin suoraan tehtävänannon komentoa, mutta minun pitikin asentaa ensin tarvittava ohjelma.  
+
+<img width="411" alt="image" src="https://github.com/user-attachments/assets/02638cd5-727d-44c3-a90f-17c296322f3e" />  
+
+Asennuksen jälkeen kokeilin uudestaan komentoa.  
+Sudo lshow -short -sanitize  
+
+<img width="417" alt="image" src="https://github.com/user-attachments/assets/4f193839-28bc-419a-a918-3ae0510bf80a" />  
+
+Listaus näyttäisi olevan virtuaalikoneen ja sille antamani resurssien rauta.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ls
+
+
+cd log
+
+
+cd var
+
+
+
+
+
+ls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dc .
+
+
+
 
 
 
