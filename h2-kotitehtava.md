@@ -309,6 +309,13 @@ Sudo lshow -short -sanitize
 
 Listaus näyttäisi olevan virtuaalikoneen ja sille antamani resurssien rauta.  
 
+Listaus alkaa itse pääkomponentista eli VirtualBoxista itsestään.  
+Biokselle on annettu 128KiB muistia käytettäväksi ja 11 GiB on ram-muistia virtuaalikoneelle.  
+
+Tämän jälkeen listauksessa tulee prosessori. Tässä kohdassa ei ole kuitenkaan kerrottu virtuaalikoneen saamia prosessorin resursseja sen tarkemmin.  
+
+
+
 
 
 
