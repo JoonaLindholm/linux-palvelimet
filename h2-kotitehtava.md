@@ -22,7 +22,18 @@ g) Analysoi lokeja.
 h) Micro-editorin plugin.  
 
 
-## x) Tiisitelmä tulee tähän  
+## x) Command line basics revisited -tiivistelmä
+
+Komentorivillä voi käyttää järjestelmää nopeasti ja kätevästi tekstipohjaisilla komennoilla.  
+
+Peruskomentoja:  
+
+- pwd = näyttää käyttäjälle kansion, jossa hän on komennon suorittaessa.
+- ls = listaa tämän kansion tiedostot.
+- cd = käyttäjä voi vaihtaa hakemistoa.
+- mkdir = käyttäjä voi luoda uuden kansion.
+- 
+
 
 ## a) Micro editorin asennus  
 Aloitin asennuksen 23.1. klo 13:30.  
@@ -62,7 +73,7 @@ Sudo apt-get install micro -komento käyttöön.
 
 Tämäkin onnistui helposti. Nyt on mikro poistettu ja asennettu!  
 
-## Komentoriviohjelmien asennus apt-get komennolla.  
+## b) Komentoriviohjelmien asennus apt-get komennolla.  
 
 Pitäisi asentaa kolme komentoriviohjelmaa apt-get komentoa käyttäen.  
 Löysin youtubesta videon, jossa oli mielenkiintoisia ohjelmia.  
@@ -161,9 +172,9 @@ Nähtävästi ranger ei ymmärrä skandeja.
 
 <img width="629" alt="image" src="https://github.com/user-attachments/assets/66e69379-672d-4569-9221-24d6311f84ca" />  
 
-## neofetch  
+## neofetch    
 
-Tämän ohjelman tarkoituksena on listata nätisti kaikki järjestelmäntiedot.  
+Neofetchin tarkoituksena on listata nätisti kaikki järjestelmäntiedot.  
 Aloitetaan kirjoittamalla neofetch komentoriville.  
 
 <img width="379" alt="image" src="https://github.com/user-attachments/assets/493f9252-ee40-4004-88e5-b6e0e219686e" />  
@@ -171,6 +182,8 @@ Aloitetaan kirjoittamalla neofetch komentoriville.
 No tämä olikin aika yksinkertainen ohjelma ja toiminnot jäivät tähän.  
 
 Kokeillaan vielä asentaa yksi ohjelma. Videolla oli myös maininta hauskannäköisestä ohjelmasta nimeltä hollywood.
+
+## Hollywood
 
 sudo apt-get install hollywood  
 Tämän jälkeen tuli pitkät rivit komentorivejä.  
@@ -303,16 +316,30 @@ Yritin ensin suoraan tehtävänannon komentoa, mutta minun pitikin asentaa ensin
 <img width="411" alt="image" src="https://github.com/user-attachments/assets/02638cd5-727d-44c3-a90f-17c296322f3e" />  
 
 Asennuksen jälkeen kokeilin uudestaan komentoa.  
-Sudo lshow -short -sanitize  
+Sudo lshw -short -sanitize  
 
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/4f193839-28bc-419a-a918-3ae0510bf80a" />  
 
 Listaus näyttäisi olevan virtuaalikoneen ja sille antamani resurssien rauta.  
 
-Listaus alkaa itse pääkomponentista eli VirtualBoxista itsestään.  
+- Listaus alkaa itse pääkomponentista eli VirtualBoxista itsestään.
+  Tämä on merkitty luokkaan system.  
+  
+  <img width="121" alt="image" src="https://github.com/user-attachments/assets/53cf25e7-68ee-40b5-8b5a-4ad287df4412" />  
+  
+Seuraavaksi listauksessa tulee virtuaalisen emolevyn väylä eli luokaltaan bus.  
+
+<img width="263" alt="image" src="https://github.com/user-attachments/assets/30b0e5f6-1513-4b8c-9515-5898b2a58bb3" />  
+
 Biokselle on annettu 128KiB muistia käytettäväksi ja 11 GiB on ram-muistia virtuaalikoneelle.  
 
-Tämän jälkeen listauksessa tulee prosessori. Tässä kohdassa ei ole kuitenkaan kerrottu virtuaalikoneen saamia prosessorin resursseja sen tarkemmin.  
+<img width="307" alt="image" src="https://github.com/user-attachments/assets/950e66cc-ce15-4869-a328-ce7891735155" />  
+
+Tämän jälkeen listauksessa tulee prosessori. Tässä kohdassa ei ole kuitenkaan kerrottu virtuaalikoneen saamia prosessorin resursseja sen tarkemmin. 
+
+<img width="394" alt="image" src="https://github.com/user-attachments/assets/c93bbf2e-41b9-4f4d-8015-a732e4a4c0cc" />  
+
+
 
 
 
