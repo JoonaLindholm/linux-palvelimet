@@ -365,23 +365,17 @@ Komento: grep --color "Ananas" hedelmat.txt
 
 Mahtavaa! Tämä grep voisi olla hyvä työkalu, jos vaikka haluaisi löytää jotain virhelokeja.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# KESKEN!! JATKA GREP!  
-
 ## e) Pipe  
+Tehtävänannossa pyydettiin esittelemään putkien käyttöä.  
+Putkilla voi ketjuttaa monta toimintoa yhteen hakuun.  
 
+Kokeilin seuraavaksi käyttää pipe | komentoa hedelmat.txt tarinaani.  
+Etsitään rivit, joissa esiintyy "Ananas" ja lasketaan monta riviä niitä oli.  
+Komento: grep "Ananas" tarina.txt | wc l  
+
+<img width="290" alt="image" src="https://github.com/user-attachments/assets/963c1378-bad3-4e71-9cb9-c6730093b30e" />  
+
+Etsittiin ananakset ja laskettiin, että rivejä oli 3.  
 
 ## f) Rauta  
 Tässä tehtävässä minun piti listata tietokoneeni rauta käyttäen komentoa.  
@@ -403,120 +397,12 @@ Esimerkiksi bioksella on 128KiB emuloitua muistia ja 11 GiB on ram-muistia virtu
 
 Osa resursseista tulee omalta pääkoneeltani, esimerkiksi kovalevy, ram-muisti ja prosessori, mutta osa listauksessa oelvista asioista on virtuaalisia koneen komponentteja ja erilaisia emuloituja ohjaimia.  
 
+## g) Analysoidaan lokeja  
+Lokit olivat siirtyneet journaliin ja niitä pääsi katsomaan komennolla journalctl.  
+Tämä selvisi aiemmin, kun olin /var/log/ kansiossa ja luin sieltä README.txt tiedoston.  
 
+Journalctl koment
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ls
-
-
-cd log
-
-
-cd var
-
-
-
-
-
-ls
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-dc .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
