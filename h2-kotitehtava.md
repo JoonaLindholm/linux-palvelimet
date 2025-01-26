@@ -28,11 +28,28 @@ Komentorivillä voi käyttää järjestelmää nopeasti ja kätevästi tekstipoh
 
 Peruskomentoja:  
 
-- pwd = näyttää käyttäjälle kansion, jossa hän on komennon suorittaessa.
-- ls = listaa tämän kansion tiedostot.
-- cd = käyttäjä voi vaihtaa hakemistoa.
-- mkdir = käyttäjä voi luoda uuden kansion.
-- 
+- pwd = näyttää käyttäjälle kansion, jossa hän on komennon suorittaessa.  
+- ls = listaa tämän kansion tiedostot.  
+- cd = käyttäjä voi vaihtaa hakemistoa.  
+- mkdir = käyttäjä voi luoda uuden kansion.  
+- less = näyttää tiedoston sisällön sivu kerrallaan.  
+- | (pipe) = Yhdistää kahden komennon tuloksen, jolloin ensimmäisen komennon tuottama tulos siirretään seuraavalle komennolle.  
+- nano, micro jne. = tekstieditoreja.  
+- mv = käyttäjä voi siirtää tai nimetä tiedostoja tai kansioita.  
+- cp = kopioi tiedoston tai kansion. "-r" lisättyäsi voit kopioida myös kansioiden sisällön.  
+- rm = poistaa tiedoston. "-r" lisättyäsi voit poistaa myös kansion ja sen sisällön.  
+- rmdir = poistaa tyhjän kansion.  
+- ssh = avaa etäyhteyden turvallisesti palvelimelle.  
+- scp = kopioi tiedoston tai kansion turvallisesti etäpalvelimelle.  
+- man = näyttää komennon manuaalisivut.  
+-  --help tai -h = näyttää komennon lyhyen avun.  
+- history = näyttää käyttäjän aiemmin suorittamat komennot.  
+- sudo = suorittaa komennon korkeammilla käyttöoikeuksilla.  
+- apt-get update = päivittää ohjelmistovarastojen tiedot.  
+- apt-get install [ohjelma] = asentaa ohjelman.  
+- apt-get purge [ohjelma] = poistaa ohjelman ja sen asetustiedostot.  
+- dpkg --listfiles [ohjelma] = näyttää ohjelman asentamat tiedostot.  
+- tab = täydentää komennot tai tiedostonimet automaattisesti, jos mahdollista.  
 
 
 ## a) Micro editorin asennus  
