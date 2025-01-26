@@ -43,14 +43,23 @@ Peruskomentoja:
 - scp = kopioi tiedoston tai kansion turvallisesti etäpalvelimelle.  
 - man = näyttää komennon manuaalisivut.  
 -  --help tai -h = näyttää komennon lyhyen avun.  
-- history = näyttää käyttäjän aiemmin suorittamat komennot.  
-- sudo = suorittaa komennon korkeammilla käyttöoikeuksilla.  
-- apt-get update = päivittää ohjelmistovarastojen tiedot.  
-- apt-get install [ohjelma] = asentaa ohjelman.  
-- apt-get purge [ohjelma] = poistaa ohjelman ja sen asetustiedostot.  
-- dpkg --listfiles [ohjelma] = näyttää ohjelman asentamat tiedostot.  
+- history = näyttää käyttäjän aiemmin suorittamat komennot.
+   
+### sudo komennot = suorittaa komennon korkeammilla käyttöoikeuksilla.  
+
+- sudo apt-get update = päivittää saatavilla olevien pakettien listauksen.  
+- sudo apt-get install (ohjelmannimi) = asentaa ohjelman.  
+- sudo apt-get purge (ohjelmannimi) = poistaa ohjelman ja sen asetustiedostot.  
+- dpkg --listfiles (ohjelmannimi) = näyttää ohjelman asentamat tiedostot.  
 - tab = täydentää komennot tai tiedostonimet automaattisesti, jos mahdollista.  
 
+### Tärkeitä kansioita:  
+
+- / = juurihakemisto, josta kaikki alkaa.
+- /home/ = käyttäjien kotihakemistot.
+- /etc/ = järjestelmän asetukset.
+- /media/ = irrotettavat tallennusvälineet, kuten CD-levyt ja USB-tikut.
+- /var/log/ = järjestelmälokit.  
 
 ## a) Micro editorin asennus  
 Aloitin asennuksen 23.1. klo 13:30.  
