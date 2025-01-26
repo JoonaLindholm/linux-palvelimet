@@ -311,24 +311,72 @@ https://www.google.com/search?q=what+is+linux+grep&oq=what+is+linux+grep&gs_lcrp
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/67a49c72-6fb9-4d02-9c11-9ea6a4c30d9c" />  
 
 Eli kyseessä on vähän kuin hakukone terminaaliin.  
-Seuraavaksi kokeilin grepin käyttöä.  
-Heitin juurikansioon suoraan vain grep error ihan vain testiksi, mitä käy.  
-No koko terminaali jäätyi..  hups.  
 
-<img width="330" alt="image" src="https://github.com/user-attachments/assets/7e6bd4e5-3674-4a3d-bc7d-0c2608b3c210" />  
+Luodaan kokeiluun tekstitiedosto, jossa on hedelmiä.  
+Luodaan ensin kansio "hedelmat"  
+mkdir hedelmat omassa kansiossani. /Home/joona/  
 
-Terminaali ei ollutkaan jäätynyt. Pystyin kirjoittelemaan kaikenlaista komentoriville, mutta mitään ei kuitenkaan tapahtunut.  
+<img width="496" alt="image" src="https://github.com/user-attachments/assets/86aab218-19cb-40ae-b9ee-6b56ab1b46a2" />  
 
-<img width="269" alt="image" src="https://github.com/user-attachments/assets/c045749f-5414-4647-aaff-16cdc0aee599" />  
+Mennään hedelmat kansioon ja luodaan hedelmat.txt.  
 
-Suljin terminaalin kokonaan yläkulman x näppäimestä.  
-En oikeastaan tiedä, mitä aiemmin tapahtui.  
-Menin tutkimaan tarkempia ohjeita ja löysinkin niitä.  
+Komento micro hedelmat.txt  
+
+<img width="212" alt="image" src="https://github.com/user-attachments/assets/0f285d88-caa3-4da7-88c1-dcdfabdf0ef5" />  
+
+<img width="474" alt="image" src="https://github.com/user-attachments/assets/54fc99d2-c7b5-4037-ae15-877907c52160" />  
+
+Ctrl-s tallensi hedelmät micro tekstieditorissa. Seuraavaksi kokeilin grep komentoa hedelmiini.  
+Etsin googlesta grep -komentoja ja löysin seuraavan sivun:  
 
 https://linux-tips.us/lets-learn-about-grep/  
 
-Komentoni oli väärä. Seuraavaksi kokeilin eri komentoa.  
-grep "error" /var/log/syslog  
+Kokeillaan miltä riviltä "Persikka" löytyy.  
+grep -n "Persikka"  
+
+<img width="275" alt="image" src="https://github.com/user-attachments/assets/c7e19f11-cf69-415e-8ea1-0ed974496798" />  
+
+Persikka löytyi riviltä 5.  
+
+Tässä vaiheessa ajattelin, että tekstitiedostoni sisällön täytyy olla monimutkaisempi.  
+Chatgpt saa luoda listaamistani hedelmistä tarinan, josta voin sitten etsiä asioita grepillä.  
+
+<img width="833" alt="image" src="https://github.com/user-attachments/assets/2222618b-ae41-4368-9f9c-9baac448e123" />  
+
+Kaunis tarina hedelmista.  
+Kokeillaan greppiä tarinaan.  
+
+Etsitään rivit, joissa ei esiinny "Omena".  
+
+komento: grep -v "Omena" hedelmat.txt.  
+
+<img width="820" alt="image" src="https://github.com/user-attachments/assets/4b8e10d0-8c27-441f-9edb-68dcfaabd56a" />  
+
+Toimii!  
+
+Halusin vielä kokeilla jotain erilaista ja löysin googlaamalla seuraavan sivun:  
+
+https://www.cyberciti.biz/tips/howto-see-grep-command-output-in-colours.html  
+
+Sivun ohjeilla kokeilin seuraavaksi värittää ananakset ja etsiä kaikki rivit, joilla ananas esiintyy.  
+Komento: grep --color "Ananas" hedelmat.txt  
+
+<img width="812" alt="image" src="https://github.com/user-attachments/assets/52a0f6b9-9f0d-4305-ac9e-0d614f85e53d" />  
+
+Mahtavaa! Tämä grep voisi olla hyvä työkalu, jos vaikka haluaisi löytää jotain virhelokeja.  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # KESKEN!! JATKA GREP!  
 
@@ -346,24 +394,14 @@ Sudo lshw -short -sanitize
 
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/4f193839-28bc-419a-a918-3ae0510bf80a" />  
 
-Listaus näyttäisi olevan virtuaalikoneen ja sille antamani resurssien rauta.  
+Listaus näyttäisi olevan virtuaalikoneen ja sille antamani resurssien rauta.    
+Listauksessa on tietokoneen resursseja, mutta virtuaaliversiona eli emuloituna.  
 
-- Listaus alkaa itse pääkomponentista eli VirtualBoxista itsestään.
-  Tämä on merkitty luokkaan system.  
-  
-  <img width="121" alt="image" src="https://github.com/user-attachments/assets/53cf25e7-68ee-40b5-8b5a-4ad287df4412" />  
-  
-Seuraavaksi listauksessa tulee virtuaalisen emolevyn väylä eli luokaltaan bus.  
-
-<img width="263" alt="image" src="https://github.com/user-attachments/assets/30b0e5f6-1513-4b8c-9515-5898b2a58bb3" />  
-
-Biokselle on annettu 128KiB muistia käytettäväksi ja 11 GiB on ram-muistia virtuaalikoneelle.  
+Esimerkiksi bioksella on 128KiB emuloitua muistia ja 11 GiB on ram-muistia virtuaalikoneelle.  
 
 <img width="307" alt="image" src="https://github.com/user-attachments/assets/950e66cc-ce15-4869-a328-ce7891735155" />  
 
-Tämän jälkeen listauksessa tulee prosessori. Tässä kohdassa ei ole kuitenkaan kerrottu virtuaalikoneen saamia prosessorin resursseja sen tarkemmin. 
-
-<img width="394" alt="image" src="https://github.com/user-attachments/assets/c93bbf2e-41b9-4f4d-8015-a732e4a4c0cc" />  
+Osa resursseista tulee omalta pääkoneeltani, esimerkiksi kovalevy, ram-muisti ja prosessori, mutta osa listauksessa oelvista asioista on virtuaalisia koneen komponentteja ja erilaisia emuloituja ohjaimia.  
 
 
 
