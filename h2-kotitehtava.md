@@ -72,7 +72,7 @@ Tietokoneen resurssit:
 - 3060ti 8GB GDDR6 -näytönohjain  
 
 VM Linuxin resurssit ja asetukset:  
-<img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />
+<img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />  
 
 
 Virtual linuxin käynnistys -> salasana -> työpöydältä Applications -> Terminal Emulator  
@@ -89,13 +89,13 @@ Kokeillaan "sudo apt-get remove $package-name" komentoa. Package namen tilalle t
 
 Komentorivin mukaan homma meni maaliin.  
 
-<img width="413" alt="image" src="https://github.com/user-attachments/assets/db9ab217-e326-42dc-b45f-b5a307e1dcf6" />
+<img width="413" alt="image" src="https://github.com/user-attachments/assets/db9ab217-e326-42dc-b45f-b5a307e1dcf6" />  
 
 Hienoa! Nyt voimme asentaa tuon micron uudestaan. Samassa keskustelussa on myös ohjeet asentamiseen.  
 Komento onkin melkein sama, mutta removen tilalle tuleekin install. Loogista.  
 Sudo apt-get install micro -komento käyttöön.  
 
-<img width="410" alt="image" src="https://github.com/user-attachments/assets/d890bc48-acd0-43d9-8abf-50622b0e3488" />
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/d890bc48-acd0-43d9-8abf-50622b0e3488" />  
 
 Tämäkin onnistui helposti. Nyt on mikro poistettu ja asennettu!  
 
@@ -103,6 +103,7 @@ Tämäkin onnistui helposti. Nyt on mikro poistettu ja asennettu!
 
 Pitäisi asentaa kolme komentoriviohjelmaa apt-get komentoa käyttäen.  
 Löysin youtubesta videon, jossa oli mielenkiintoisia ohjelmia.  
+
 https://www.youtube.com/watch?v=FXu428tLhdE  
 
 Valitsin videon ohjelmista seuraavat.  
@@ -123,7 +124,7 @@ Asennukset menivät varmaankin hyvin. Kokeillaan ohjelmia.
 
 ### btop  
 Tämän ohjelman tarkoituksena on, että käyttäjä voi seurata resurssien käyttöä reaaliajassa.  
-Käyttäjä voi myös sulkea ohjelmia btopin kautta.
+Käyttäjä voi myös sulkea ohjelmia btopin kautta.  
 
 Kirjoitin terminaaliin btop.  
 
