@@ -401,7 +401,41 @@ Osa resursseista tulee omalta pääkoneeltani, esimerkiksi kovalevy, ram-muisti 
 Lokit olivat siirtyneet journaliin ja niitä pääsi katsomaan komennolla journalctl.  
 Tämä selvisi aiemmin, kun olin /var/log/ kansiossa ja luin sieltä README.txt tiedoston.  
 
-Journalctl koment
+Journalctl komennon jälkeen terminaali täyttyi lokeista.  
+Aloin katselemaan erottuvia keltaisia komentorivejä.  
+
+<img width="692" alt="image" src="https://github.com/user-attachments/assets/bc969032-3799-46b3-9e2b-55ac75a102e2" />  
+
+Nähtävästi pulseaudio etsii evästeitä, mutta niitä ei löydy.  
+Tämä voi johtua siitä etten ole tehnyt mitään toimintoja järjestelmällä, joka loisi evästeitä pulseaudiolle.  
+
+## h) Micro-editorin plugin  
+
+Asensin palettero nimisen pluginin, joka maininittiin myös tehtävänannossa.  
+Pluginin pitäisi tarjota komentopaletti.  
+
+En tiennyt miten plugin asennetaan microon, joten päädyin kysymään ohjeita tekoälyltä.  
+
+<img width="560" alt="image" src="https://github.com/user-attachments/assets/6036ac4a-b0fd-45c4-9afa-375b9dc8cdaa" />  
+
+<img width="239" alt="image" src="https://github.com/user-attachments/assets/c9690297-a25d-4f22-a035-7ac5b944e955" />  
+
+<img width="503" alt="image" src="https://github.com/user-attachments/assets/d190a2ab-d6eb-4fbd-a0ec-4e4e52702c75" />  
+
+Navigoin hedelmat tarinaan kokeilemaan microa.  
+
+<img width="491" alt="image" src="https://github.com/user-attachments/assets/68d9b415-d08d-46e4-a413-a721f3882c09" />  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -410,13 +444,29 @@ Journalctl koment
 
 ## Lähdeluettelo  
 
+- Kotitehtävä h2  
+  https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini  
+
 - Tero Karvinen 2020  
-https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited 
+  https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited  
   
 - Google support -keskustelu  
   https://support.google.com/chromebook/thread/211306991/uninstall-linux-apps-using-terminal?hl=en  
 
-- Youtube video linux ohjelmista.  
+- Youtubevideo linux ohjelmista.  
   https://www.youtube.com/watch?v=FXu428tLhdE  
+
+- What is grep -googlehaku
+  https://www.google.com/search?q=what+is+linux+grep&oq=what+is+linux+grep&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINDk4NmowajGoAgiwAgE&sourceid=chrome&ie=UTF-8  
+
+- grep -ohjeita
+  https://linux-tips.us/lets-learn-about-grep/    
+
+- Grep -komentoja
+  How to see grep output in color with highlighting feature
+  https://www.cyberciti.biz/tips/howto-see-grep-command-output-in-colours.html
+
+- Chatgpt -komentoja ja hedelmatarinan luominen
+  
 
   
