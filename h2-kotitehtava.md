@@ -411,8 +411,12 @@ Tämä voi johtua siitä etten ole tehnyt mitään toimintoja järjestelmällä,
 
 ## h) Micro-editorin plugin  
 
-Asensin palettero nimisen pluginin, joka maininittiin myös tehtävänannossa.  
-Pluginin pitäisi tarjota komentopaletti.  
+Etsin internetistä micro -plugineita ja löysin sivut, joilla oli listaus.  
+
+https://micro-editor.github.io/plugins.html
+
+
+Asensin wc nimisen pluginin, jolla voi laskea sanojen tai merkkien määrän.
 
 En tiennyt miten plugin asennetaan microon, joten päädyin kysymään ohjeita tekoälyltä.  
 
