@@ -186,7 +186,7 @@ Avautui editor ohjelman valinta kohta. Valitsin micron.
 <img width="323" alt="image" src="https://github.com/user-attachments/assets/b2d6b752-f877-4a25-9206-30d4a57648ba" />  
 
 Kirjoittelin tiedostoon jotain testiksi ja tämän jälkeen en tiennyt miten pääsen takaisin kansionäkymään.  
-Ruudun alaosassa oli kuitenkin ctrl-g : help, joten painoin sitä.
+Ruudun alaosassa oli kuitenkin ctrl-g : help, joten painoin sitä.  
 
 <img width="524" alt="image" src="https://github.com/user-attachments/assets/b3d301b7-cb43-45f6-905d-2b1e2f3d86fc" />  
 
@@ -208,9 +208,9 @@ Aloitetaan kirjoittamalla neofetch komentoriville.
 
 No tämä olikin aika yksinkertainen ohjelma ja toiminnot jäivät tähän.  
 
-Kokeillaan vielä asentaa yksi ohjelma. Videolla oli myös maininta hauskannäköisestä ohjelmasta nimeltä hollywood.
+Kokeillaan vielä asentaa yksi ohjelma. Videolla oli myös maininta hauskannäköisestä ohjelmasta nimeltä hollywood.  
 
-## Hollywood
+## Hollywood  
 
 sudo apt-get install hollywood  
 Tämän jälkeen tuli pitkät rivit komentorivejä.  
