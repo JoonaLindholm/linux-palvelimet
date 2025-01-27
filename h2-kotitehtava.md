@@ -325,6 +325,7 @@ Komento micro hedelmat.txt
 
 <img width="212" alt="image" src="https://github.com/user-attachments/assets/0f285d88-caa3-4da7-88c1-dcdfabdf0ef5" />  
 
+  
 <img width="474" alt="image" src="https://github.com/user-attachments/assets/54fc99d2-c7b5-4037-ae15-877907c52160" />  
 
 Ctrl-s tallensi hedelmät micro tekstieditorissa. Seuraavaksi kokeilin grep komentoa hedelmiini.  
