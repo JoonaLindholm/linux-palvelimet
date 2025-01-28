@@ -1,3 +1,5 @@
+*28.1.2025 lisätty lähdeluettelo*
+
 # Kotitehtävät h1
 
 Kotitehtävänä oli tiivistää pääkohdat seuraavista teksteistä:
