@@ -408,8 +408,8 @@ https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
 **What is Free Software?**  
 https://www.gnu.org/philosophy/free-sw.html    
 
-**Tero Karvisen ohjeet ** 
+**Tero Karvisen ohjeet**  
 https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual-machine  
 
-**Virtualbox**
-https://www.virtualbox.org/wiki/Downloads  
+**Virtualbox**  
+https://www.virtualbox.org/wiki/Downloads    
