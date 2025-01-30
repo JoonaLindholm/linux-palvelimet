@@ -1,9 +1,8 @@
-# linux-palvelimet
-# Moikkamoi!
+# linux-palvelimet -kurssi  
+# Moikkamoi!  
 
-Tervetuloa sivuilleni :)
 
-## References
+Tervetuloa katsomaan linux -palvelimet kurssin tehtäviä!  
+
 
 Joona Lindholm 2025
-https://terokarvinen.com/2023/create-a-web-page-using-github/?fromSearch=github
