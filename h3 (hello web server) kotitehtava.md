@@ -10,7 +10,7 @@
 
 **a)** Weppipalvelimen toimivuuden testaus    
 
-**b)** Etsi lokista rivit, jotka syntyvät, kun lataat omalta palvelimeltasi yhden sivun. Analysoi rivit (eli selitä yksityiskohtaisesti jokainen kohta ja numero, etsi tarvittaessa lähteitä).  
+**b)** Apache2 lokien tutkiminen ja analysointi  
 
 **c)** Etusivu uusiksi. Tee uusi name based virtual host. Sivun tulee näkyä suoraan palvelimen etusivulla http://localhost/. Sivua pitää pystyä muokkaamaan normaalina käyttäjänä, ilman sudoa. Tee uusi, laita vanhat pois päältä. Uusi sivu on hattu.example.com, ja tämän pitää näkyä: asetustiedoston nimessä, asetustiedoston ServerName-muuttujassa sekä etusivun sisällössä (esim title, h1 tai p).  
 
@@ -58,6 +58,14 @@ Annoin osoitekenttään osoitteen:
 <img width="394" alt="image" src="https://github.com/user-attachments/assets/656e5703-08b2-49a3-a069-268c98cdf40f" />  
 
 Palvelin toimi hyvin.  
+
+## b) Apache2 lokien tutkiminen ja analysointi  
+
+Aloitin tehtävän navigoimalla oikeaan kansioon terminaalissa komennolla  
+
+
+
+
 
 
 
