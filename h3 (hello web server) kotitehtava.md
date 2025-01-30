@@ -71,14 +71,17 @@ sudo tail /var/log/apache2/error.log
 Tämä tulosti kymmenen viimeisintä lokimerkintää access.log tiedostosta.  
 
 ## c) 
-Tein tehtävää opettajani Tero Karivisen ohjeiden mukaan.  
+Tein tehtävää opettajani Tero Karvisen ohjeiden mukaan.  
 **https://terokarvinen.com/2018/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/**
 
-sudoedit /etc/apache2/sites-available/hattu.example.com.conf  
+Aloitin luomalla hattu.example.com.conf-asetustiedoston käytettävissä oleviin sivuihin.  
+Komento:  
+**sudoedit /etc/apache2/sites-available/hattu.example.com.conf**   
 
 <img width="576" alt="image" src="https://github.com/user-attachments/assets/bcedff98-a006-47ee-9129-29df8e97dcae" />
 
-ctrl-s -> ctrl-x
+Tallensin ja suljin nano-editorin komennoilla:   
+**ctrl-s -> ctrl-x**  
 
 sudo a2ensite hattu.example.com
 sudo systemctl restart apache2
@@ -119,5 +122,10 @@ Lisäsin perus html-koodia:
 
 crtl-s (tallennus) -> ctrl-x (exit)  
 
+Menin kokeilemaan pääsenkö selaimella katsomaan hattu-sivua.  
+
+<img width="394" alt="image" src="https://github.com/user-attachments/assets/ab4b4ec9-766b-4b6f-9031-4f99dfd9fada" />  
+
+Hattu-sivu toimi hyvin ja oli päivittynyt.
 
 
