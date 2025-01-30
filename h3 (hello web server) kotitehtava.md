@@ -105,7 +105,7 @@ Komennot:
 
 <img width="427" alt="image" src="https://github.com/user-attachments/assets/a767608d-b919-43ee-a120-c69995b34e85" />  
 
-sudo a2dissite Joonansivut.example.com.conf**  
+**sudo a2dissite Joonansivut.example.com.conf**  
 
 <img width="430" alt="image" src="https://github.com/user-attachments/assets/ece34dc4-3a16-4b44-838b-fe6e5c098aa7" />  
 
@@ -116,12 +116,12 @@ Jatkoin ohjeiden seuraamista ja loin kansiot kotikansiooni seuraavalla komennoll
 Ohjeissa oli seuraavaksi komento luoda tekstiä hattu.example.com tiedostoon komennolla:
 **echo hattu > /home/joona/publicsites//hattu.example.com/**  
 
-Tämän jälkeen kokeilin tulostaako curl localhost tekstin hattu komentoriville.   
+Tämän jälkeen kokeilin tulostaako curl localhost tekstin "hattu" komentoriville.   
 Komento oli siis **Curl localhost**  
 
 <img width="299" alt="image" src="https://github.com/user-attachments/assets/405988bf-0e2f-410d-9c0f-a577a1f12ecc" />  
 
-Sivu siis toimi ja hattu tulostui selaimeen.  
+Sivu toimi ja hattu tulostui selaimeen.    
 
 Seuraavaksi muokkasin index.html tiedostoa, että sain muutettua sivun tietoja.  
 Enemmän hattu-tekstiä siis sivulle.  
@@ -141,6 +141,41 @@ Menin kokeilemaan pääsenkö graafisella selaimella katsomaan hattu-sivua.
 
 Hattu-sivu toimi hyvin ja oli päivittynyt.  
 Sivua pystyi myös muokkaamaan ilman sudo oikeuksia.  
+
+## e) Validi HTML5-sivu  
+Olin periaatteessa, jo suorittanut tämän tehtävän vahingossa jo edellisessä tehtävässä.  
+Halusin kuitenkin muokata lisää hattu-sivua ja lisätä jotain tekstiä siihen.  
+Opettajallani Terolla oli sivuillaan myös ohjeet perus HTML5-sivun tekemiseen.  
+
+**https://terokarvinen.com/2012/short-html5-page/**  
+
+Navigoin kansioon, jossa oli index.html tiedosto.  
+**Komennot**
+**cd /home/joona/publicsites/hattu.example.com -> 
+ls ->
+nano index.html**  
+
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/342c21e9-0d09-4f4c-9a28-1133fde53636" />  
+
+Googlasin mikä on maailman kallein hattu ja päädyin sivulle:  
+**https://damiaglobalservices.com/article/most-expensive-hats-in-the-world/**  
+Lisäsin sivulta tietoa hattu-sivulle.  
+
+<img width="443" alt="image" src="https://github.com/user-attachments/assets/386e3daf-3592-49a0-9245-3ddfd82bf45e" />  
+
+<img width="395" alt="image" src="https://github.com/user-attachments/assets/d531b04c-23ad-4539-8606-98f42b34852f" />  
+
+
+
+
+
+Lähdeluettelo  
+
+Maailman kallein hattu
+https://damiaglobalservices.com/article/most-expensive-hats-in-the-world/
+
+
+
 
 
 
