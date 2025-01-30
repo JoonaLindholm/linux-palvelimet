@@ -57,19 +57,67 @@ Annoin osoitekenttään osoitteen:
 
 <img width="394" alt="image" src="https://github.com/user-attachments/assets/656e5703-08b2-49a3-a069-268c98cdf40f" />  
 
-Palvelin toimi hyvin.  
+Kokeilin vielä lopuksi komentoa  
+**sudo systemctl status apache2**  
+
+<img width="419" alt="image" src="https://github.com/user-attachments/assets/09ea7b2e-7b90-4a4e-ae75-297f4985fc3f" />
+
+Palvelin toimi hyvin ja oli statuksen mukaan aktiivinen.  
 
 ## b) Apache2 lokien tutkiminen ja analysointi  
 
-Aloitin tehtävän navigoimalla oikeaan kansioon terminaalissa komennolla  
+Aloitin tehtävän terminaalissa komennolla  
+sudo tail /var/log/apache2/error.log  
+Tämä tulosti kymmenen viimeisintä lokimerkintää access.log tiedostosta.  
 
+## c) 
+Tein tehtävää opettajani Tero Karivisen ohjeiden mukaan.  
+**https://terokarvinen.com/2018/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/**
 
+sudoedit /etc/apache2/sites-available/hattu.example.com.conf  
 
+<img width="576" alt="image" src="https://github.com/user-attachments/assets/bcedff98-a006-47ee-9129-29df8e97dcae" />
 
+ctrl-s -> ctrl-x
 
+sudo a2ensite hattu.example.com
+sudo systemctl restart apache2
+cd /etc/apache2/sites-enabled/ -> ls
+sudo a2dissite Joonansivut.example.com.conf
+<img width="427" alt="image" src="https://github.com/user-attachments/assets/a767608d-b919-43ee-a120-c69995b34e85" />
 
+<img width="430" alt="image" src="https://github.com/user-attachments/assets/ece34dc4-3a16-4b44-838b-fe6e5c098aa7" />
 
+mkdir -p /home/joona/publicsites/hattu.example.com/
+echo hattu > /home/joona/publicsites//hattu.example.com/
 
+Curl localhost
+
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/405988bf-0e2f-410d-9c0f-a577a1f12ecc" />
+
+Seuraavaksi muokkasin index.html tiedostoa, että sain muutettua sivun tietoja.  
+
+<img width="459" alt="image" src="https://github.com/user-attachments/assets/acba5887-d045-41a2-8955-5f873fb10b15" />
+
+Avasin tiedoston komennolla **nano index.html**  
+Lisäsin perus html-koodia:  
+                                                            
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hattu</title>
+</head>
+<body>
+    <h1>Tervetuloa Hattu-sivulle!</h1>
+    <p>Hatut on jees!</p>
+</body>
+</html> 
+
+<img width="454" alt="image" src="https://github.com/user-attachments/assets/a342f6b7-bac2-4247-951a-aca16b51248b" />
+
+crtl-s (tallennus) -> ctrl-x (exit)  
 
 
 
