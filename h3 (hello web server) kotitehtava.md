@@ -82,6 +82,11 @@ Komento:
 
 Lisäsin ohjeiden mukaiset tiedot tiedostoon ja muutin ne tehtävänannon mukaisiksi.  
 Vaihdoin siis pyörät hattuihin ja kansioiden polut vastaamaan omaa käyttäjääni.  
+
+**ServerName = palvelimen nimi = hattu  
+DocumentRoot = kansio, jossa on sivun tiedostot  
+Directory = oikeudet kaikille kansioon /home/joona/publicsites/hattu.example.com**  
+
 Tallensin ja suljin nano-editorin komennoilla:   
 **ctrl-s -> ctrl-x**  
 
@@ -111,8 +116,8 @@ Jatkoin ohjeiden seuraamista ja loin kansiot kotikansiooni seuraavalla komennoll
 Ohjeissa oli seuraavaksi komento luoda tekstiä hattu.example.com tiedostoon komennolla:
 **echo hattu > /home/joona/publicsites//hattu.example.com/**  
 
-Tämän jälkeen kokeilin tulostaako curl localhost tekstin hattu
-**Curl localhost**  
+Tämän jälkeen kokeilin tulostaako curl localhost tekstin hattu komentoriville.   
+Komento oli siis **Curl localhost**  
 
 <img width="299" alt="image" src="https://github.com/user-attachments/assets/405988bf-0e2f-410d-9c0f-a577a1f12ecc" />  
 
@@ -130,10 +135,13 @@ Lisäsin perus html-koodia:
 
 crtl-s (tallennus) -> ctrl-x (exit)  
 
-Menin kokeilemaan pääsenkö selaimella katsomaan hattu-sivua.  
+Menin kokeilemaan pääsenkö graafisella selaimella katsomaan hattu-sivua.  
 
 <img width="394" alt="image" src="https://github.com/user-attachments/assets/ab4b4ec9-766b-4b6f-9031-4f99dfd9fada" />  
 
-Hattu-sivu toimi hyvin ja oli päivittynyt.
+Hattu-sivu toimi hyvin ja oli päivittynyt.  
+Sivua pystyi myös muokkaamaan ilman sudo oikeuksia.  
+
+
 
 
