@@ -80,13 +80,24 @@ Komento:
 
 <img width="576" alt="image" src="https://github.com/user-attachments/assets/bcedff98-a006-47ee-9129-29df8e97dcae" />
 
+Lisäsin ohjeiden mukaiset tiedot tiedostoon ja muutin ne tehtävänannon mukaisiksi.  
+Vaihdoin siis pyörät hattuihin ja kansioiden polut vastaamaan omaa käyttäjääni.  
 Tallensin ja suljin nano-editorin komennoilla:   
 **ctrl-s -> ctrl-x**  
 
-sudo a2ensite hattu.example.com
-sudo systemctl restart apache2
-cd /etc/apache2/sites-enabled/ -> ls
-sudo a2dissite Joonansivut.example.com.conf
+Seuraavaksi aktivoin hattu.example.com sivun apache2:lle, luoden sen sites-enabled kansioon.  
+Komento:  
+**sudo a2ensite hattu.example.com**  
+
+Tämän jälkeen käynnistin apache2 uudelleen, jotta muutokset aktivoituvat.  
+Komento:  
+**sudo systemctl restart apache2**  
+
+Sitten luin tehtävänantoa ja huomasin, että vanha asetustiedosto piti käydä poistamassa.  
+Navigoin aktiivisiin apache2 sivuihin ja poistin vanhan sivun.  
+Komennot:
+**cd /etc/apache2/sites-enabled/ -> ls  
+sudo a2dissite Joonansivut.example.com.conf**
 <img width="427" alt="image" src="https://github.com/user-attachments/assets/a767608d-b919-43ee-a120-c69995b34e85" />
 
 <img width="430" alt="image" src="https://github.com/user-attachments/assets/ece34dc4-3a16-4b44-838b-fe6e5c098aa7" />
