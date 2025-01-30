@@ -97,38 +97,35 @@ Sitten luin tehtävänantoa ja huomasin, että vanha asetustiedosto piti käydä
 Navigoin aktiivisiin apache2 sivuihin ja poistin vanhan sivun.  
 Komennot:
 **cd /etc/apache2/sites-enabled/ -> ls  
-sudo a2dissite Joonansivut.example.com.conf**
-<img width="427" alt="image" src="https://github.com/user-attachments/assets/a767608d-b919-43ee-a120-c69995b34e85" />
 
-<img width="430" alt="image" src="https://github.com/user-attachments/assets/ece34dc4-3a16-4b44-838b-fe6e5c098aa7" />
+<img width="427" alt="image" src="https://github.com/user-attachments/assets/a767608d-b919-43ee-a120-c69995b34e85" />  
 
-mkdir -p /home/joona/publicsites/hattu.example.com/
-echo hattu > /home/joona/publicsites//hattu.example.com/
+sudo a2dissite Joonansivut.example.com.conf**  
 
-Curl localhost
+<img width="430" alt="image" src="https://github.com/user-attachments/assets/ece34dc4-3a16-4b44-838b-fe6e5c098aa7" />  
 
-<img width="299" alt="image" src="https://github.com/user-attachments/assets/405988bf-0e2f-410d-9c0f-a577a1f12ecc" />
+Jatkoin ohjeiden seuraamista ja loin kansiot kotikansiooni seuraavalla komennolla.  
+
+**mkdir -p /home/joona/publicsites/hattu.example.com/**
+-p loi myös kaikki puuttuvat välikansiot.  
+Ohjeissa oli seuraavaksi komento luoda tekstiä hattu.example.com tiedostoon komennolla:
+**echo hattu > /home/joona/publicsites//hattu.example.com/**  
+
+Tämän jälkeen kokeilin tulostaako curl localhost tekstin hattu
+**Curl localhost**  
+
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/405988bf-0e2f-410d-9c0f-a577a1f12ecc" />  
+
+Sivu siis toimi ja hattu tulostui selaimeen.  
 
 Seuraavaksi muokkasin index.html tiedostoa, että sain muutettua sivun tietoja.  
+Enemmän hattu-tekstiä siis sivulle.  
 
 <img width="459" alt="image" src="https://github.com/user-attachments/assets/acba5887-d045-41a2-8955-5f873fb10b15" />
 
 Avasin tiedoston komennolla **nano index.html**  
 Lisäsin perus html-koodia:  
                                                             
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hattu</title>
-</head>
-<body>
-    <h1>Tervetuloa Hattu-sivulle!</h1>
-    <p>Hatut on jees!</p>
-</body>
-</html> 
-
 <img width="454" alt="image" src="https://github.com/user-attachments/assets/a342f6b7-bac2-4247-951a-aca16b51248b" />
 
 crtl-s (tallennus) -> ctrl-x (exit)  
