@@ -209,6 +209,22 @@ HTTP/1.1 200 OK tarkoitti, että palvelin palautti pyydetyt tiedot eli sivun. 20
 
 
 
+m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.  
+
+Googletin github education ja päädyin sivulle:  
+
+https://github.com/education  
+
+<img width="671" alt="image" src="https://github.com/user-attachments/assets/4d9cdddd-8584-453e-af0f-39eca964e047" />  
+
+Klikkasin Join GitHub Education ja student.  
+
+<img width="686" alt="image" src="https://github.com/user-attachments/assets/80e03403-0dfb-4347-b4ba-99f2734ba552" />
+
+
+
+o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
+
 
 
 
