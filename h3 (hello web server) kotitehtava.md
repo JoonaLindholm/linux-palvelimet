@@ -176,6 +176,8 @@ Laitoin HTML-koodin validate by direct input kohtaan ja painoin check.
 
 <img width="386" alt="image" src="https://github.com/user-attachments/assets/c4683f07-1c61-42ca-84d7-7bded29f1141" />  
 
+Validointi meni läpi ja sivuni oli hyväksytty.  
+
 
 
 
@@ -183,6 +185,9 @@ Lähdeluettelo
 
 Maailman kallein hattu
 https://damiaglobalservices.com/article/most-expensive-hats-in-the-world/
+
+Sivun validointi
+https://validator.w3.org/#validate_by_input
 
 
 
