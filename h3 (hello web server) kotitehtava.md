@@ -168,12 +168,13 @@ Lisäsin sivulta tietoa hattu-sivulle.
 ### Validointi 
 Tein sivun validoinnin w3 sivustolla  
 **https://validator.w3.org/#validate_by_input**   
-
+Laitoin HTML-koodin 
+<img width="389" alt="image" src="https://github.com/user-attachments/assets/2cc8b6ee-ff67-451b-b3c7-5636492ce7e5" />
 <img width="388" alt="image" src="https://github.com/user-attachments/assets/bb20c9f4-b761-49ba-bd95-b811cb0b4f47" />
 
 <img width="386" alt="image" src="https://github.com/user-attachments/assets/c4683f07-1c61-42ca-84d7-7bded29f1141" />
 
-<img width="389" alt="image" src="https://github.com/user-attachments/assets/2cc8b6ee-ff67-451b-b3c7-5636492ce7e5" />
+
 
 
 Lähdeluettelo  
