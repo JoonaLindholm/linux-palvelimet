@@ -221,6 +221,17 @@ Klikkasin Join GitHub Education ja student.
 
 <img width="686" alt="image" src="https://github.com/user-attachments/assets/80e03403-0dfb-4347-b4ba-99f2734ba552" />
 
+Tarkistin vaaditut tiedot github -käyttäjäsivuiltani, lisäsin koulun nimen kenttään ja painoin continue.  
+
+<img width="532" alt="image" src="https://github.com/user-attachments/assets/3d1aa94f-f389-4429-a269-85c772a7e1eb" />  
+
+<img width="548" alt="image" src="https://github.com/user-attachments/assets/8a5ff390-9fe1-48e0-b817-5275bad746d8" />  
+
+Lopuksi piti todistaa oma opiskelija status. Nappasin kuvan pepistä ja kokeilin kelpaako se.  
+
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/6a8e9c2f-ebba-4862-8531-c4bf5f227f46" />  
+
+
 
 
 o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
