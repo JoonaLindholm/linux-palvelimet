@@ -178,6 +178,17 @@ Laitoin HTML-koodin validate by direct input kohtaan ja painoin check.
 
 Validointi meni läpi ja sivuni oli hyväksytty.  
 
+## 'curl -I' ja 'curl' -komennot ##  
+
+Kokeilin molempia komentoja terminaaliin.  
+Curl -I localhost ja curl localhost.  
+
+![image](https://github.com/user-attachments/assets/924e24a4-8ece-4123-b569-662ec90999fc)  
+
+Curl -I palautti komentoriville HTTP-vastauksen otsakkeet ja curl palautti HTML sivun sisällön.  
+
+
+
 
 
 
