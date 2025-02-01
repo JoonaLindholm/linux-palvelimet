@@ -187,6 +187,33 @@ Curl -I localhost ja curl localhost.
 
 Curl -I palautti komentoriville HTTP-vastauksen otsakkeet ja curl palautti HTML sivun sisällön.  
 
+Curl -I palautti seuraavat tiedot:  
+
+HTTP/1.1 200 OK
+Date: Sat, 01 Feb 2025 12:57:41 GMT
+Server: Apache/2.4.62 (Debian)
+Last-Modified: Thu, 30 Jan 2025 17:52:08 GMT
+ETag: "19d-62cf015b77bc3"
+Accept-Ranges: bytes
+Content-Length: 413
+Vary: Accept-Encoding
+Content-Type: text/html  
+
+Server: kohtaan tuli palvelimen tiedot eli apache2 ja versio 2.4.62.
+Server kohdassa oli myös käyttöjärjestelmä, johon palvelin oli asennettu.  
+
+Content-Type kertoi, että palvelin lähetti HTML tietoa. Tämä tieto menee selaimelle.  
+
+HTTP/1.1 200 OK tarkoitti, että palvelin palautti pyydetyt tiedot eli sivun. 200 tarkoitti, että OK.  
+1.1 oli HTTP versio numero.  
+
+
+
+
+
+
+
+
 
 
 
