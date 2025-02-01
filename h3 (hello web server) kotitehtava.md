@@ -165,10 +165,10 @@ Lisäsin sivulta tietoa hattu-sivulle.
 
 <img width="395" alt="image" src="https://github.com/user-attachments/assets/d531b04c-23ad-4539-8606-98f42b34852f" />  
 
+### Validointi 
+Tein sivun validoinnin w3 sivustolla  
+**https://validator.w3.org/#validate_by_input**   
 
-Validointi  
-
-https://validator.w3.org/#validate_by_input
 <img width="388" alt="image" src="https://github.com/user-attachments/assets/bb20c9f4-b761-49ba-bd95-b811cb0b4f47" />
 
 <img width="386" alt="image" src="https://github.com/user-attachments/assets/c4683f07-1c61-42ca-84d7-7bded29f1141" />
