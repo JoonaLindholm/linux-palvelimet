@@ -20,7 +20,7 @@
 
 **m)** GitHub Education -paketti.  
 
-**o)** Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.  
+**o)** Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä.  
 
 # Raportti kotitehtävistä  
 
@@ -353,7 +353,52 @@ Jäin odottelemaan vahvistusta.
 
 *päivitys: 2.2.2025. ei vielä vahvistusta :(*  
 
-## o) Sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä
+## o) Sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä  
+
+Aloitin tehtävän tekemisen 2.2. klo 17:37.  
+Muistin, että Tero Karvisen sivuilla oli tähän sopivat ohjeet.  
+https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/  
+
+<img width="485" alt="image" src="https://github.com/user-attachments/assets/b22f0926-0248-429c-b3a8-6b65560f92cc" />  
+
+Aloin kokeilemaan saanko tehtävän ratkaistua muokkaamalla /etc/hosts -tiedostoa.   
+Tein uuden rivin jonka nimesin kengäksi ja annoin sille saman osoitteen kuin hatulle.  
+
+<img width="246" alt="image" src="https://github.com/user-attachments/assets/e5573e91-b497-435d-88dd-2752c46e7188" />  
+ 
+Seuraavaksi minun täytyi luoda uusi sivu kengälle eli mennä ohje alusta.  
+
+Tein kenkäsivustolle oman kansion:  
+Komento:  **sudo mkdir /var/www/kenka**  
+
+Tämän jälkeen katsoin, että se ilmestyi kansioon.  
+Komento: **sudo ls /var/www/**  
+Kenkä-kansio oli www-kansiossa.  
+
+Tämän jälkeen loin uuden index.html-tiedoston juuri tekemääni kenkä-kansioon.  
+Komento: **sudo nano /var/www/kenka/index.html**  
+
+<img width="388" alt="image" src="https://github.com/user-attachments/assets/01b3aa98-525a-4720-bdb9-351ead131167" />  
+
+Lisäsin tiedostoon HTML-koodia.  
+
+Seuraavaksi loin kenka-sivulle oman konfiguraation.  
+Komento:  
+**sudo nano /etc/apache2/sites-available/kenka.conf**  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 
