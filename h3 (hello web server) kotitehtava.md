@@ -47,6 +47,11 @@ VM Linuxin resurssit ja asetukset:
   Palvelin vertaa ServerName ja/tai ServerAlias nimiä valitakseen ensimmäisen oikean, joka vastaa pyyntöön.
   Jos täsmäävää nimeä ei löydy, käytetään ensimmäistä.
 
+- Nimeen perustuva virtuaali-isännöinti säästää IP-osoitteita ja yksinkertaistaa DNS-konfiguraatiota.
+
+- Jos VirtualHostiin ei määritellä ServerName kohtaa, palvelin käyttää oletuksena system hostnamea.  
+  Tämä voi aiheuttaa ongelmia.  
+
 ### **Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address**  
 
 Artikkelissa kerrotaan selkeät ohjeet, kuinka Apache-palvelimella voi tehdä useita verkkosivustoja yhdellä IP-osoitteella käyttäen nimiin perustuvaa virtuaali-isännöintiä.  
@@ -72,16 +77,23 @@ Tämän jälkeen konfiguroidaan sisältö.
   **mkdir -p /home/xubuntu/publicsites/pyora.example.com/**  
   **echo pyora > /home/xubuntu/publicsites/pyora.example.com/index.html**  
 
-- Testaus curl-komennolla.
+- Sivujen testaus terminaalissa curl-komennolla.
   Komennot:  
   **curl -H 'Host: pyora.example.com' localhost  
-  curl localhost**  
-  
-Verkkosivujen tarkistus selaimessa.
+  curl localhost**
 
-
+- DNS-asetuksien asettaminen.  
+  Komennot:   
+  **sudoedit /etc/hosts
+  cat /etc/hosts  
+  127.0.0.1 localhost  
+  127.0.1.1 xubuntu  
+  127.0.0.1 pyora.example.com**   
   
-Tähän tulee tiivistelmät  
+- Sivujen testaus selaimessa.
+  kokeile URL-osoitteita  
+  **http://localhost  
+  http://pyora.example.com**  
 
 ## a)  Weppipalvelimen toimivuuden testaus  
 
