@@ -242,15 +242,15 @@ Curl -I palautti komentoriville HTTP-vastauksen otsakkeet ja curl palautti HTML 
 
 Curl -I palautti seuraavat tiedot:  
 
-HTTP/1.1 200 OK
-Date: Sat, 01 Feb 2025 12:57:41 GMT
-Server: Apache/2.4.62 (Debian)
-Last-Modified: Thu, 30 Jan 2025 17:52:08 GMT
-ETag: "19d-62cf015b77bc3"
-Accept-Ranges: bytes
-Content-Length: 413
-Vary: Accept-Encoding
-Content-Type: text/html  
+**HTTP/1.1 200 OK  
+Date: Sat, 01 Feb 2025 12:57:41 GMT  
+Server: Apache/2.4.62 (Debian)  
+Last-Modified: Thu, 30 Jan 2025 17:52:08 GMT  
+ETag: "19d-62cf015b77bc3"  
+Accept-Ranges: bytes  
+Content-Length: 413  
+Vary: Accept-Encoding  
+Content-Type: text/html**  
 
 Server: kohtaan tuli palvelimen tiedot eli apache2 ja versio 2.4.62.
 Server kohdassa oli myös käyttöjärjestelmä, johon palvelin oli asennettu.  
