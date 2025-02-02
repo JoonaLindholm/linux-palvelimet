@@ -39,6 +39,9 @@ Tietokoneen resurssit:
 VM Linuxin resurssit ja asetukset:  
 <img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />  
 
+*Päivitys 2.2.2025. Nostin video memoryn määrää = 256 MB.  
+ Virtual Box muuttui mustaksi isolla näytöllä, kun video memoryn määrä ei ollut riittävä.*
+
 ## x) Tiivistelmät  
 
 ### **The Apache Software Foundation 2023: Apache HTTP Server Version 2.4 Documentation: Name-based Virtual Host Support**
