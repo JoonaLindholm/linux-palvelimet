@@ -359,7 +359,7 @@ Aloitin tehtävän tekemisen 2.2. klo 17:37.
 Muistin, että Tero Karvisen sivuilla oli tähän sopivat ohjeet.  
 https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/  
 
-<img width="485" alt="image" src="https://github.com/user-attachments/assets/b22f0926-0248-429c-b3a8-6b65560f92cc" />  
+<img width="329" alt="image" src="https://github.com/user-attachments/assets/305c224b-36b7-4cb6-9c52-e8fd3e3a3bc2" />  
 
 Aloin kokeilemaan saanko tehtävän ratkaistua muokkaamalla /etc/hosts -tiedostoa.   
 Tein uuden rivin jonka nimesin kengäksi ja annoin sille saman osoitteen kuin hatulle.  
