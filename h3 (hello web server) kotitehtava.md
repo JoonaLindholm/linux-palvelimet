@@ -349,7 +349,9 @@ Lopuksi piti todistaa oma opiskelija status. Nappasin kuvan pepistä ja kokeilin
 
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/6a8e9c2f-ebba-4862-8531-c4bf5f227f46" />  
 
+Jäin odottelemaan vahvistusta.  
 
+*päivitys: 2.2.2025. ei vielä vahvistusta :(*
 
 
 o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
