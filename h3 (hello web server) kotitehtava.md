@@ -119,10 +119,77 @@ Palvelin toimi hyvin ja oli statuksen mukaan aktiivinen.
 
 ## b) Apache2 lokien tutkiminen ja analysointi  
 
-Aloitin tehtävän terminaalissa komennolla  
-sudo tail /var/log/apache2/error.log  
-Tämä tulosti kymmenen viimeisintä lokimerkintää access.log tiedostosta.  
+Tein tehtävää 2.2. noin klo 14 eteenpäin.
 
+Aloitin tehtävän terminaalissa komennolla  
+**sudo tail /var/log/apache2/access.log**  
+
+<img width="260" alt="image" src="https://github.com/user-attachments/assets/caaaa152-422a-4422-9a56-b95ad211a319" />  
+
+Tämä komento ei tulostanut mitään komentoriville, vaikka sen oli tarkoitus näyttää 10 viimeisintä lokijälkeä.  
+Kokeilin testiksi saisinko error lokitiedoston tietoja näkyviville.  
+Komento:  
+**sudo tail /var/log/apache2/error.log**  
+
+<img width="868" alt="image" src="https://github.com/user-attachments/assets/9aaa8a51-36ab-42fe-9b16-125954647409" />  
+
+Tämä toimi ja sain näkyville erilaisia error tapahtumia.  
+
+Minua jäi kuitenkin vaivaamaan, että miksi access.log ei näytä yhtään tapahtumaa.  
+Menin tutkimaan kansiota /var/log/apache2/, jos sieltä vaikka löytyisi jotain.  
+Komento: **sudo ls /var/log/apache2**  
+
+<img width="739" alt="image" src="https://github.com/user-attachments/assets/e18a2ac5-9ff6-4d13-b48b-e44f3cb60720" />  
+
+/var/log/apache2/ kansio oli täynnä lokitiedostoja.  
+Ilmeisesti edellisistä virtual host-sivusto harjoituksista.  
+
+Tämä herätti epäilykseni siitä, että tämän uusimman sivun lokit eivät menneet access.log lokiin vaan johonkin toiseen tiedostoon kansion lokeista.  
+Aloin käymään kansion access.log tiedostoja läpi yksi kerrallaan. Tavoitteena löytää tältä päivältä joku jälki.  
+
+**sudo tail /var/log/apache2/access.log.1 = Vanhoja lokeja**    
+**sudo tail /var/log/apache2/other_vhosts_access.log.2.gz = Jotain hämärää alien kieltä**  
+**sudo tail /var/log/apache2/other_vhosts_access.log = we have a winner**  
+
+<img width="983" alt="image" src="https://github.com/user-attachments/assets/51abee87-3131-4c8e-b6ac-7b320731342d" />
+
+Oikeaksi komennoksi selvisi:  
+**sudo tail /var/log/apache2/other_vhosts_access.log**  
+
+<img width="962" alt="image" src="https://github.com/user-attachments/assets/108237ab-9f86-4c7e-8491-bd98996eb61a" />  
+
+Tehtävänantona oli analysoida loki, joka syntyy avatessani sivun palvelimelta.  
+Käytin tähän Teron tunnilla opettamaa komentoa ja tapaa.  
+**Komento: sudo tail -f /var/log/apache2/other_vhosts_access.log**  
+Näin sain terminaalin "seuraamaan" tuota lokia eli näin kaikki tapahtumat heti komentorivillä reaaliajassa.  
+Tämän jälkeen latasin sivun selaimella ja sain jäljen lokiin.  
+
+**hattu.example.com:80 127.0.0.1 - - [02/Feb/2025:16:26:14 +0200] "GET / HTTP/1.1" 200 636 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"**  
+
+- **hattu.example.com:80: Tämä oli palvelimen nimi ja portti (80 on HTTP:n oletusportti).  
+Selain lähettää pyynnön näihin osoitetietoihin. Pyyntö voi olla vaikka sivun avaaminen.**  
+
+- **127.0.0.1: Tämä oli lähdeosoite (pyyntö tuli tästä osoitteesta) eli pyynnön oli tehnyt sama kone, jossa palvelin oli (localhost).**
+ 
+- **[02/Feb/2025:14:54:33 +0200]: Tämä oli aikaleima ja se kertoi milloin pyyntö oli tehty.**  
+
+- **"GET / HTTP/1.1": Tämä oli get pyyntö, jonka tarkoituksena oli saada tietoa sivun juurikansiosta käyttäen HTTP/1.1 -protokollaa.
+  GET / tarkoitti sivun juurikansiota, josta haluttiin tietoa.**  
+  
+- **200: Tämä oli HTTP-vastaus, joka tarkoitti "OK" ja kertoi, että pyyntö onnistui ja palvelin palautti pyydetyn tiedon.**  
+  
+- **636: Tämä oli lähetetyn datan koko tavumäärä (bytes). Se kertoi, että palvelin lähetti selaimen pyynnön seurauksena 636 tavua tietoa selaimelle.**  
+  
+- **"-": Tämä kenttä on tyhjä, koska pyynnölle ei ollut liitetty referenssiä (eli ei ole tiedossa, mistä sivulta pyyntö on tullut).**
+
+- "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"  
+- Tämä oli user agent, joka kertoi, että pyyntö tuli Firefox-selaimelta, joka oli asennettu Linux-järjestelmään.  
+- 5.0 = Mozillan yhteensopivuus -versio, tämä kertoo selaimen yhteensopivuudesta.  
+- X11 = Linux ja UNIX pohjiasten järjestelmien graafinen ympäristö (X window system)  
+- Linux x86_64 = 64 bittinen Linux  
+- rv:128.0 = revision 128.0 asennettu firefox versio  
+- Gecko/20100101 = Selaimen moottori ja sen versionumero    
+  
 ## c) 
 Tein tehtävää opettajani Tero Karvisen ohjeiden mukaan.  
 **https://terokarvinen.com/2018/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/**
