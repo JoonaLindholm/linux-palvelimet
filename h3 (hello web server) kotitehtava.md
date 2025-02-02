@@ -393,6 +393,18 @@ Komento:
 
 <img width="405" alt="image" src="https://github.com/user-attachments/assets/8a7b5aea-8701-40fe-a3c9-9030c87f896d" />  
 
+Tämän jälkeen kävin kokeilemassa selaimella onko minulla kaksi sivua.  
+
+**hattu.example.com  
+kenka.example.com**  
+
+<img width="1676" alt="image" src="https://github.com/user-attachments/assets/4f18ebaf-14a3-4b0a-bdcc-43608c05af64" />  
+
+Kaikki näytti toimivan.
+
+
+
+
 ## Lähdeluettelo  
 
 - Tehtävänanto  
