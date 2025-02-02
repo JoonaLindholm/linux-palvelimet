@@ -326,7 +326,7 @@ HTTP/1.1 200 OK tarkoitti, että palvelin palautti pyydetyt tiedot eli sivun. 20
 
 
 
-## m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.  
+## m) GitHub Education -paketti  
 
 Googletin github education ja päädyin sivulle:  
 
@@ -399,10 +399,7 @@ kenka.example.com**
 
 <img width="1676" alt="image" src="https://github.com/user-attachments/assets/4f18ebaf-14a3-4b0a-bdcc-43608c05af64" />  
 
-Kaikki näytti toimivan.
-
-
-
+Kaikki näytti toimivan.  
 
 ## Lähdeluettelo  
 
@@ -420,6 +417,9 @@ Kaikki näytti toimivan.
 
 - Sivun validointi  
   https://validator.w3.org/#validate_by_input  
+
+- Komentoja ja neuvoja (esim kansion poistaminen sisältöineen)  
+  https://chatgpt.com/  
 
 
 
