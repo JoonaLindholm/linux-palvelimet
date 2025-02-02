@@ -84,8 +84,7 @@ Tämän jälkeen konfiguroidaan sisältö.
 
 - DNS-asetuksien asettaminen.  
   Komennot:   
-  **sudoedit /etc/hosts
-  cat /etc/hosts  
+  **sudoedit /etc/hosts 
   127.0.0.1 localhost  
   127.0.1.1 xubuntu  
   127.0.0.1 pyora.example.com**   
