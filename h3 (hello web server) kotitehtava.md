@@ -383,31 +383,15 @@ Tämän jälkeen aktivoin sivun seuraavalla komennolla:
 Apachen uudelleenkäynnistys komennolla:  
 **sudo systemctl restart apache2**
 
+Tämän jälkeen kävin vielä luomassa index.html tiedoston kansioon, josta asetustiedosto sen löytää.  
+Komento:  
+**mkdir -p /home/joona/publicsites/kenka.example.com/**  
+Navigoin kansioon komennolla: **cd /home/joona/publicsites/kenka.example.com/**  
+Loin sinne uuden index.html-tiedoston ja lisäsin sinne nanolla perus HTML-sivun rakenteen.  
+Komento:  
+**/publicsites/kenka.example.com$ nano index.html**  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
+<img width="405" alt="image" src="https://github.com/user-attachments/assets/8a7b5aea-8701-40fe-a3c9-9030c87f896d" />  
 
 ## Lähdeluettelo  
 
