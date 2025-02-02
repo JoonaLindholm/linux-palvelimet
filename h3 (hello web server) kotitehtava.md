@@ -359,32 +359,31 @@ Aloitin tehtävän tekemisen 2.2. klo 17:37.
 Muistin, että Tero Karvisen sivuilla oli tähän sopivat ohjeet.  
 https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/  
 
-<img width="329" alt="image" src="https://github.com/user-attachments/assets/305c224b-36b7-4cb6-9c52-e8fd3e3a3bc2" />  
-
 Aloin kokeilemaan saanko tehtävän ratkaistua muokkaamalla /etc/hosts -tiedostoa.   
 Tein uuden rivin jonka nimesin kengäksi ja annoin sille saman osoitteen kuin hatulle.  
-
-<img width="246" alt="image" src="https://github.com/user-attachments/assets/e5573e91-b497-435d-88dd-2752c46e7188" />  
+<img width="329" alt="image" src="https://github.com/user-attachments/assets/305c224b-36b7-4cb6-9c52-e8fd3e3a3bc2" />  
  
 Seuraavaksi minun täytyi luoda uusi sivu kengälle eli mennä ohje alusta.  
-
-Tein kenkäsivustolle oman kansion:  
-Komento:  **sudo mkdir /var/www/kenka**  
-
-Tämän jälkeen katsoin, että se ilmestyi kansioon.  
-Komento: **sudo ls /var/www/**  
-Kenkä-kansio oli www-kansiossa.  
-
-Tämän jälkeen loin uuden index.html-tiedoston juuri tekemääni kenkä-kansioon.  
-Komento: **sudo nano /var/www/kenka/index.html**  
-
-<img width="388" alt="image" src="https://github.com/user-attachments/assets/01b3aa98-525a-4720-bdb9-351ead131167" />  
-
-Lisäsin tiedostoon HTML-koodia.  
-
-Seuraavaksi loin kenka-sivulle oman konfiguraation.  
 Komento:  
-**sudo nano /etc/apache2/sites-available/kenka.conf**  
+**sudoedit /etc/apache2/sites-available/kenka.example.com.conf**  
+Laitoin tiedostoon allaolevat tiedot:  
+
+<VirtualHost *:80>  
+ ServerName kenka.example.com  
+ ServerAlias www.kenka.example.com  
+ DocumentRoot /home/joona/publicsites/kenka.example.com  
+ <Directory /home/joona/publicsites/kenka.example.com>  
+   Require all granted  
+ </Directory>  
+</VirtualHost>  
+ctrl-s eli tallennus  
+
+Tämän jälkeen aktivoin sivun seuraavalla komennolla:  
+**sudo a2ensite kenka.example.com**  
+Apachen uudelleenkäynnistys komennolla:  
+**sudo systemctl restart apache2**
+
+
 
 
 
