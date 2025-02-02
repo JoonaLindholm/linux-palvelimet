@@ -351,14 +351,11 @@ Lopuksi piti todistaa oma opiskelija status. Nappasin kuvan pepistä ja kokeilin
 
 Jäin odottelemaan vahvistusta.  
 
-*päivitys: 2.2.2025. ei vielä vahvistusta :(*
+*päivitys: 2.2.2025. ei vielä vahvistusta :(*  
 
+## o) Sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä
 
-o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
-
-
-
-
+ 
 
 
 
@@ -366,13 +363,24 @@ o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla 
 
 
 
-Lähdeluettelo  
 
-Maailman kallein hattu
-https://damiaglobalservices.com/article/most-expensive-hats-in-the-world/
 
-Sivun validointi
-https://validator.w3.org/#validate_by_input
+## Lähdeluettelo  
+
+- Tehtävänanto  
+  https://terokarvinen.com/linux-palvelimet/#h3-hello-web-server  
+
+- Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address  
+  https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/  
+
+- The Apache Software Foundation 2023: Apache HTTP Server Version 2.4 Documentation: Name-based Virtual Host Support  
+  https://httpd.apache.org/docs/2.4/vhosts/name-based.html  
+
+- Maailman kallein hattu  
+  https://damiaglobalservices.com/article/most-expensive-hats-in-the-world/  
+
+- Sivun validointi  
+  https://validator.w3.org/#validate_by_input  
 
 
 
