@@ -62,17 +62,20 @@ Tämän jälkeen konfiguroidaan sisältö.
 
 <img width="319" alt="image" src="https://github.com/user-attachments/assets/d5490283-9efc-4cf6-9fdc-274c5fd8ac75" />  
 
-Uuden virtuuali-isännän eli hostin käyttöönotto.  
-Komennot:  
-**sudo a2ensite pyora.example.com**  
-**sudo systemctl restart apache2**
+- Uuden virtuuali-isännän eli hostin käyttöönotto.  
+  Komennot:  
+  **sudo a2ensite pyora.example.com**  
+  **sudo systemctl restart apache2**  
 
-- Sivun luominen tavallisena käyttäjänä eli ilman sudoa.
-Komennot:
-**mkdir -p /home/xubuntu/publicsites/pyora.example.com/**  
-**echo pyora > /home/xubuntu/publicsites/pyora.example.com/index.html**  
+- Sivun luominen tavallisena käyttäjänä eli ilman sudoa.  
+  Komennot:  
+  **mkdir -p /home/xubuntu/publicsites/pyora.example.com/**  
+  **echo pyora > /home/xubuntu/publicsites/pyora.example.com/index.html**  
 
-- Testaus ja DNS-simulointi paikallisesti /etc/hosts -tiedostossa.
+- Testaus curl-komennolla.
+  Komennot:  
+  **curl -H 'Host: pyora.example.com' localhost  
+  curl localhost**  
   
 Verkkosivujen tarkistus selaimessa.
 
