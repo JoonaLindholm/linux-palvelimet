@@ -180,15 +180,13 @@ Selain lähettää pyynnön näihin osoitetietoihin. Pyyntö voi olla vaikka siv
   
 - **636: Tämä oli lähetetyn datan koko tavumäärä (bytes). Se kertoi, että palvelin lähetti selaimen pyynnön seurauksena 636 tavua tietoa selaimelle.**  
   
-- **"-": Tämä kenttä on tyhjä, koska pyynnölle ei ollut liitetty referenssiä (eli ei ole tiedossa, mistä sivulta pyyntö on tullut).**
-
-- "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"  
-- Tämä oli user agent, joka kertoi, että pyyntö tuli Firefox-selaimelta, joka oli asennettu Linux-järjestelmään.  
-- 5.0 = Mozillan yhteensopivuus -versio, tämä kertoo selaimen yhteensopivuudesta.  
-- X11 = Linux ja UNIX pohjiasten järjestelmien graafinen ympäristö (X window system)  
-- Linux x86_64 = 64 bittinen Linux  
-- rv:128.0 = revision 128.0 asennettu firefox versio  
-- Gecko/20100101 = Selaimen moottori ja sen versionumero    
+- **"Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"  
+  Tämä oli user agent, joka kertoi, että pyyntö tuli Firefox-selaimelta, joka oli asennettu Linux-järjestelmään.  
+  5.0 = Mozillan yhteensopivuus -versio, tämä kertoo selaimen yhteensopivuudesta.  
+  X11 = Linux ja UNIX pohjiasten järjestelmien graafinen ympäristö (X window system)  
+  Linux x86_64 = 64 bittinen Linux  
+  rv:128.0 = revision 128.0 asennettu firefox versio  
+  Gecko/20100101 = Selaimen moottori ja sen versionumero**   
   
 ## c) 
 Tein tehtävää opettajani Tero Karvisen ohjeiden mukaan.  
