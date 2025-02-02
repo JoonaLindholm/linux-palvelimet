@@ -12,13 +12,13 @@
 
 **b)** Apache2 lokien tutkiminen ja analysointi  
 
-**c)** Etusivu uusiksi. Tee uusi name based virtual host. Sivun tulee näkyä suoraan palvelimen etusivulla http://localhost/. Sivua pitää pystyä muokkaamaan normaalina käyttäjänä, ilman sudoa. Tee uusi, laita vanhat pois päältä. Uusi sivu on hattu.example.com, ja tämän pitää näkyä: asetustiedoston nimessä, asetustiedoston ServerName-muuttujassa sekä etusivun sisällössä (esim title, h1 tai p).  
+**c)** Uusi name based virtual host
 
-**e)** Tee validi HTML5 sivu.  
+**e)** Tee validi HTML5 sivu
 
-**f)** Anna esimerkit 'curl -I' ja 'curl' -komennoista. Selitä 'curl -I' muutamasta näyttämästä otsakkeesta (response header), mitä ne tarkoittavat.  
+**f)** Esimerkit 'curl -I' ja 'curl' -komennoista
 
-**m)** Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.  
+**m)** GitHub Education -paketti.  
 
 **o)** Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.  
 
@@ -39,7 +39,45 @@ Tietokoneen resurssit:
 VM Linuxin resurssit ja asetukset:  
 <img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />  
 
-## x)  
+## x) Tiivistelmät  
+
+### **The Apache Software Foundation 2023: Apache HTTP Server Version 2.4 Documentation: Name-based Virtual Host Support**
+
+- Jokaisella sivulla on oma IP-osoitteensa, mutta yhden IP-osoitteen voi jakaa monelle sivulle HTTP-otsikon eli headerin Host-nimen avulla.
+  Palvelin vertaa ServerName ja/tai ServerAlias nimiä valitakseen ensimmäisen oikean, joka vastaa pyyntöön.
+  Jos täsmäävää nimeä ei löydy, käytetään ensimmäistä.
+
+### **Karvinen 2018: Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address**  
+
+Artikkelissa kerrotaan selkeät ohjeet, kuinka Apache-palvelimella voi tehdä useita verkkosivustoja yhdellä IP-osoitteella käyttäen nimiin perustuvaa virtuaali-isännöintiä.  
+
+- Apache-palvelimen asennus ja oletussivuston korvaaminen.  
+  Komennot:  
+  **sudo apt-get -y install apache2**  
+  **echo "Default" | sudo tee /var/www/html/index.html**  
+
+- Nimiin perustuvan virtuaali-isännän luominen konfiguraatiotiedostossa.  
+Komento: **sudoedit /etc/apache2/sites-available/pyora.example.com.conf**
+Tämän jälkeen konfiguroidaan sisältö.  
+
+<img width="319" alt="image" src="https://github.com/user-attachments/assets/d5490283-9efc-4cf6-9fdc-274c5fd8ac75" />  
+
+Uuden virtuuali-isännän eli hostin käyttöönotto.  
+Komennot:  
+**sudo a2ensite pyora.example.com**  
+**sudo systemctl restart apache2**
+
+- Sivun luominen tavallisena käyttäjänä eli ilman sudoa.
+Komennot:
+**mkdir -p /home/xubuntu/publicsites/pyora.example.com/**  
+**echo pyora > /home/xubuntu/publicsites/pyora.example.com/index.html**  
+
+- Testaus ja DNS-simulointi paikallisesti /etc/hosts -tiedostossa.
+  
+Verkkosivujen tarkistus selaimessa.
+
+
+  
 Tähän tulee tiivistelmät  
 
 ## a)  Weppipalvelimen toimivuuden testaus  
@@ -209,7 +247,7 @@ HTTP/1.1 200 OK tarkoitti, että palvelin palautti pyydetyt tiedot eli sivun. 20
 
 
 
-m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.  
+## m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.  
 
 Googletin github education ja päädyin sivulle:  
 
