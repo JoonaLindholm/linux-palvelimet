@@ -46,6 +46,23 @@ VM Linuxin resurssit ja asetukset:
 Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla  
 https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/  
 
+**a) Pilvipalvelimen vuokraus ja asennus**  
+- Valitse itsellesi sopiva pilvipalveluntarjoaja.  
+- Luo käyttäjätili.  
+- Määritä palvelimen asetukset omien tarpeidesi mukaan.
+  Esimerkiksi sijainti ja resurssit.
+**d) Palvelin suojaan palomuurilla**  
+- Otetaan yhteys palvelimeen: ssh root@ip-osoite.  
+- Annetaan palvelussa määritetty salasana.  
+- Päivitetään järjestelmä: sudo apt-get update.  
+- Sitten asennetaan palomuuri: sudo apt-get install ufw.  
+- Tehdään reikä palomuuriin (portti 22): sudo ufw allow 22/tcp.  
+- Palomuurin aktivointi: sudo ufw enable.  
+**e) Kotisivut palvelimelle**  
+- Asenna Apache2-webpalvelin 
+**f) Palvelimen ohjelmien päivitys**  
+  
+
 TÄHÄN TIIVISTELMÄ!
 
 Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
@@ -71,12 +88,13 @@ Ilmeisesti onnistuin luomaan jonkinlaisen puolikkaan käyttäjätilin.
 Tuntui jotenkin hölmöltä alkaa tekemään tikettejä ensimmäisenä asianani tällä alustalla, joten äänestin jaloillani.  
 Tunnilla käytettiin UpCloudia, joten siirryin sinne.  
 
-https://upcloud.com/
+https://upcloud.com/  
+
 <img width="605" alt="image" src="https://github.com/user-attachments/assets/6aca59f5-7eac-4b6c-bcf6-d5a7f50dd585" />  
 
 <img width="872" alt="image" src="https://github.com/user-attachments/assets/4141dfea-607b-453e-aaad-ef7fd6fbbc6d" />  
 
-<img width="487" alt="image" src="https://github.com/user-attachments/assets/7212655b-2aed-45c8-b4cf-24524d13ecaf" />
+<img width="487" alt="image" src="https://github.com/user-attachments/assets/7212655b-2aed-45c8-b4cf-24524d13ecaf" />  
 
 Sain tilin luotua vaivattomasti ja lisäsin tililleni 10 euroa rahaa, että sain trial-version pois päältä.  
 Laitoin myös 2fa autentikoinnin päälle klikkaamalla oikeasta yläkulmasta.  
@@ -85,11 +103,11 @@ Aika tehdä palvelin.
 
 Klikkasin deploy now ja server.  
 
-<img width="905" alt="image" src="https://github.com/user-attachments/assets/c789ee97-e9eb-4291-b34a-0f963d2b70ec" />
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/c789ee97-e9eb-4291-b34a-0f963d2b70ec" />  
 
-Valitsin samast asetukset, kuin oppitunnilla eli:
+Valitsin samast asetukset, kuin oppitunnilla eli:  
 
-Location = FI-HEL1
+Location = FI-HEL1  
 Plan = Developer  
 <img width="590" alt="image" src="https://github.com/user-attachments/assets/099ba33a-6011-4fb9-8a27-435298dfdf19" />  
 
