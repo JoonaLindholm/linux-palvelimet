@@ -221,10 +221,24 @@ Sieltä löysin Namecheap kupongin, jolla saisin domain nimen vuodeksi veloituks
 
 <img width="430" alt="image" src="https://github.com/user-attachments/assets/44bf312c-304b-439e-a9fd-46f39da26bf3" />
 
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/55dd714c-0944-47c5-8073-7bd35eeb4b65" />
+
+<img width="552" alt="image" src="https://github.com/user-attachments/assets/cf575547-67c5-4e89-8879-79f024d50628" />
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/0c0b9fe0-364a-4f85-b718-85140203c491" />
+
+<img width="484" alt="image" src="https://github.com/user-attachments/assets/0619884c-0fb9-47c0-b050-4525d684ac90" />
+
+<img width="673" alt="image" src="https://github.com/user-attachments/assets/8a676c57-ad03-4362-bc93-fc73385b5edc" />
+
+Jatkoin nimipalvelimen muokkausta raportin mukaan ja lisäsin advanced DNS asetuksiin virtuaalipalvelimen ip-osoitteen.  
+
+
+<img width="668" alt="image" src="https://github.com/user-attachments/assets/bcf62c7e-c4a7-463e-a88a-5eb1de2525f0" />
 
 sudo micro /etc/apache2/sites-available/000-default.conf
 
-
+echo Hello world! |sudo tee /var/www/html/index.html
 
 
 
