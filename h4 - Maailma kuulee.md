@@ -51,6 +51,7 @@ https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
 - Luo käyttäjätili.  
 - Määritä palvelimen asetukset omien tarpeidesi mukaan.
   Esimerkiksi sijainti ja resurssit.
+  
 **d) Palvelin suojaan palomuurilla**  
 - Otetaan yhteys palvelimeen: ssh root@ip-osoite.  
 - Annetaan palvelussa määritetty salasana.  
@@ -58,8 +59,10 @@ https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
 - Sitten asennetaan palomuuri: sudo apt-get install ufw.  
 - Tehdään reikä palomuuriin (portti 22): sudo ufw allow 22/tcp.  
 - Palomuurin aktivointi: sudo ufw enable.  
-**e) Kotisivut palvelimelle**  
-- Asenna Apache2-webpalvelin 
+  
+**e) Kotisivut palvelimelle**
+- Asenna Apache2-webpalvelin
+- 
 **f) Palvelimen ohjelmien päivitys**  
   
 
