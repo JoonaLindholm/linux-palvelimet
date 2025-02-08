@@ -12,15 +12,13 @@ e) Kotisivut palvelimelle
 f) Palvelimen ohjelmien päivitys  
 Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS**  
 
-**a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta.  
-(Vaihtoehtona voit käyttää ilmaista kokeilujaksoa, GitHub Education krediittejä; tai jos mikään muu ei onnistu, voit kokeilla ilmaiseksi vagrant:ia paikallisesti.  
-Suosittelen kuitenkin harjoittelemaan oikeilla, tuotantoon kelpaavilla julkisilla palveluilla).**
+**a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta.**  
 
-**b) Tee alkutoimet omalla virtuaalipalvelimellasi: tulimuuri päälle, root-tunnus kiinni, ohjelmien päivitys.**
+**b) Tee alkutoimet omalla virtuaalipalvelimellasi: tulimuuri päälle, root-tunnus kiinni, ohjelmien päivitys.**  
 
 **c) Asenna weppipalvelin omalle virtuaalipalvelimellesi.  
 Korvaa testisivu. Kokeile, että se näkyy julkisesti. Kokeile myös eri koneelta, esim kännykältä.  
-(Jos haluat tehdä oikeat weppisivut, tarvitset Name Based Virtual Hostin)**
+(Jos haluat tehdä oikeat weppisivut, tarvitset Name Based Virtual Hostin)**  
 
 **e) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host.  
 Kun sammutat muut weppisivut, niin se ainut näkyy nimestä riippumatta etusivulla.  
@@ -91,7 +89,7 @@ Ilmeisesti onnistuin luomaan jonkinlaisen puolikkaan käyttäjätilin.
 Tuntui jotenkin hölmöltä alkaa tekemään tikettejä ensimmäisenä asianani tällä alustalla, joten äänestin jaloillani.  
 Tunnilla käytettiin UpCloudia, joten siirryin sinne.  
 
-https://upcloud.com/  
+**https://upcloud.com/**    
 
 <img width="605" alt="image" src="https://github.com/user-attachments/assets/6aca59f5-7eac-4b6c-bcf6-d5a7f50dd585" />  
 
@@ -108,14 +106,128 @@ Klikkasin deploy now ja server.
 
 <img width="905" alt="image" src="https://github.com/user-attachments/assets/c789ee97-e9eb-4291-b34a-0f963d2b70ec" />  
 
-Valitsin samast asetukset, kuin oppitunnilla eli:  
+Valitsin samat asetukset, kuin oppitunnilla eli:  
 
-Location = FI-HEL1  
-Plan = Developer  
+**Location = FI-HEL1**   
+**Plan = Developer**    
 <img width="590" alt="image" src="https://github.com/user-attachments/assets/099ba33a-6011-4fb9-8a27-435298dfdf19" />  
 
-Operating system  
+**Operating system**  
 <img width="595" alt="image" src="https://github.com/user-attachments/assets/47e9c01a-48c7-401a-9582-20d28533f63a" />  
+
+**Openssh asennus ja ssh-avaimen luonti**   
+
+Komento:  
+**sudo apt-get install openssh-client**  
+tämän jälkeen loin ssh-avaimen komennolla:  
+**ssh-keygen**  
+Sitten painoin oppitunnin ohjeiden mukaan 4 kertaa entteriä.  
+Tämän jälkeen navigoin kotikansiooni etsimään kansion .ssh ja tiedoston id_rsa.pub,  
+jonka avasin mcro-tekstieditorilla ja kopioin sen sisältämän julkisen avaimen palvelimen määritykseen.  
+
+<img width="183" alt="image" src="https://github.com/user-attachments/assets/36912637-43ae-4d1e-98d3-035a24130125" />  
+
+<img width="596" alt="image" src="https://github.com/user-attachments/assets/fcfef53e-7a8f-4c47-9195-c9fbaf0de0b6" />  
+
+<img width="580" alt="image" src="https://github.com/user-attachments/assets/21fe3550-c5b6-4068-b0b9-3ba39fa4a191" />  
+
+Avaimeni hyväksyttiin ja pääsin eteenpäin.  
+Muutin huvikseeni hostin ja palvelimen nimen ja klikkasin "Deploy".  
+
+<img width="603" alt="image" src="https://github.com/user-attachments/assets/eee5e37f-c018-4ec8-adeb-edb56386e727" />  
+
+<img width="797" alt="image" src="https://github.com/user-attachments/assets/3fa6e98f-52aa-4c3d-b365-083db4ad4180" />  
+
+<img width="806" alt="image" src="https://github.com/user-attachments/assets/6fc684ec-9e16-4330-ac86-56657ed93e8c" />  
+
+Palvelin käynnistyi ilman ongelmia.  
+
+## b) Alkutoimet omalla virtuaalipalvelimella
+Seuraavaksi yhdistin palvelimeen virtuaalikoneeltani.  
+
+Komento:  
+**ssh root@80.69.172.181 // ip-osoite luki UpCloudissa palvelimet sivulla.**   
+
+Tämän jälkeen minulta kysyttiin haluanko yhdistää palvelimelle, johon vastasin "yes".  
+
+<img width="463" alt="image" src="https://github.com/user-attachments/assets/c1f8cd74-d7c6-4f2b-a5d1-8e6d2f4396c9" />  
+
+Tämän jälkeen ajoin päivitykset ja asensin palomuurin.  
+
+Komennot:  
+**sudo apt-get update  
+sudo apt-get install ufw**  
+
+<img width="689" alt="image" src="https://github.com/user-attachments/assets/dac7c57f-b4cb-4ef9-bee1-d71d1b498a0a" />  
+
+Ohjeiden mukaan piti tehdä reikä palomuuriin porttiin 22 ja aktivoida palomuuri.  
+
+Komennot:  
+**sudo ufw allow 22/tcp**  
+**sudo ufw enable**  
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/d97ed029-2e98-4919-9f38-3f349caab85e" />  
+
+Seuraavaksi ohjeissa tehtiin käyttäjiä **sudo user**  
+
+**Komento: sudo adduser joona**  
+
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/75f0c841-837e-44fd-a3d5-7eb271c98c74" />  
+
+Tämän jälkeen luotiin salasana ja täytettiin tietoja, joita kysyttiin.  
+Laitoin vain vahvan salasanan, oman nimeni ja muut kohdat jätin tyhjiksi painamalla entteriä.  
+
+Seuraavaksi käyttäjäni lisättiin eri ryhmiin komennoilla:  
+
+**sudo adduser joona sudo = ok  
+sudo adduser joona adm = ok  
+sudo adduser joona admin = admin ryhmää ei löytynyt**  
+
+sitten otin root kirjautumisen pois päältä  
+Komennot:  
+**sudo usermod --lock root  
+sudoedit /etc/ssh/sshd_config**  
+
+<img width="337" alt="image" src="https://github.com/user-attachments/assets/b3c4524b-9b38-4412-9963-958bb7343f65" />  
+configista muokattiin seuraava rivi:  **PermitRootLogin yes -> no**  
+
+Sitten vielä kopioitiin root:n ssh-asetukset -> omalle käyttäjälle.  
+Asetukset eli esimerkiksi julkinen avain, jonka avulla voidaan sitten kirjautua palvelimeen komennolla ssh joona@ip-osoite eikä ssh root@ip-osoite.  
+Komennot palvelimella:  
+**sudo cp -rvn /root/.ssh/ /home/joona/  
+sudo chown -R joona:joona /home/joona/**  
+
+## C) Weppipalvelimen asennus virtuaalipalvelimelle  
+
+Ensin asensin apache2-web-palvelimen  
+Komento:  
+**sudo apt install apache2**  
+
+Sitten katsoin onko se päällä komennolla:
+**sudo systemctl status apache2**  
+
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/6c00071c-e420-4847-a145-8ddcbbc25ca7" />  
+
+Apache2 näkyi aktiivisena.  
+Seuraavaksi tein toisen reiän palomuuriin apache2:selle.  
+Komento: **sudo ufw allow 80/tcp**  
+Kävin kokeilemassa löytyykö palvelimen ip-osoitteella sivua selaimella.  
+<img width="619" alt="image" src="https://github.com/user-attachments/assets/6cc411ea-bc5e-42d8-834f-a4898c798311" />  
+Sivu löytyi ja toimi.  
+
+Tämän jälkeen lähdin tutkimaan Name Based Virtual Hostia github educationista.  
+Sieltä löysin Namecheap kupongin, jolla saisin domain nimen vuodeksi veloituksetta.  
+<img width="274" alt="image" src="https://github.com/user-attachments/assets/048f838a-a7bd-4701-9cb7-0dd6d8c3e821" />  
+
+<img width="430" alt="image" src="https://github.com/user-attachments/assets/44bf312c-304b-439e-a9fd-46f39da26bf3" />
+
+
+sudo micro /etc/apache2/sites-available/000-default.conf
+
+
+
+
+
 
 
 
