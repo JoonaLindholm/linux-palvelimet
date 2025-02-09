@@ -211,9 +211,24 @@ Sitten katsoin onko se päällä komennolla:
 Apache2 näkyi aktiivisena.  
 Seuraavaksi tein toisen reiän palomuuriin apache2:selle.  
 Komento: **sudo ufw allow 80/tcp**  
+Portti 80 oli siis apache2:sen käyttämä portti ja aiemmin avattu portti 22 oli ssh-etäyhteyksille avattava portti.  
+
 Kävin kokeilemassa löytyykö palvelimen ip-osoitteella sivua selaimella.  
 <img width="619" alt="image" src="https://github.com/user-attachments/assets/6cc411ea-bc5e-42d8-834f-a4898c798311" />  
+
 Sivu löytyi ja toimi.  
+
+Muutin vielä apachen defult sivun sivun komennolla:  
+
+**echo Hello world! |sudo tee /var/www/html/index.html**  
+
+<img width="119" alt="image" src="https://github.com/user-attachments/assets/4be53809-97b0-4e7d-8d8e-70e6c7d684b0" />  
+
+Hello world näkyi ja sivu toimi.  
+
+## e) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host.  
+Kun sammutat muut weppisivut, niin se ainut näkyy nimestä riippumatta etusivulla.  
+Name Based Virtual Host avulla pääset muokkaamaan kotisivuja normaalilla käyttäjällä, ilman sudoa. 
 
 Tämän jälkeen lähdin tutkimaan Name Based Virtual Hostia github educationista.  
 Sieltä löysin Namecheap kupongin, jolla saisin domain nimen vuodeksi veloituksetta.  
@@ -242,15 +257,18 @@ Postin myös vanhat recordit.
 
 <img width="668" alt="image" src="https://github.com/user-attachments/assets/bcf62c7e-c4a7-463e-a88a-5eb1de2525f0" />  
 
-Muutin apachen sivun komennolla:  
-
-**echo Hello world! |sudo tee /var/www/html/index.html**  
-
 Kävin kokeilemassa onko DNS päivittynyt ja näkyykö sivulla "Hello world" -teksti.  
 
 <img width="475" alt="image" src="https://github.com/user-attachments/assets/806f3034-1d4a-4df4-a60d-dd97c5c52fdf" />  
 
 Kaikki toimi hyvin.  
+
+Seuraavaksi lähdin tekemään käyttäjälleni kansioita ja tiedostoja, että voin muokata sivua ilman sudo komentoa.  
+NAvigoin kotikansiooni ja loin sinne kansion public_html  
+Komento: **mkdir public_html**  
+
+
+<img width="185" alt="image" src="https://github.com/user-attachments/assets/d66715ba-18ad-4049-bd00-0a4c1aa6bfcb" />
 
 
 
