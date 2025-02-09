@@ -274,6 +274,8 @@ sudo chown -R joona:joona /home/joona/**
 
 ## C) Weppipalvelimen asennus virtuaalipalvelimelle  
 
+Tein tätä tehtävää 8.2.2025. Alkaen noin klo 10 aamulla.  
+
 Ensin asensin apache2-web-palvelimen  
 Komento:  
 **sudo apt install apache2**  
@@ -302,6 +304,7 @@ Muutin vielä apachen defult sivun sivun komennolla:
 Hello world näkyi ja sivu toimi.  
 
 ## e) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host.  
+Aloitin tämän tehtävän 9.2.2025. Alkaen noin klo 10 aamulla.  
 
 Tämän jälkeen lähdin tutkimaan Name Based Virtual Hostia github educationista.  
 Sieltä löysin Namecheap kupongin, jolla saisin domain nimen vuodeksi veloituksetta.  
@@ -373,7 +376,7 @@ Menin error.logiin katsomaan, mitä erroreita sinne ilmestyy, kun yritän pääs
 Komento:  
 **sudo tail -f /var/log/apache2/error.log**  
 
-Allaoleva lokimerkintä näkyi error lokissa.  
+Allaoleva lokimerkintä näkyi error lokissa, kun yritin päästä sivuilleni.  
 
 **[Sun Feb 09 10:34:39.056147 2025] [core:error] [pid 19236:tid 19246] (13)Permission denied: [client 88.114.9.199:50772] AH00035: access to / denied (filesystem path '/home/joona/publicsites') because search permissions are missing on a component of the path**
 
