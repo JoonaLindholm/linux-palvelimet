@@ -260,6 +260,7 @@ Komento:
 **sudo usermod --lock root**  
 
 <img width="337" alt="image" src="https://github.com/user-attachments/assets/b3c4524b-9b38-4412-9963-958bb7343f65" />  
+
 Myös config tiedostoa piti muuttaa.  
 Komento:  
 **sudoedit /etc/ssh/sshd_config**  
