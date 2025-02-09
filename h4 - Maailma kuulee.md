@@ -380,7 +380,7 @@ Allaoleva lokimerkintä näkyi error lokissa.
 Tämä virhe muistutti minua siitä, että en ollut antanut pääsyoikeuksia apachelle ja siksi se ei päässyt käsiksi luomaani index.html tiedostoon.  
 
 Tutkin asiaa googlailemalla ja lopuksi kysyin chatgpt:eeltä, että mitä oikeuksia apache2 tarkalleen tarvitsee.  
-Sain vastaukseksi, että luku ja suoritus -oikeudeuksia kansiohin polulla, jossa index.html sijaitsee.  
+Sain vastaukseksi, että luku ja suoritus -oikeuksia kansiohin polulla, jossa index.html sijaitsee.  
 Apache tarvitsee myös lukuoikeuden itse index.html tiedostoon.  
 
 Komennot:  
