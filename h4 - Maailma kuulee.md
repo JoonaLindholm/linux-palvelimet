@@ -41,7 +41,7 @@ VM Linuxin resurssit ja asetukset:
 
 ## x) Tiivistelmät  
 
-Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla  
+### Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla  
 https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/  
 
 **a) Pilvipalvelimen vuokraus ja asennus**  
@@ -64,10 +64,60 @@ https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
 **f) Palvelimen ohjelmien päivitys**  
   
 
-TÄHÄN TIIVISTELMÄ!
-
-Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
+### Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
 https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
+
+**a) Virtuaalipalvelimen luonti**  
+- Luo palvelin (esim. DigitalOcean).  
+- Lisää maksutiedot ja mahdollinen promo-koodi.  
+- Kirjaudu sisään root-käyttäjänä vain ensimmäisellä kerralla.  
+**Komento: ssh root@10.0.0.1/palvelimen ip-osoite**
+  
+**Muista käyttää uutta vahvaa salasanaa!**  
+
+**b) Palomuuri (UFW) ja käyttäjien hallinta**  
+Avaa SSH-yhteydelle reikä ennen palomuurin aktivointia.  
+Komennot:  
+**sudo ufw allow 22/tcp** = näin tehtiin reikä  
+**sudo ufw enable**  = näin aktivoitiin palomuuri  
+
+Luo oma käyttäjä ja lisää se sudo-ryhmään.
+Komennot:  
+**sudo adduser "käyttäjänimi"  
+sudo adduser "käyttäjänimi" sudo**  
+
+**Testaa uusi käyttäjä ennen root-oikeuksien poistamista.**  
+Muuten voit vahingossa lukita itsesi ulos palvelimelta.  
+Avaa uusi terminaali ja kokeile kirjautua käyttäen käyttäjänimeäsi.  
+Komento:  
+**ssh "käyttäjänimi"@"ip-osoite"**  
+
+**c) Root-käyttäjän poistaminen käytöstä**  
+
+Lukitse root-käyttäjä:
+Komento:  
+**sudo usermod --lock root**  
+
+Estä root-kirjautuminen SSH:n kautta.  
+Komento:  
+**sudoedit /etc/ssh/sshd_config**   
+**Muuta kohta: PermitRootLogin no**   
+
+ssh yhteyden uudellenkäynnistys muutoksien jälkeen.
+Komento:  
+**sudo service ssh restart**    
+
+**d) Ohjelmistojen päivittäminen**
+Suojaa palvelin asentamalla uusimmat tietoturvapäivitykset:
+Komento:  
+**sudo apt-get update && sudo apt-get upgrade**  
+
+**e) Verkkotunnuksen (DNS) lisääminen**  
+
+Rekisteröi verkkotunnus (esim. NameCheap).  
+Määritä A-record osoittamaan palvelimen IP-osoitteeseen.  
+Testaa DNS-yhteys:  
+host example.com dns1.registrar-servers.com  
 
 ## a) Virtuaalipalvelimen vuokraus  
 
@@ -99,9 +149,7 @@ Tunnilla käytettiin UpCloudia, joten siirryin sinne.
 
 Sain tilin luotua vaivattomasti ja lisäsin tililleni 10 euroa rahaa, että sain trial-version pois päältä.  
 Laitoin myös 2fa autentikoinnin päälle klikkaamalla oikeasta yläkulmasta.  
-
-Aika tehdä palvelin.  
-
+ 
 Klikkasin deploy now ja server.  
 
 <img width="905" alt="image" src="https://github.com/user-attachments/assets/c789ee97-e9eb-4291-b34a-0f963d2b70ec" />  
@@ -311,7 +359,7 @@ Komennot:
 sudo chmod -R 644 /home/joona/publicsites/*  
 sudo chmod -R 755 /home/joona/publicsites  
 
-Tarkennus numeroista komennoista:    
+Tarkennus numeroista komennoissa:    
 
 **644 = antoi oikeudet lukea tiedostoja (esim. apachelle oikeus lukea index.html tiedoston sisältö).    
 755 = antoi oikeudet lukea ja suorittaa kansioita (esim. apachelle oikeus availla kansioita ja navigoida niissä).**  
