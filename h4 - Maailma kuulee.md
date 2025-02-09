@@ -44,7 +44,7 @@ Tietokoneen resurssit:
 - 3060ti 8GB GDDR6 -näytönohjain  
 
 VM Linuxin resurssit ja asetukset:  
-<img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />  
+<img width="459" alt="image" src="https://github.com/user-attachments/assets/972da793-eb52-4ae8-acb5-ed6165d6718f" />  
 
 ## x) Tiivistelmät  
 
