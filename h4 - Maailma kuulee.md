@@ -1,10 +1,12 @@
 # H4 kotitehtävät (Maailma kuulee)  
 
-## Tehtävänannot ja raportin sisältö  
+## Tehtävänannot   
 
 **(https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee)**  
 
-## x) Lue ja tiivistä  
+## Raportin sisältö  
+
+### x) Lue ja tiivistä  
 
 **Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4) (opiskelijan esimerkkiraportti), kohdat  
 a) Pilvipalvelimen vuokraus ja asennus  
@@ -13,6 +15,8 @@ e) Kotisivut palvelimelle
 f) Palvelimen ohjelmien päivitys**  
 
 **Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS**  
+
+### Muut kotitehtävät  
 
 **a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta.**  
 
@@ -28,7 +32,8 @@ Name Based Virtual Host avulla pääset muokkaamaan kotisivuja normaalilla käyt
 
 # Raportti kotitehtävistä  
 
-Aloitin tehtävien suorittamisen TÄHÄN AIKA!
+Aloitin tehtävien suorittamisen 7.2.2025. klo 15.  
+Tein tehtäviä 7.2.-9.2. välisenä aikana.  
 
 Tietokoneen resurssit:  
 - Windows 11 pro x64 -käyttöjärjestelmä  
