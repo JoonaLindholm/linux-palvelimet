@@ -183,13 +183,16 @@ Valitsin samat asetukset, kuin oppitunnilla eli:
 
 Komento:  
 **sudo apt-get install openssh-client**  
+
 tämän jälkeen loin ssh-avaimen komennolla:  
 **ssh-keygen**  
-Sitten painoin oppitunnin ohjeiden mukaan 4 kertaa entteriä.  
-Tämän jälkeen navigoin kotikansiooni etsimään kansion .ssh ja tiedoston id_rsa.pub,  
-jonka avasin mcro-tekstieditorilla ja kopioin sen sisältämän julkisen avaimen palvelimen määritykseen.  
+Sitten painoin oppitunnin ohjeiden mukaan 3 kertaa entteriä.  
+
+Tämän jälkeen navigoin kotikansiooni etsimään kansion .ssh ja tiedoston id_rsa.pub.  
 
 <img width="183" alt="image" src="https://github.com/user-attachments/assets/36912637-43ae-4d1e-98d3-035a24130125" />  
+
+Avasin tiedoston micro-tekstieditorilla ja kopioin sen sisältämän julkisen avaimen palvelimen määritykseen.  
 
 <img width="596" alt="image" src="https://github.com/user-attachments/assets/fcfef53e-7a8f-4c47-9195-c9fbaf0de0b6" />  
 
@@ -200,15 +203,13 @@ Muutin huvikseeni hostin ja palvelimen nimen ja klikkasin "Deploy".
 
 <img width="603" alt="image" src="https://github.com/user-attachments/assets/eee5e37f-c018-4ec8-adeb-edb56386e727" />  
 
-
 <img width="797" alt="image" src="https://github.com/user-attachments/assets/3fa6e98f-52aa-4c3d-b365-083db4ad4180" />  
-
 
 <img width="806" alt="image" src="https://github.com/user-attachments/assets/6fc684ec-9e16-4330-ac86-56657ed93e8c" />  
 
 Palvelin käynnistyi ilman ongelmia.  
 
-## b) Alkutoimet omalla virtuaalipalvelimella
+## b) Alkutoimet omalla virtuaalipalvelimella  
 Seuraavaksi yhdistin palvelimeen virtuaalikoneeltani.  
 
 Komento:  
@@ -234,7 +235,7 @@ Komennot:
 
 <img width="397" alt="image" src="https://github.com/user-attachments/assets/d97ed029-2e98-4919-9f38-3f349caab85e" />  
 
-Seuraavaksi ohjeissa tehtiin käyttäjiä **sudo user**  
+Seuraavaksi ohjeissa tehtiin käyttäjä **sudo user**  
 
 **Komento: sudo adduser joona**  
 
@@ -249,15 +250,17 @@ Seuraavaksi käyttäjäni lisättiin eri ryhmiin komennoilla:
 sudo adduser joona adm = ok  
 sudo adduser joona admin = admin ryhmää ei löytynyt**  
 
-sitten otin root kirjautumisen pois päältä  
-Komennot:  
-**sudo usermod --lock root  
-sudoedit /etc/ssh/sshd_config**  
+sitten otin root kirjautumisen pois päältä.  
+Komento:  
+**sudo usermod --lock root**  
 
 <img width="337" alt="image" src="https://github.com/user-attachments/assets/b3c4524b-9b38-4412-9963-958bb7343f65" />  
+Myös config tiedostoa piti muuttaa.  
+Komento:  
+**sudoedit /etc/ssh/sshd_config**  
 configista muokattiin seuraava rivi:  **PermitRootLogin yes -> no**  
 
-Sitten vielä kopioitiin root:n ssh-asetukset -> omalle käyttäjälle.  
+Sitten vielä kopioitiin root ssh-asetukset -> omalle käyttäjälle.  
 Asetukset eli esimerkiksi julkinen avain, jonka avulla voidaan sitten kirjautua palvelimeen komennolla ssh joona@ip-osoite eikä ssh root@ip-osoite.  
 Komennot palvelimella:  
 **sudo cp -rvn /root/.ssh/ /home/joona/  
@@ -269,7 +272,7 @@ Ensin asensin apache2-web-palvelimen
 Komento:  
 **sudo apt install apache2**  
 
-Sitten katsoin onko se päällä komennolla:
+Sitten katsoin onko se päällä komennolla:  
 **sudo systemctl status apache2**  
 
 <img width="650" alt="image" src="https://github.com/user-attachments/assets/6c00071c-e420-4847-a145-8ddcbbc25ca7" />  
@@ -293,8 +296,6 @@ Muutin vielä apachen defult sivun sivun komennolla:
 Hello world näkyi ja sivu toimi.  
 
 ## e) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host.  
-Kun sammutat muut weppisivut, niin se ainut näkyy nimestä riippumatta etusivulla.  
-Name Based Virtual Host avulla pääset muokkaamaan kotisivuja normaalilla käyttäjällä, ilman sudoa. 
 
 Tämän jälkeen lähdin tutkimaan Name Based Virtual Hostia github educationista.  
 Sieltä löysin Namecheap kupongin, jolla saisin domain nimen vuodeksi veloituksetta.  
@@ -308,7 +309,7 @@ Etsin omalla nimelläni sopivan domainin ja painoin "ADD" -> "Confirm Order"
 
 Tämän jälkeen liitin viel github käyttäjäni namecheapin käyttäjään.  
 
-<img width="552" alt="image" src="https://github.com/user-attachments/assets/cf575547-67c5-4e89-8879-79f024d50628" /> 
+<img width="552" alt="image" src="https://github.com/user-attachments/assets/cf575547-67c5-4e89-8879-79f024d50628" />  
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/0c0b9fe0-364a-4f85-b718-85140203c491" />  
 
@@ -318,7 +319,8 @@ Kirjauduin sisään tililleni ja aktivoin tilini sähköpostin kautta.
 
 <img width="673" alt="image" src="https://github.com/user-attachments/assets/8a676c57-ad03-4362-bc93-fc73385b5edc" />  
 
-Jatkoin nimipalvelimen muokkausta Susanna Lehdon raportin mukaan ja lisäsin advanced DNS asetuksiin virtuaalipalvelimen ip-osoitteen.  
+Jatkoin nimipalvelimen muokkausta Susanna Lehdon raportin mukaan ja lisäsin advanced DNS asetuksiin virtuaalipalvelimen ip-osoitteen. 
+   
 Postin myös vanhat recordit.  
 
 <img width="668" alt="image" src="https://github.com/user-attachments/assets/bcf62c7e-c4a7-463e-a88a-5eb1de2525f0" />  
@@ -327,7 +329,7 @@ Kävin kokeilemassa onko DNS päivittynyt ja näkyykö sivulla "Hello world" -te
 
 <img width="475" alt="image" src="https://github.com/user-attachments/assets/806f3034-1d4a-4df4-a60d-dd97c5c52fdf" />  
 
-Kaikki toimi nyt hyvin. DNS muutokset eivät tapahtuneet heti.  
+Kaikki toimi hyvin. DNS muutokset eivät tapahtuneet heti.  
 
 Seuraavaksi tein käyttäjälleni kansioita ja tiedostoja, jotta voin muokata sivua ilman sudo komentoa.  
 Navigoin kotikansiooni ja loin sinne kansion publicsites, johon loin vielä kansion joonalindholm.me.  
@@ -365,7 +367,9 @@ Menin error.logiin katsomaan, mitä erroreita sinne ilmestyy, kun yritän pääs
 Komento:  
 **sudo tail -f /var/log/apache2/error.log**  
 
-[Sun Feb 09 10:34:39.056147 2025] [core:error] [pid 19236:tid 19246] (13)Permission denied: [client 88.114.9.199:50772] AH00035: access to / denied (filesystem path '/home/joona/publicsites') because search permissions are missing on a component of the path
+Allaoleva lokimerkintä näkyi error lokissa.  
+
+**[Sun Feb 09 10:34:39.056147 2025] [core:error] [pid 19236:tid 19246] (13)Permission denied: [client 88.114.9.199:50772] AH00035: access to / denied (filesystem path '/home/joona/publicsites') because search permissions are missing on a component of the path**
 
 Tämä virhe muistutti minua siitä, että en ollut antanut pääsyoikeuksia apachelle ja siksi se ei päässyt käsiksi luomaani index.html tiedostoon.  
 
@@ -386,9 +390,8 @@ Näiden komentojen jälkeen sivuni näkyi selaimessa.
 
 <img width="551" alt="image" src="https://github.com/user-attachments/assets/bc6927ec-b255-4ac2-8328-bac99557280e" />  
 
-## Yhteenveto kotitehtävistä  
-
-
+En halunnut muokata sivuja enempää, kun en ollut varma, mitä kurssilla tehdään seuraavaksi.  
+Sivuista voisi tehdä tulevaisuudessa vaikka kotisivut.  
 
 ## Lähdeluettelo  
 
@@ -398,13 +401,19 @@ https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
 Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS  
 https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/  
 
-https://upcloud.com/
+Palvelimen vuokraus  
+https://upcloud.com/  
 
-https://github.com/education
+Kuponkien tutkiminen  
+https://github.com/education  
 
-https://www.digitalocean.com/
+Palvelimen vuokraus  
+https://www.digitalocean.com/  
 
-https://www.namecheap.com/
+Nimipalvelun vuokraus  
+https://www.namecheap.com/  
 
+Neuvoja ja komentoja käyttöoikeuksien kanssa  
+Chatgpt.com  
 
 
