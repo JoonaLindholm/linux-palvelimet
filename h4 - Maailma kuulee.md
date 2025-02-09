@@ -4,13 +4,15 @@
 
 **(https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee)**  
 
-**x) Lue ja tiivistä  
- Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4) (opiskelijan esimerkkiraportti), kohdat  
+## x) Lue ja tiivistä  
+
+**Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4) (opiskelijan esimerkkiraportti), kohdat  
 a) Pilvipalvelimen vuokraus ja asennus  
 d) Palvelin suojaan palomuurilla  
 e) Kotisivut palvelimelle  
-f) Palvelimen ohjelmien päivitys  
-Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS**  
+f) Palvelimen ohjelmien päivitys**  
+
+**Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS**  
 
 **a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta.**  
 
@@ -58,20 +60,34 @@ https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
 - Tehdään reikä palomuuriin (portti 22): sudo ufw allow 22/tcp.  
 - Palomuurin aktivointi: sudo ufw enable.  
   
-**e) Kotisivut palvelimelle**
-- Asenna Apache2-webpalvelin
-- 
-**f) Palvelimen ohjelmien päivitys**  
-  
+**e) Kotisivut palvelimelle**  
 
-### Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
-https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
+- Asenna Apache2-webpalvelin  
+  komento: **sudo apt-get install apache2**
+  
+  Käynnistetään Apache2.  
+  Komento: **sudo systemctl start apache2**
+  
+  Apachen käynnistys automaattisesti palvelimen käynnistyessä.  
+  komento: **sudo systemctl enable apache2**
+  
+  Palvelimen toiminnan voi tarkistaa selaimella syöttämällä URL-osoitteeksi palvelimen ip-osoitteen.  
+  Apache2 oletussivun pitäisi tulla näkyviin, jos palvelimen on toiminnassa.  
+  Sivun ulkonäköä voi muokata index.html tiedostossa, kansiossa /var/www/html/.  
+  
+**f) Palvelimen ohjelmien päivitys**  
+Päivitetään pakettilista komennolla: **sudo apt-get update**  
+Asennetaan saatavilla olevat päivitykset: **sudo apt-get upgrade -y**  
+Jos tarvitaan laajempia järjestelmäpäivityksiä, suoritetaan komento: **sudo apt-get dist-upgrade -y**  
+
+### Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS  
+**https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/**  
 
 **a) Virtuaalipalvelimen luonti**  
 - Luo palvelin (esim. DigitalOcean).  
 - Lisää maksutiedot ja mahdollinen promo-koodi.  
 - Kirjaudu sisään root-käyttäjänä vain ensimmäisellä kerralla.  
-**Komento: ssh root@10.0.0.1/palvelimen ip-osoite**
+**Komento: ssh root@10.0.0.1/palvelimen ip-osoite**  
   
 **Muista käyttää uutta vahvaa salasanaa!**  
 
@@ -81,7 +97,7 @@ Komennot:
 **sudo ufw allow 22/tcp** = näin tehtiin reikä  
 **sudo ufw enable**  = näin aktivoitiin palomuuri  
 
-Luo oma käyttäjä ja lisää se sudo-ryhmään.
+Luo oma käyttäjä ja lisää se sudo-ryhmään.  
 Komennot:  
 **sudo adduser "käyttäjänimi"  
 sudo adduser "käyttäjänimi" sudo**  
@@ -94,7 +110,7 @@ Komento:
 
 **c) Root-käyttäjän poistaminen käytöstä**  
 
-Lukitse root-käyttäjä:
+Lukitse root-käyttäjä.  
 Komento:  
 **sudo usermod --lock root**  
 
@@ -107,8 +123,8 @@ ssh yhteyden uudellenkäynnistys muutoksien jälkeen.
 Komento:  
 **sudo service ssh restart**    
 
-**d) Ohjelmistojen päivittäminen**
-Suojaa palvelin asentamalla uusimmat tietoturvapäivitykset:
+**d) Ohjelmistojen päivittäminen**  
+Suojaa palvelin asentamalla uusimmat tietoturvapäivitykset.    
 Komento:  
 **sudo apt-get update && sudo apt-get upgrade**  
 
