@@ -320,11 +320,25 @@ Näiden komentojen jälkeen sivuni näkyi selaimessa.
 
 <img width="551" alt="image" src="https://github.com/user-attachments/assets/bc6927ec-b255-4ac2-8328-bac99557280e" />  
 
+## Yhteenveto kotitehtävistä  
 
 
 
+## Lähdeluettelo  
 
+Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla    
+https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/  
 
+Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS  
+https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/  
+
+https://upcloud.com/
+
+https://github.com/education
+
+https://www.digitalocean.com/
+
+https://www.namecheap.com/
 
 
 
