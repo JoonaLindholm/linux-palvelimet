@@ -261,46 +261,64 @@ Kävin kokeilemassa onko DNS päivittynyt ja näkyykö sivulla "Hello world" -te
 
 <img width="475" alt="image" src="https://github.com/user-attachments/assets/806f3034-1d4a-4df4-a60d-dd97c5c52fdf" />  
 
-Kaikki toimi hyvin.  
+Kaikki toimi nyt hyvin. DNS muutokset eivät tapahtuneet heti.  
 
-Seuraavaksi tein käyttäjälleni kansioita ja tiedostoja, että voin muokata sivua ilman sudo komentoa.  
-Navigoin kotikansiooni ja loin sinne kansion public_html  
-Komento: **mkdir public_html**  
+Seuraavaksi tein käyttäjälleni kansioita ja tiedostoja, jotta voin muokata sivua ilman sudo komentoa.  
+Navigoin kotikansiooni ja loin sinne kansion publicsites, johon loin vielä kansion joonalindholm.me.  
+Komento: **mkdir publicsites**  
+Komennot: **cd publicsites ja mkdir joonalindholm.me**  
 
-Tämän jälkeen loin kansioon index.html tiedoston komennolla:  
+Tämän jälkeen loin kansioon joonalindholm.me, tiedoston index.html komennolla:  
 **micro index.html**  
 
 Tämä avasi tekstieditorin, jolla lisäsin html rakennetta tiedostoon.  
 
-TÄHÄN KUVA
+<img width="449" alt="image" src="https://github.com/user-attachments/assets/b417e4ef-0cc8-4cfc-a9e7-f0d36884b856" />  
 
-Tämän jälkeen kävin muokkaamassa konfiguraatio tiedostoa komennolla:  
-**sudo nano /etc/apache2/sites-available/joona.conf**  
+Tämän jälkeen kävin muokkaamassa konfiguraatio-tiedostoa komennolla:  
+**sudo nano /etc/apache2/sites-available/joonalindholm.me.conf**  
 
 Lisäsin sinne rivit:  
 
-**<VirtualHost *:80>  
-    ServerName joonalindholm.me
-    ServerAlias www.joonalindholm.me
-    DocumentRoot /home/joona/public_html  
-    <Directory /home/joona/public_html>  
-        Require all granted  
-    </Directory>  
-</VirtualHost>**  
+<img width="295" alt="image" src="https://github.com/user-attachments/assets/8e4335ad-d554-4e65-9bd2-c279ec22c48e" />  
 
 Tallensin tekstini ctrl-s näppäinyhdistelmällä ja poistuin editorista.  
 Seuraavaksi otin sivun käyttöön komennoilla:  
 
-**sudo a2ensite joona.conf
-sudo systemctl restart apache2**
+**sudo a2ensite joonalindholm.me.conf  
+sudo systemctl restart apache2**  
 
+Nämä komennot kopioivat konfiguraatio-tiedostoni sites-enabled kansioon ja käynnistivät apachen uudelleen.  
 
-<img width="185" alt="image" src="https://github.com/user-attachments/assets/d66715ba-18ad-4049-bd00-0a4c1aa6bfcb" />
+<img width="185" alt="image" src="https://github.com/user-attachments/assets/d66715ba-18ad-4049-bd00-0a4c1aa6bfcb" />  
 
+Olin nyt siis tehnyt kansiot ja konfiguroinut asetukset tiedostojen nimien ja polkujen mukaan.  
+Sivu ei kuitenkaan näkynyt selaimessa. Olin ilmeisesti unohtanut jotakin.  
+Menin error.logiin katsomaan, mitä erroreita sinne ilmestyy, kun yritän päästä sivulle.  
 
+Komento:  
+**sudo tail -f /var/log/apache2/error.log**  
 
-sudo micro /etc/apache2/sites-available/000-default.conf
+[Sun Feb 09 10:34:39.056147 2025] [core:error] [pid 19236:tid 19246] (13)Permission denied: [client 88.114.9.199:50772] AH00035: access to / denied (filesystem path '/home/joona/publicsites') because search permissions are missing on a component of the path
 
+Tämä virhe muistutti minua siitä, että en ollut antanut pääsyoikeuksia apachelle ja siksi se ei päässyt käsiksi luomaani index.html tiedostoon.  
+
+Tutkin asiaa googlailemalla ja lopuksi kysyin chatgpt:eeltä, että mitä oikeuksia apache2 tarkalleen tarvitsee.  
+Sain vastaukseksi, että luku ja suoritus -oikeudeuksia kansiohin polulla, jossa index.html sijaitsee.  
+Apache tarvitsee myös lukuoikeuden itse index.html tiedostoon.  
+
+Komennot:  
+sudo chmod -R 644 /home/joona/publicsites/*  
+sudo chmod -R 755 /home/joona/publicsites  
+
+Tarkennus numeroista komennoista:    
+
+**644 = antoi oikeudet lukea tiedostoja (esim. apachelle oikeus lukea index.html tiedoston sisältö).    
+755 = antoi oikeudet lukea ja suorittaa kansioita (esim. apachelle oikeus availla kansioita ja navigoida niissä).**  
+
+Näiden komentojen jälkeen sivuni näkyi selaimessa.    
+
+<img width="551" alt="image" src="https://github.com/user-attachments/assets/bc6927ec-b255-4ac2-8328-bac99557280e" />  
 
 
 
