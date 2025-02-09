@@ -200,7 +200,9 @@ Muutin huvikseeni hostin ja palvelimen nimen ja klikkasin "Deploy".
 
 <img width="603" alt="image" src="https://github.com/user-attachments/assets/eee5e37f-c018-4ec8-adeb-edb56386e727" />  
 
+
 <img width="797" alt="image" src="https://github.com/user-attachments/assets/3fa6e98f-52aa-4c3d-b365-083db4ad4180" />  
+
 
 <img width="806" alt="image" src="https://github.com/user-attachments/assets/6fc684ec-9e16-4330-ac86-56657ed93e8c" />  
 
