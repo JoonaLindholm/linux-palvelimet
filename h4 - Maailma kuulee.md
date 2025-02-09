@@ -263,9 +263,36 @@ Kävin kokeilemassa onko DNS päivittynyt ja näkyykö sivulla "Hello world" -te
 
 Kaikki toimi hyvin.  
 
-Seuraavaksi lähdin tekemään käyttäjälleni kansioita ja tiedostoja, että voin muokata sivua ilman sudo komentoa.  
-NAvigoin kotikansiooni ja loin sinne kansion public_html  
+Seuraavaksi tein käyttäjälleni kansioita ja tiedostoja, että voin muokata sivua ilman sudo komentoa.  
+Navigoin kotikansiooni ja loin sinne kansion public_html  
 Komento: **mkdir public_html**  
+
+Tämän jälkeen loin kansioon index.html tiedoston komennolla:  
+**micro index.html**  
+
+Tämä avasi tekstieditorin, jolla lisäsin html rakennetta tiedostoon.  
+
+TÄHÄN KUVA
+
+Tämän jälkeen kävin muokkaamassa konfiguraatio tiedostoa komennolla:  
+**sudo nano /etc/apache2/sites-available/joona.conf**  
+
+Lisäsin sinne rivit:  
+
+**<VirtualHost *:80>  
+    ServerName joonalindholm.me
+    ServerAlias www.joonalindholm.me
+    DocumentRoot /home/joona/public_html  
+    <Directory /home/joona/public_html>  
+        Require all granted  
+    </Directory>  
+</VirtualHost>**  
+
+Tallensin tekstini ctrl-s näppäinyhdistelmällä ja poistuin editorista.  
+Seuraavaksi otin sivun käyttöön komennoilla:  
+
+**sudo a2ensite joona.conf
+sudo systemctl restart apache2**
 
 
 <img width="185" alt="image" src="https://github.com/user-attachments/assets/d66715ba-18ad-4049-bd00-0a4c1aa6bfcb" />
