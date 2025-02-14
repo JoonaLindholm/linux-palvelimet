@@ -40,8 +40,8 @@ Tein tehtäviä 14.2. - AIKA välisenä aikana.
 ## a) ja b)  
 **Nimi ja based**  
 
-Olin tehnyt kotitehtävien kohdat a ja b vahingossa jo edellisissä kotitehtävissä.  
-Seuraava osio jonka olen rajanuut viivalla on siis muistelu edellisistä kotitehtävistäni.  
+Olin tehnyt kotitehtävien kohdat **a** ja **b** vahingossa jo edellisissä kotitehtävissä.  
+Seuraava osio, jonka olen rajannut viivalla, on siis muistelu edellisistä kotitehtävistäni.  
 
 ***
 **h4-Maailma kuulee**  
@@ -65,7 +65,7 @@ Tämän jälkeen liitin viel github käyttäjäni namecheapin käyttäjään.
 ![image](https://github.com/user-attachments/assets/d286d490-1205-467a-a828-69d37d634c04)  
   
 ![image](https://github.com/user-attachments/assets/554af77b-14f7-4c4b-bd87-c9105c488346)  
-
+  
 Kirjauduin sisään tililleni ja aktivoin tilini sähköpostin kautta.  
   
 ![image](https://github.com/user-attachments/assets/8b1c78c9-055e-4299-b554-889041253d39)  
@@ -74,39 +74,42 @@ Kirjauduin sisään tililleni ja aktivoin tilini sähköpostin kautta.
   
 Jatkoin nimipalvelimen muokkausta Susanna Lehdon raportin mukaan ja lisäsin advanced DNS asetuksiin virtuaalipalvelimen ip-osoitteen.  
 Postin myös vanhat recordit.  
-
+  
 ![image](https://github.com/user-attachments/assets/36aa9f98-a317-49d5-b8d0-17081aebfd64)  
-
+  
 Kävin kokeilemassa onko DNS päivittynyt ja näkyykö sivulla "Hello world" -teksti.  
   
 ![image](https://github.com/user-attachments/assets/ec907e2f-8cbc-4aee-b968-90c6167e68ec)  
   
 Kaikki toimi hyvin. DNS muutokset eivät tapahtuneet heti.  
-
+  
 Seuraavaksi tein käyttäjälleni kansioita ja tiedostoja, jotta voin muokata sivua ilman sudo komentoa.  
 Navigoin kotikansiooni ja loin sinne kansion publicsites, johon loin vielä kansion joonalindholm.me.  
-Komento: mkdir publicsites  
-Komennot: cd publicsites ja mkdir joonalindholm.me  
+
+**Komento: mkdir publicsites  
+Komennot: cd publicsites ja mkdir joonalindholm.me**  
 
 Tämän jälkeen loin kansioon joonalindholm.me, tiedoston index.html komennolla:  
-micro index.html  
 
+**micro index.html**  
+  
 Tämä avasi tekstieditorin, jolla lisäsin html rakennetta tiedostoon.    
 
 ![image](https://github.com/user-attachments/assets/ffa63d17-485c-4e6a-bcd3-6dbbb9ab6cf6)  
   
 Tämän jälkeen kävin muokkaamassa konfiguraatio-tiedostoa komennolla:  
-sudo nano /etc/apache2/sites-available/joonalindholm.me.conf  
+
+**sudo nano /etc/apache2/sites-available/joonalindholm.me.conf**  
   
 Lisäsin sinne rivit:  
-
+  
 ![image](https://github.com/user-attachments/assets/94f1b8c6-35e8-4ca5-9622-17cd09410fb1)  
   
 Tallensin tekstini ctrl-s näppäinyhdistelmällä ja poistuin editorista.  
 Seuraavaksi otin sivun käyttöön komennoilla:  
   
-sudo a2ensite joonalindholm.me.conf  
-sudo systemctl restart apache2  
+**sudo a2ensite joonalindholm.me.conf  
+sudo systemctl restart apache2**  
 
 Nämä komennot kopioivat konfiguraatio-tiedostoni sites-enabled kansioon ja käynnistivät apachen uudelleen.  
 
@@ -135,8 +138,8 @@ sudo chmod -R 755 /home/joona/publicsites
 
 Tarkennus numeroista komennoissa:  
 
-644 = antoi oikeudet lukea tiedostoja (esim. apachelle oikeus lukea index.html tiedoston sisältö).  
-755 = antoi oikeudet lukea ja suorittaa kansioita (esim. apachelle oikeus availla kansioita ja navigoida niissä).  
+**644 = antoi oikeudet lukea tiedostoja (esim. apachelle oikeus lukea index.html tiedoston sisältö).  
+755 = antoi oikeudet lukea ja suorittaa kansioita (esim. apachelle oikeus availla kansioita ja navigoida niissä).**    
  
 Näiden komentojen jälkeen sivuni näkyi selaimessa.  
 
