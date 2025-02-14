@@ -1,5 +1,9 @@
 # h5-nimekäs  
-Raportti kotitehtävistä.  
+
+## Raportti kotitehtävistä.  
+
+**Tehtävänannot:  
+https://terokarvinen.com/linux-palvelimet/#h5-nimekas**  
 
 ## Sisällys  
 
@@ -143,6 +147,10 @@ Sivuista voisi tehdä tulevaisuudessa vaikka kotisivut.
 
 ***
 
+Olin siis vuokrannut nimipalvelusta domain-nimen itselleni ja tehnyt name based virtual host -konfiguraatiot sekä saanut sivuston toimimaan.  
 
+***
+
+## c) Kotisivu  
 
 
