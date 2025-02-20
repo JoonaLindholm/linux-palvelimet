@@ -156,4 +156,11 @@ Olin siis vuokrannut nimipalvelusta domain-nimen itselleni ja tehnyt name based 
 
 ## c) Kotisivu  
 
+Aloitin tehtävän 20.2.25. klo 20 aikoihin.  
+Aloin googlailemaan ohjeita alisivujen luomiseen ja löysin hyvät ohjeet.  
+
+**https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**  
+
+Avasin virtuaalikoneeni -> avasin terminaalin -> yhdistin palvelimeeni **ssh 80.69.172.181**  
+-> ja navigoin ls
 
