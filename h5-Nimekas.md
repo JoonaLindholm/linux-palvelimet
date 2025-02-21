@@ -157,10 +157,28 @@ Olin siis vuokrannut nimipalvelusta domain-nimen itselleni ja tehnyt name based 
 ## c) Kotisivu  
 
 Aloitin tehtävän 20.2.25. klo 20 aikoihin.  
+
+
+
+## d)  
 Aloin googlailemaan ohjeita alisivujen luomiseen ja löysin hyvät ohjeet.  
 
 **https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**  
 
 Avasin virtuaalikoneeni -> avasin terminaalin -> yhdistin palvelimeeni **ssh 80.69.172.181**  
--> ja navigoin ls
+-> navigoin konfiguraatio-tiedostoon ja muokkasin sitä sivuilta löytämieni ohjeiden mukaan.  
+
+<img width="588" alt="image" src="https://github.com/user-attachments/assets/e4a6c9de-2daf-4bf9-b1fd-c4aab0418e31" />  
+  
+<img width="283" alt="image" src="https://github.com/user-attachments/assets/2744336d-f347-4b13-995a-d9effb2ef4b8" />  
+
+Tämän jälkeen aktivoin uuden konfiguraation komennolla:  
+**sudo a2ensite joonalindholm.me.conf**  
+Sitten käynnistin vielä apachen uudelleen komennolla:  
+**sudo systemctl restart apache2**  
+
+Seuraavaksi loin konfiguraationi sopivat kansiot ja niihin html-tiedostot.
+
+mkdir -p /home/joona/publicsites/schoolworks
+mkdir -p /home/joona/publicsites/workworks
 
