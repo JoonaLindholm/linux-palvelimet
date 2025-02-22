@@ -272,6 +272,18 @@ Tein nämä korjaukset kaikkiin html-tiedostoihin eli index.html, schoolworks.ht
 
 <img width="473" alt="image" src="https://github.com/user-attachments/assets/76dea76b-f2d8-467d-86a8-29d5b49e62ea" />  
 
-Kävin vielä tutkimassa tekemäni muutokset konfiguraatioon.
+Kävin vielä tutkimassa tekemäni muutokset konfiguraatioon ja kaikki näytti olevan oikein.
+
+Seuraavaksi lähdin muokkaamaan dns asetuksiani NameCheap-sivuilta, että alidomainit saadaan toimintaan.  
+
+<img width="854" alt="image" src="https://github.com/user-attachments/assets/4c316f3c-17f5-49bd-abc6-e58d23c2d2b2" />  
+
+Tässä vaiheessa tehtävää päätin lukea tehtävänantoa ja huomasin, että olin taas tehnyt jotain omia säätöjäni.  
+
+Jotta d) tehtävä olisi tehty oikein, niin minun piti muokata sivuston rakenne vähän hölmöksi.  
+Muokkasin siis DNS asetuksia, niin että linkit veivät vain takaisin etusivulle.
+
+
+
 
 
