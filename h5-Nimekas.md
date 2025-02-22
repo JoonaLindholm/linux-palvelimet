@@ -158,6 +158,16 @@ Olin siis vuokrannut nimipalvelusta domain-nimen itselleni ja tehnyt name based 
 
 Aloitin tehtävän 20.2.25. klo 20 aikoihin.  
 
+Avasin virtuaalikoneeni -> avasin terminaalin -> yhdistin palvelimeeni komennolla **ssh 80.69.172.181**  
+
+Navigoin sivustoni kansioon.   
+joona@vm-linux1:~/publicsites/joonalindholm.me$  
+
+Loin kansioon kaksi html-tiedostoa lisää nimillä  
+schoolworks.html ja workworks.html  
+
+<img width="427" alt="image" src="https://github.com/user-attachments/assets/86e372b9-c51e-4c49-895c-bc3ac540b7d8" />  
+
 
 
 ## d)  
@@ -179,6 +189,12 @@ Sitten käynnistin vielä apachen uudelleen komennolla:
 
 Seuraavaksi loin konfiguraationi sopivat kansiot ja niihin html-tiedostot.
 
-mkdir -p /home/joona/publicsites/schoolworks
-mkdir -p /home/joona/publicsites/workworks
+Navigoin kansioon /home/joona/publicsites/ ja loin sinne uuden kansion komennolla:  
+**mkdir schoolworks**  
+
+Tein saman myös workworks kansiolle:  
+**polku: /home/joona/publicsites/  
+Komento: mkdir workworks**   
+
+Lisäsin tämän jälkeen molempiin kansiohin perus html-rakenteen eli saman kuin tehtävässä c.  
 
