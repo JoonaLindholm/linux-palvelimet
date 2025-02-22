@@ -227,8 +227,8 @@ Tehtävään d muodot olisivat olleet oikein, mutta c tehtävässä ei käytetty
 
 Sivuni toimivat, niitä pystyi muokkaaman ilman sudoa ja ne linkittivät toisiinsa.  
 
-## d)  
-Aloin googlailemaan ohjeita alisivujen luomiseen ja löysin hyvät ohjeet.  
+## d) Alisivut oikeina alidomainena
+Aloin googlailemaan ohjeita alidomainien luomiseen ja löysin hyvät ohjeet.  
 
 **https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**  
 
@@ -253,5 +253,9 @@ Tein saman myös workworks kansiolle:
 **polku: /home/joona/publicsites/  
 Komento: mkdir workworks**   
 
-Lisäsin tämän jälkeen molempiin kansiohin perus html-rakenteen eli saman kuin tehtävässä c.  
+Kansioiden luomisen jälkeen siirsin tehtävän c html tiedostot uusiin kansioihin.  
+
+Komennot:  
+**mv ~/publicsites/joonalindholm.me/schoolworks.html ~/publicsites/schoolworks/  
+mv ~/publicsites/joonalindholm.me/workworks.html ~/publicsites/workworks/**  
 
