@@ -259,3 +259,18 @@ Komennot:
 **mv ~/publicsites/joonalindholm.me/schoolworks.html ~/publicsites/schoolworks/  
 mv ~/publicsites/joonalindholm.me/workworks.html ~/publicsites/workworks/**  
 
+Html-tiedostojen siirron jälkeen minun piti käydä muokkaamassa niiden rakenne takaisin alidomain muotoon.  
+Tarkemmin muutin siis seuraavan kohdan esimerkiksi schoolworks.html tiedostosta:
+**<li><a href="http://joonalindholm.me/workworks.html">Workworks</a></li>**  
+Tämä piti muuttaa muotoon:  
+**<li><a href="http://¨workworks.joonalindholm.me/workworks.html">Workworks</a></li>**  
+
+Tein nämä korjaukset kaikkiin html-tiedostoihin eli index.html, schoolworks.html ja workworks.html.  
+
+
+
+
+
+<img width="473" alt="image" src="https://github.com/user-attachments/assets/76dea76b-f2d8-467d-86a8-29d5b49e62ea" />  
+
+
