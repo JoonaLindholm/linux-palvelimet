@@ -154,8 +154,9 @@ Olin siis vuokrannut nimipalvelusta domain-nimen itselleni ja tehnyt name based 
 
 ***
 
-## c) Kotisivu  
+## c) Kotisivu, alasivuineen  
 
+Tehtävässä piti luoda kotisivuilleni alasivuja.  
 Aloitin tehtävän 20.2.25. klo 20 aikoihin.  
 
 Avasin virtuaalikoneeni -> avasin terminaalin -> yhdistin palvelimeeni komennolla **ssh 80.69.172.181**  
@@ -163,12 +164,68 @@ Avasin virtuaalikoneeni -> avasin terminaalin -> yhdistin palvelimeeni komennoll
 Navigoin sivustoni kansioon.   
 joona@vm-linux1:~/publicsites/joonalindholm.me$  
 
-Loin kansioon kaksi html-tiedostoa lisää nimillä  
+Loin kansioon kaksi html-tiedostoa lisää nimillä.   
 schoolworks.html ja workworks.html  
+Kansiossa oli siis jo valmiiksi index.html.  
+
+Alla perus html-rakennetta, jonka rakennetta kopioin vanhasta työstäni, jossa tehtiin omat kotisivut.  
+Kurssi taisi olla johdanto digitaalisiin palveluihin.  
 
 <img width="427" alt="image" src="https://github.com/user-attachments/assets/86e372b9-c51e-4c49-895c-bc3ac540b7d8" />  
 
+<img width="436" alt="image" src="https://github.com/user-attachments/assets/5cc84953-1f2e-4687-b00d-f072babb9b53" />  
 
+Olin siis luonut nyt kansiot ja htm tiedostot alisivuille. Ajattelin, että seuraavaksi kokeilen, mitä sivustolla näkyy.  
+
+<img width="403" alt="image" src="https://github.com/user-attachments/assets/bad65ff0-2c4e-415e-8bae-0bbb2a50f88a" />  
+
+Etusivulla näkyi tekemäni linkit alisivuille, mutta alisivut eivät toimineet.  
+Ajattelin ongelman johtuvan siitä etten ollut muuttanut mitään oikeuksia tiedostojen luomisen jälkeen.  
+Palasin siis takaisin opiskelemaan, miten oikeudet toimivatkaan.  
+
+Löysin hyvät ohjeet seuraavilta sivuilta:  
+
+**https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/**  
+
+chmod [kuka] [muutos] [oikeudet] tiedosto  
+
+[kuka]  
+u = omistaja  
+g = ryhmä  
+o = muut  
+a = kaikki  
+[muutos]  
++ = lisää oikeus  
+- = poista oikeus  
+= = määritä oikeudet ja poista kaikki muut  
+[oikeudet]  
+r = luku  
+w = kirjoitus  
+x = suoritus  
+
+**sudo chmod g+rx /polku/joonalindholm.me/*.html = eli ryhmälle (g) lisätään oikeudet (+) lukea ja suorittaa tiedostoja (rx)   
+sudo chmod u+rx /polku/joonalindholm.me/*.html = eli omistajalle (u) lisätään oikeudet (+) lukea ja suorittaa tiedostoja (rx)**  
+
+<img width="386" alt="image" src="https://github.com/user-attachments/assets/db5399ef-529b-4baa-b2ee-2a044e718148" />  
+
+Tämä ei korjannut ongelmaani, koska olin vahingossa laittanut html-rakenteen linkkien polut väärin.  
+Tajusin tarkistaa tämän onneksi heti, kun oikeuksien antaminen ei onnistunut.   
+
+<img width="397" alt="image" src="https://github.com/user-attachments/assets/badce58d-bbde-458e-8105-cc71b68ac5e9" />  
+
+Korjasin jokaiseen html-tiedostoon linkin toiselle sivulle.  
+
+<img width="388" alt="image" src="https://github.com/user-attachments/assets/4d96b3b7-c871-4f3a-b07a-791e260c9ad8" />  
+
+<img width="472" alt="image" src="https://github.com/user-attachments/assets/be4eb343-0b72-4376-8f68-21c1f18288f5" />  
+
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/bd37be4e-f47c-45cc-b8ba-559675156648" />  
+
+Linkit olivat muodossa **http://schoolworks.joonalindholm.me/**  
+Oikea muoto tehtävässä C oli **http://joonalindholm.me/schoolworks.html**  
+Tehtävään d muodot olisivat olleet oikein, mutta c tehtävässä ei käytetty vielä alidomaineja.  
+
+Sivuni toimivat, niitä pystyi muokkaaman ilman sudoa ja ne linkittivät toisiinsa.  
 
 ## d)  
 Aloin googlailemaan ohjeita alisivujen luomiseen ja löysin hyvät ohjeet.  
@@ -187,7 +244,7 @@ Tämän jälkeen aktivoin uuden konfiguraation komennolla:
 Sitten käynnistin vielä apachen uudelleen komennolla:  
 **sudo systemctl restart apache2**  
 
-Seuraavaksi loin konfiguraationi sopivat kansiot ja niihin html-tiedostot.
+Seuraavaksi loin konfiguraationi sopivat kansiot ja niihin html-tiedostot.  
 
 Navigoin kansioon /home/joona/publicsites/ ja loin sinne uuden kansion komennolla:  
 **mkdir schoolworks**  
