@@ -406,6 +406,29 @@ namecheap.com.		60	IN	A	198.54.117.250
 ;; MSG SIZE  rcvd: 58  
 
 ---
+Komento: **haijaa.fi**  
+
+; <<>> DiG 9.18.33-1~deb12u2-Debian <<>> haijaa.fi  
+;; global options: +cmd  
+;; Got answer:  
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62639  
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1  
+
+;; OPT PSEUDOSECTION:  
+; EDNS: version: 0, flags:; udp: 512  
+;; QUESTION SECTION:  
+;haijaa.fi.			IN	A  
+
+;; ANSWER SECTION:  
+haijaa.fi.		300	IN	A	91.90.50.101  
+haijaa.fi.		300	IN	A	93.90.51.139  
+
+;; Query time: 28 msec  
+;; SERVER: 94.237.127.9#53(94.237.127.9) (UDP)  
+;; WHEN: Sun Feb 23 18:01:33 UTC 2025  
+;; MSG SIZE  rcvd: 70  
+
+---
 
 komento: **dig youtube.com**  
 
