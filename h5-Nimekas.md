@@ -349,21 +349,84 @@ youtube.com has address 142.250.74.78
 youtube.com has IPv6 address 2a00:1450:400f:802::200e  
 youtube.com mail is handled by 0 smtp.google.com.  
 
+Youtubella oli ipv6 tuki ja sen sähköpostipalvelin oli googlen hallinnoima.  
+Youtube on osa googlea, joten tämä on ymmärrettävää.  
 
 Seuraavaksi kokeilin dig komentoa.  
 Tämäkin työkalu puuttui. Tein nopean googlauksen ja asennuksen.  
 
 https://askubuntu.com/questions/25098/how-do-i-install-dig  
 
-<img width="380" alt="image" src="https://github.com/user-attachments/assets/914e0b3e-6fba-4c86-87eb-bc2c1f8c0ce8" />
+<img width="380" alt="image" src="https://github.com/user-attachments/assets/914e0b3e-6fba-4c86-87eb-bc2c1f8c0ce8" />  
+
+---
 
 Komento: **dig joonalindholm.me**  
 
-<img width="398" alt="image" src="https://github.com/user-attachments/assets/2af96066-d811-463d-8619-89614cc999aa" />  
+; <<>> DiG 9.18.33-1~deb12u2-Debian <<>> joonalindholm.me  
+;; global options: +cmd  
+;; Got answer:  
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 46148  
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1  
 
-Tutkin netistä ohjeita selittämään, mitä dig-komennon tiedot tarkoittavat.  
-Löysin 
+;; OPT PSEUDOSECTION:  
+; EDNS: version: 0, flags:; udp: 512  
+;; QUESTION SECTION:  
+;joonalindholm.me.		IN	A  
 
+;; ANSWER SECTION:  
+joonalindholm.me.	1799	IN	A	80.69.172.181  
+
+;; Query time: 48 msec  
+;; SERVER: 94.237.127.9#53(94.237.127.9) (UDP)  
+;; WHEN: Sun Feb 23 15:52:03 UTC 2025  
+;; MSG SIZE  rcvd: 61  
+
+komento: **dig namecheap.com**  
+
+; <<>> DiG 9.18.33-1~deb12u2-Debian <<>> namecheap
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 62245
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;namecheap.			IN	A
+
+;; AUTHORITY SECTION:
+.			60	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2025022300 1800 900 604800 86400
+
+;; Query time: 0 msec
+;; SERVER: 94.237.127.9#53(94.237.127.9) (UDP)
+;; WHEN: Sun Feb 23 17:41:42 UTC 2025
+;; MSG SIZE  rcvd: 113
+
+---
+
+komento: **dig youtube.com**  
+
+; <<>> DiG 9.18.33-1~deb12u2-Debian <<>> youtube.com  
+;; global options: +cmd  
+;; Got answer:  
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63774  
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1  
+
+;; OPT PSEUDOSECTION:  
+; EDNS: version: 0, flags:; udp: 512  
+;; QUESTION SECTION:  
+;youtube.com.			IN	A  
+
+;; ANSWER SECTION:  
+youtube.com.		232	IN	A	142.250.74.78  
+
+;; Query time: 4 msec  
+;; SERVER: 94.237.127.9#53(94.237.127.9) (UDP)  
+;; WHEN: Sun Feb 23 17:42:35 UTC 2025  
+;; MSG SIZE  rcvd: 56  
+
+---
 
 
 
