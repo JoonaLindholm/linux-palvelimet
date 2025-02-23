@@ -282,7 +282,19 @@ Tämän jälkeen käynnistin apache2:sen uudelleen
 
 Seuraavaksi lähdin muokkaamaan dns asetuksiani NameCheap-sivuilta, että alidomainit saadaan toimintaan.  
 
-<img width="854" alt="image" src="https://github.com/user-attachments/assets/4c316f3c-17f5-49bd-abc6-e58d23c2d2b2" />  
+<img width="659" alt="image" src="https://github.com/user-attachments/assets/29a1a4c4-1886-4c41-b56e-3c621f215ddd" />  
+
+Tämän jälkeen kokeilin sivuja, mutta ne eivät heti toimineet. Noin 30 minuutin kuluttua sivut alkoivat toimimaan.  
+
+joonalindholm.me = toi käyttäjän etusivulle, koska CNAME record oli wwww.  
+Käyttäjän ei siis tarvitse syöttää osoitekenttään erikseen www.joonalindholm.me, koska CNAME on määritetty.  
+
+Etusivun linkit toimivat edelleen oikein eli ne veivät käyttäjän schoolworksiin tai workworksiin linkin mukaisesti.  
+
+Osoitekenttään syötettynä osoite toi aina etusivulle, koska apache2 konfiguraatio ja dns asetukset olivat säädetty.  
+
+
+
 
 
 
