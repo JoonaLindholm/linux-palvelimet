@@ -384,24 +384,24 @@ joonalindholm.me.	1799	IN	A	80.69.172.181
 
 komento: **dig namecheap.com**  
 
-; <<>> DiG 9.18.33-1~deb12u2-Debian <<>> namecheap
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 62245
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+; <<>> DiG 9.18.33-1~deb12u2-Debian <<>> namecheap.com  
+;; global options: +cmd  
+;; Got answer:  
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 61260  
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1  
 
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 512
-;; QUESTION SECTION:
-;namecheap.			IN	A
+;; OPT PSEUDOSECTION:  
+; EDNS: version: 0, flags:; udp: 512  
+;; QUESTION SECTION:  
+;namecheap.com.			IN	A  
 
-;; AUTHORITY SECTION:
-.			60	IN	SOA	a.root-servers.net. nstld.verisign-grs.com. 2025022300 1800 900 604800 86400
+;; ANSWER SECTION:  
+namecheap.com.		60	IN	A	198.54.117.250  
 
-;; Query time: 0 msec
-;; SERVER: 94.237.127.9#53(94.237.127.9) (UDP)
-;; WHEN: Sun Feb 23 17:41:42 UTC 2025
-;; MSG SIZE  rcvd: 113
+;; Query time: 8 msec  
+;; SERVER: 94.237.127.9#53(94.237.127.9) (UDP)  
+;; WHEN: Sun Feb 23 17:47:18 UTC 2025  
+;; MSG SIZE  rcvd: 58  
 
 ---
 
