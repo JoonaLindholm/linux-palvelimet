@@ -273,7 +273,7 @@ Tein nämä korjaukset kaikkiin html-tiedostoihin eli index.html, schoolworks.ht
 <img width="473" alt="image" src="https://github.com/user-attachments/assets/76dea76b-f2d8-467d-86a8-29d5b49e62ea" />  
 
 Kävin vielä tutkimassa tekemäni muutokset konfiguraatioon ja muutin alisivuni osoittamaan etusivulleni.  
-Tämän jälkeen käynnistin apache2:sen uudelleen
+Tämän jälkeen käynnistin apache2:sen uudelleen.  
 
 **sudo a2ensite joonalindholm.me.conf**  
 **sudo systemctl restart apache2**  
@@ -289,9 +289,82 @@ Tämän jälkeen kokeilin sivuja, mutta ne eivät heti toimineet. Noin 30 minuut
 joonalindholm.me = toi käyttäjän etusivulle, koska CNAME record oli wwww.  
 Käyttäjän ei siis tarvitse syöttää osoitekenttään erikseen www.joonalindholm.me, koska CNAME on määritetty.  
 
-Etusivun linkit toimivat edelleen oikein eli ne veivät käyttäjän schoolworksiin tai workworksiin linkin mukaisesti.  
+Osoitekenttään syötettynä osoite toi aina etusivulle, koska apache2 konfiguraatio ja dns asetukset olivat säädetty niin.  
 
-Osoitekenttään syötettynä osoite toi aina etusivulle, koska apache2 konfiguraatio ja dns asetukset olivat säädetty.  
+<img width="415" alt="image" src="https://github.com/user-attachments/assets/382ecb4f-e00e-4403-b523-a53d3a984ec3" />  
+
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/1a41e592-19cb-4569-ba5c-b12b0da98ad0" />  
+
+Muokkaukset, joita tein konfiguraatio-tiedostoon rikkoi sivustoni sisäiset linkit.  
+Kävin vielä korjaamassa kansiot oikeiksi konfiguraatiossa, niin sain sivustoni linkit takaisin toimintaan.  
+
+<img width="314" alt="image" src="https://github.com/user-attachments/assets/c68fba44-8b4e-4a84-b5fd-40f09b30e502" />  
+
+Loppujen lopuksi en ollut aivan varma olinko täyttänyt tehtävänantoa tämän d-tehtävän osalta.  
+
+## e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla.
+
+Aloitin tehtävän 23.2. sunnuntaina noin klo 17 aikaan.  
+kirjoitin terminaaliin host joonalindholm.me ja sain seuraavan virheen.  
+
+<img width="348" alt="image" src="https://github.com/user-attachments/assets/0f7b07e7-dd25-4591-8edc-7a319f10e756" />  
+
+Googlasin virheen "host command not found" ja löysin ohjeet, joissa kerrotiin kuinka asennetaan host työkalu.  
+
+https://ioflood.com/blog/install-host-command-linux/  
+
+Ohjeissa käytettiin debianille komentoa:  
+**sudo apt-get install bind9-host**  
+Asennuksen jälkeen kokeilin uudestaan host-komentoa ja komento toimi.  
+
+joonalindholm.me has address 80.69.172.181  
+joonalindholm.me mail is handled by 20 eforward5.registrar-servers.com.  
+joonalindholm.me mail is handled by 10 eforward2.registrar-servers.com.  
+joonalindholm.me mail is handled by 10 eforward1.registrar-servers.com.  
+joonalindholm.me mail is handled by 15 eforward4.registrar-servers.com.  
+joonalindholm.me mail is handled by 10 eforward3.registrar-servers.com.  
+
+Ensimmäisellä rivillä oli sivujeni ip-osoite ja loput rivit olivat ilmeisesti DNS MX recordeja. 
+
+Cloudflaren artikkelissa kerrotaan MX-recordien sähköpostiohjauksista ja prioriteettiarvoista, joiden mukaan palvelin käsittelee saapuvat viestit.  
+
+Mitä pienempi "handled by" -numero, niin sitä korkeammalla prioriteetilla viesti käsitellään.  
+Kyseessä siis sähköpostiviestit.  
+
+https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/  
+
+Host komennon käyttö name.cheap.com-sivustolle antoi vähemmän rivejä.  
+namecheap käyttää ilmeisesti vain kahta sähköpostipalvelinta ja ensimmäiselle riville tuli namecheap sivun palvelimen ip-osoite.  
+
+Komento: **host namecheap.com**  
+
+namecheap.com has address 198.54.117.250  
+namecheap.com mail is handled by 5 mx1.jellyfish.systems.  
+namecheap.com mail is handled by 10 mx2.jellyfish.systems.  
+
+Seuraavaksi halusin kokeilla, mitä host-tietoja youtube-sivusto näyttää.  
+
+Komento: **host youtube.com**  
+youtube.com has address 142.250.74.78  
+youtube.com has IPv6 address 2a00:1450:400f:802::200e  
+youtube.com mail is handled by 0 smtp.google.com.  
+
+
+Seuraavaksi kokeilin dig komentoa.  
+Tämäkin työkalu puuttui. Tein nopean googlauksen ja asennuksen.  
+
+https://askubuntu.com/questions/25098/how-do-i-install-dig  
+
+<img width="380" alt="image" src="https://github.com/user-attachments/assets/914e0b3e-6fba-4c86-87eb-bc2c1f8c0ce8" />
+
+Komento: **dig joonalindholm.me**  
+
+<img width="398" alt="image" src="https://github.com/user-attachments/assets/2af96066-d811-463d-8619-89614cc999aa" />  
+
+Tutkin netistä ohjeita selittämään, mitä dig-komennon tiedot tarkoittavat.  
+Löysin 
+
+
 
 
 
