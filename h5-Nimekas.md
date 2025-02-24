@@ -519,7 +519,7 @@ komento: **dig txt _dmarc.google.com**
 
 **"v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com"**  
 Selitys riville:  
-**https://www.dmarcly.com/blog/what-is-rua-in-dmarc-dmarc-rua-tag-explained?utm_source=chatgpt.com**  
+**(https://www.dmarcly.com/blog/what-is-rua-in-dmarc-dmarc-rua-tag-explained)**  
 
 Ensimmäisenä tuli versio eli **DMARC versio 1**.  
 Seuraavaksi tuli **p=reject**, joka tarkoitti sitä, että kaikki sähköpostit, jotka eivät läpäise DMARC-tarkistusta hylätään.  
@@ -529,17 +529,32 @@ Tein tämän viimeisen tehtävän nopealla aikataululla ja syvempi analyysi olis
 
 ## Lähdeluettelo  
 
+Tehtävänanto:  
+**https://terokarvinen.com/linux-palvelimet/#h5-nimekas**  
 
-https://www.ionos.com/digitalguide/e-mail/e-mail-security/what-is-an-spf-record/
-https://www.clusterednetworks.com/blog/post/how-use-dig-nslookup-check-spf-dkim-and-dmarc-records
-https://www.quora.com/Why-do-I-see-two-different-IP-addresses-for-a-website 
-https://phoenixnap.com/kb/linux-dig-command-examples
-**https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**
-https://terokarvinen.com/linux-palvelimet/#h5-nimekas** 
-https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h4%20-%20Maailma%20kuulee.md  
-**https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1** 
-https://ioflood.com/blog/install-host-command-linux/  
-https://askubuntu.com/questions/25098/how-do-i-install-dig  
-*https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**
-**https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/** 
+Subdomainit:  
+**https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**  
 
+Kaksi ip-osoitetta yhdellä sivulla:  
+**https://www.quora.com/Why-do-I-see-two-different-IP-addresses-for-a-website**  
+
+SPF ja DMARC-komennot  
+**https://www.clusterednetworks.com/blog/post/how-use-dig-nslookup-check-spf-dkim-and-dmarc-records**  
+
+Host-komennon asennus:  
+**https://ioflood.com/blog/install-host-command-linux/**  
+
+MX-record:  
+**https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/**   
+
+Dig-komennon asennus:  
+**https://askubuntu.com/questions/25098/how-do-i-install-dig**  
+
+SPF record:  
+**https://www.ionos.com/digitalguide/e-mail/e-mail-security/what-is-an-spf-record/**  
+
+Dig-komennon tulokset:  
+**https://phoenixnap.com/kb/linux-dig-command-examples**  
+
+DMARC-komennon tulokset:  
+**https://www.dmarcly.com/blog/what-is-rua-in-dmarc-dmarc-rua-tag-explained**  
