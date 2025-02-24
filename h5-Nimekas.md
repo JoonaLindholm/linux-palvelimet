@@ -175,11 +175,11 @@ Kurssi taisi olla johdanto digitaalisiin palveluihin.
 
 <img width="436" alt="image" src="https://github.com/user-attachments/assets/5cc84953-1f2e-4687-b00d-f072babb9b53" />  
 
-Olin siis luonut nyt kansiot ja htm tiedostot alisivuille. Ajattelin, että seuraavaksi kokeilen, mitä sivustolla näkyy.  
+Olin siis luonut nyt kansiot ja htm tiedostot alasivuille. Ajattelin, että seuraavaksi kokeilen, mitä sivustolla näkyy.  
 
 <img width="403" alt="image" src="https://github.com/user-attachments/assets/bad65ff0-2c4e-415e-8bae-0bbb2a50f88a" />  
 
-Etusivulla näkyi tekemäni linkit alisivuille, mutta alisivut eivät toimineet.  
+Etusivulla näkyi tekemäni linkit alasivuille, mutta alasivut eivät toimineet.  
 Ajattelin ongelman johtuvan siitä etten ollut muuttanut mitään oikeuksia tiedostojen luomisen jälkeen.  
 Palasin siis takaisin opiskelemaan, miten oikeudet toimivatkaan.  
 
@@ -214,7 +214,7 @@ Oikea muoto tehtävässä C oli **http://joonalindholm.me/schoolworks.html**
 
 Sivuni toimivat, niitä pystyi muokkaaman ilman sudoa ja ne linkittivät toisiinsa.  
 
-## d) Alisivut oikeina alidomainena
+## d) Alasivut oikeina alidomainena
 Aloin googlailemaan ohjeita alidomainien luomiseen ja löysin hyvät ohjeet.  
 
 **https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**  
@@ -257,7 +257,7 @@ Tein nämä korjaukset kaikkiin html-tiedostoihin eli index.html, schoolworks.ht
 
 <img width="473" alt="image" src="https://github.com/user-attachments/assets/76dea76b-f2d8-467d-86a8-29d5b49e62ea" />  
 
-Kävin vielä tutkimassa tekemäni muutokset konfiguraatioon ja muutin alisivuni osoittamaan etusivulleni.  
+Kävin vielä tutkimassa tekemäni muutokset konfiguraatioon ja muutin alasivuni osoittamaan etusivulleni.  
 Tämän jälkeen käynnistin apache2:sen uudelleen.  
 
 **sudo a2ensite joonalindholm.me.conf**  
@@ -285,7 +285,7 @@ Kävin vielä korjaamassa kansiot oikeiksi konfiguraatiossa, niin sain sivustoni
 
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/c68fba44-8b4e-4a84-b5fd-40f09b30e502" />  
 
-Loppujen lopuksi en ollut aivan varma olinko täyttänyt tehtävänantoa tämän d-tehtävän osalta, kun halusin käyttää c-tehtävän alisivuja.  
+Loppujen lopuksi en ollut aivan varma olinko täyttänyt tehtävänantoa tämän d-tehtävän osalta, kun halusin käyttää c-tehtävän alasivuja.  
 
 ## e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla
 
