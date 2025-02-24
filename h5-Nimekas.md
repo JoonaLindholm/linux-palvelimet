@@ -222,8 +222,7 @@ Korjasin jokaiseen html-tiedostoon linkin toiselle sivulle.
 <img width="563" alt="image" src="https://github.com/user-attachments/assets/bd37be4e-f47c-45cc-b8ba-559675156648" />  
 
 Linkit olivat muodossa **http://schoolworks.joonalindholm.me/**  
-Oikea muoto tehtävässä C oli **http://joonalindholm.me/schoolworks.html**  
-Tehtävään d muodot olisivat olleet oikein, mutta c tehtävässä ei käytetty vielä alidomaineja.  
+Oikea muoto tehtävässä C oli **http://joonalindholm.me/schoolworks.html**    
 
 Sivuni toimivat, niitä pystyi muokkaaman ilman sudoa ja ne linkittivät toisiinsa.  
 
@@ -262,9 +261,9 @@ mv ~/publicsites/joonalindholm.me/workworks.html ~/publicsites/workworks/**
 Html-tiedostojen siirron jälkeen minun piti käydä muokkaamassa niiden rakenne takaisin alidomain muotoon.  
 
 Tarkemmin muutin siis seuraavan kohdan esimerkiksi schoolworks.html tiedostosta:  
-**<li> kohdassa = "http://joonalindholm.me/workworks.html"**  
+**"http://joonalindholm.me/workworks.html"**  
 Tämä piti muuttaa muotoon:  
-**<li> kohdassa = "http://¨workworks.joonalindholm.me/workworks.html"**  
+**"http://¨workworks.joonalindholm.me/workworks.html"**  
 
 Tein nämä korjaukset kaikkiin html-tiedostoihin eli index.html, schoolworks.html ja workworks.html.  
 
@@ -480,7 +479,17 @@ Ehkä haijaa.fi verkkokaupalla on välillä jotain isoja alennusmyyntejä ja he 
 
 **MSG SIZE rcvd** = Vastauksen koossa oli myös eroja. Haijaa.fi -verkkokaupan vastaus oli suurin. Todennäköisesti siksi, että sillä oli kaksi ip-osoitetta. Seuraavaksi suurin vastaus oli omilla sivuillani. Kokoon vaikuttaa esim. verkkotunnuksen pituus eli joonalindholm.me oli pidempi osoite, kun esimerkiksi youtube.com. Ilmeisesti myös TTL voi vaikuttaa DNS-paketin kokoon. TTL oli suurin minun sivuillani.  
 
+## f) SPF ja DMARC  
 
+Aloitin tehtävän maanantaina klo 13:30.  
+Deadline oli lähestymässä klo 17:40. 
+Tein ensimmäiseksi googlauksen "spf ja dmarc". Löysin hyvän sivun.
+
+**https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/**  
+
+**SPF** = Sender Policy Framework. Määrittää, mitkä palvelimet saavat lähettää sähköpostia tietyllä verkkotunnuksella ja sen avulla estetään väärentäminen.  
+
+**DMARC** = Domain-based Message Authentication, Reporting and Conformance. Määrittää toimenpiteet, jos SPF epäonnistuu. Raportoi myös epäonnistuneista todennuksista verkkotunnuksen omistajalle.  
 
 ## Lähdeluettelo  
 
@@ -495,6 +504,6 @@ https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h4%20-%20Maailma%20k
 **https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1** 
 https://ioflood.com/blog/install-host-command-linux/  
 https://askubuntu.com/questions/25098/how-do-i-install-dig  
-
+*https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**
 
 
