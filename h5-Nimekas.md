@@ -150,7 +150,7 @@ Sivuista voisi tehdä tulevaisuudessa vaikka kotisivut.
 
 ***
 
-Olin siis vuokrannut nimipalvelusta domain-nimen itselleni ja tehnyt name based virtual host -konfiguraatiot sekä saanut sivuston toimimaan.  
+Olin siis vuokrannut nimipalvelusta domain-nimen itselleni ja tehnyt name based virtual host -konfiguraatiot sekä saanut sivuston toimimaan. Oikeuksien antamiseen palasin myöhemmin uudestaan, kun en ollut ihan varma oliko antamani binäärimuodossa olevat oikeudet oikein enkä täysin vielä ymmärtänyt niitä.  
 
 ***
 
@@ -491,11 +491,12 @@ Ehkä haijaa.fi verkkokaupalla on välillä jotain isoja alennusmyyntejä ja he 
 
 https://www.quora.com/Why-do-I-see-two-different-IP-addresses-for-a-website 
 https://phoenixnap.com/kb/linux-dig-command-examples
-
-
-
-
-
+**https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**
+https://terokarvinen.com/linux-palvelimet/#h5-nimekas** 
+https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h4%20-%20Maailma%20kuulee.md  
+**https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1** 
+https://ioflood.com/blog/install-host-command-linux/  
+https://askubuntu.com/questions/25098/how-do-i-install-dig  
 
 
 
