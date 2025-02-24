@@ -22,7 +22,7 @@ f) Vapaaehtoinen bonus: Aakkossalaattia sähköpostiin. Etsi palvelu, jonka DNS-
 
 ## Raportti  
 Aloitin tehtävien suorittamisen 14.2. klo 17.  
-Tein tehtäviä 14.2. - AIKA välisenä aikana.
+Tein tehtäviä 14.2. - 24.2. välisenä aikana.
 
 **Tietokoneen resurssit:**  
 
