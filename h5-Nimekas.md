@@ -300,9 +300,9 @@ Kävin vielä korjaamassa kansiot oikeiksi konfiguraatiossa, niin sain sivustoni
 
 <img width="314" alt="image" src="https://github.com/user-attachments/assets/c68fba44-8b4e-4a84-b5fd-40f09b30e502" />  
 
-Loppujen lopuksi en ollut aivan varma olinko täyttänyt tehtävänantoa tämän d-tehtävän osalta.  
+Loppujen lopuksi en ollut aivan varma olinko täyttänyt tehtävänantoa tämän d-tehtävän osalta, kun halusin käyttää c-tehtävän alisivuja.  
 
-## e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla.
+## e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla
 
 Aloitin tehtävän 23.2. sunnuntaina noin klo 17 aikaan.  
 kirjoitin terminaaliin host joonalindholm.me ja sain seuraavan virheen.  
@@ -352,7 +352,7 @@ youtube.com mail is handled by 0 smtp.google.com.
 Youtubella oli ipv6 tuki ja sen sähköpostipalvelin oli googlen hallinnoima.  
 Youtube on osa googlea, joten tämä on ymmärrettävää.  
 
-Seuraavaksi kokeilin dig komentoa.  
+Seuraavaksi kokeilin dig komentoa kaikille sivuille.  
 Tämäkin työkalu puuttui. Tein nopean googlauksen ja asennuksen.  
 
 https://askubuntu.com/questions/25098/how-do-i-install-dig  
@@ -453,7 +453,35 @@ youtube.com.		232	IN	A	142.250.74.78
 
 ---
 
+Dig komennon antamat tiedot olivat jaettu eri osiin.  
 
+https://phoenixnap.com/kb/linux-dig-command-examples  
+
+HEADER = DNS-kyselyn tiivistelmä ja vastauksen tiedot.  
+Sisältää kyselyn tyypin, vastauksen tilan ja lippuja ominaisuuksista.  
+
+QUESTION SECTION = Ensimmäisessä sarakkeessa on kysytty verkkotunnus. Toisessa sarakkeessa on kyselytyyppi esim.  
+IN = internet. Kolmannessa sarakkeessa on tietuen (record) tyyppi esim. A tietue eli A record.  
+
+ANSWER SECTION = Ensimmäisessä sarakkeessa on kysytyn palvelimen nimi.  
+Toisessa sarakkeessa on TTL eli "time to live", joka kertoo aikarajan tietuen päivitykselle.  Kolmas sarake kertoo kyselyn luokan. Neljös sarake kertoo kyseytyypin ja viides sarake näyttää verkkotunnuksen ip-osoitteen. ANSWER SECTION sisältää siis vastauksen aiempaan QUESTION SECTIONIIN.  
+ANSWER SECTION sisältää esim. ip-osoitteen, jota QUESTION SECTION ei vielä tiedä.  
+
+OPT PSEUDOSECTION = Näyttää DNS-tietoja. EDNS (Extension Mechanics for DNS) DNS laajennusjärjestelmä. Flags eli liput,   jotka tarkoittavat lisäasetuksia. UDP (User Datagram Protocol) kertoo suurimman paketin koon, jonka palvelin voi käsitellä.  
+STATISTIC SECTION = Näyttää erilaisia tilastoja. Query time kertoo ajan, joka kului vastauksen saamiseen. Server kertoo,   mistä ip-osoitteesta ja portista vastaus tuli. When kertoo aikaleiman, jolloin komento suoritettiin. MSG SIZE rcvd kertoo   vastausviestin koon dns-palvelimelta tavuina.  
+
+
+
+
+
+
+## Lähdeluettelo  
+
+
+
+
+
+https://phoenixnap.com/kb/linux-dig-command-examples
 
 
 
