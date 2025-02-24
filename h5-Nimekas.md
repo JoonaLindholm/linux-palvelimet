@@ -189,19 +189,7 @@ Löysin hyvät ohjeet seuraavilta sivuilta:
 
 chmod [kuka] [muutos] [oikeudet] tiedosto  
 
-[kuka]  
-u = omistaja  
-g = ryhmä  
-o = muut  
-a = kaikki  
-[muutos]  
-+ = lisää oikeus  
-- = poista oikeus  
-= = määritä oikeudet ja poista kaikki muut  
-[oikeudet]  
-r = luku  
-w = kirjoitus  
-x = suoritus  
+<img width="223" alt="image" src="https://github.com/user-attachments/assets/e7ea6f95-6b6f-4dbd-ba76-87a9394adc4b" />  
 
 **sudo chmod g+rx /polku/joonalindholm.me/*.html = eli ryhmälle (g) lisätään oikeudet (+) lukea ja suorittaa tiedostoja (rx)   
 sudo chmod u+rx /polku/joonalindholm.me/*.html = eli omistajalle (u) lisätään oikeudet (+) lukea ja suorittaa tiedostoja (rx)**  
