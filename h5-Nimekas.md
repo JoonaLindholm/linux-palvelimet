@@ -162,7 +162,7 @@ Aloitin tehtävän 20.2.25. klo 20 aikoihin.
 Avasin virtuaalikoneeni -> avasin terminaalin -> yhdistin palvelimeeni komennolla **ssh 80.69.172.181**  
 
 Navigoin sivustoni kansioon.   
-joona@vm-linux1:~/publicsites/joonalindholm.me$  
+**/publicsites/joonalindholm.me**  
 
 Loin kansioon kaksi html-tiedostoa lisää nimillä.   
 schoolworks.html ja workworks.html  
@@ -328,7 +328,7 @@ Cloudflaren artikkelissa kerrotaan MX-recordien sähköpostiohjauksista ja prior
 Mitä pienempi "handled by" -numero, niin sitä korkeammalla prioriteetilla viesti käsitellään.  
 Kyseessä siis sähköpostiviestit.  
 
-https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/  
+**https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/**  
 
 Host komennon käyttö name.cheap.com-sivustolle antoi vähemmän rivejä.  
 namecheap käyttää ilmeisesti vain kahta sähköpostipalvelinta ja ensimmäiselle riville tuli namecheap sivun palvelimen ip-osoite.  
@@ -352,7 +352,7 @@ Youtube on osa googlea, joten tämä on ymmärrettävää.
 Seuraavaksi kokeilin dig komentoa kaikille sivuille.  
 Tämäkin työkalu puuttui. Tein nopean googlauksen ja asennuksen.  
 
-https://askubuntu.com/questions/25098/how-do-i-install-dig  
+**https://askubuntu.com/questions/25098/how-do-i-install-dig**  
 
 <img width="380" alt="image" src="https://github.com/user-attachments/assets/914e0b3e-6fba-4c86-87eb-bc2c1f8c0ce8" />  
 
@@ -452,50 +452,98 @@ youtube.com.		232	IN	A	142.250.74.78
 
 Dig komennon antamat tiedot olivat jaettu eri osiin.  
 
-https://phoenixnap.com/kb/linux-dig-command-examples  
+**https://phoenixnap.com/kb/linux-dig-command-examples**  
 
-HEADER = DNS-kyselyn tiivistelmä ja vastauksen tiedot.  
+**HEADER** = DNS-kyselyn tiivistelmä ja vastauksen tiedot.  
 Sisältää kyselyn tyypin, vastauksen tilan ja lippuja ominaisuuksista.  
 
-QUESTION SECTION = Ensimmäisessä sarakkeessa on kysytty verkkotunnus. Toisessa sarakkeessa on kyselytyyppi esim.  
-IN = internet. Kolmannessa sarakkeessa on tietuen (record) tyyppi esim. A tietue eli A record.  
+**QUESTION SECTION** = Ensimmäisessä sarakkeessa on kysytty verkkotunnus. Toisessa sarakkeessa on kyselytyyppi esim.  
+**IN = internet**. Kolmannessa sarakkeessa on tietuen (record) tyyppi esim. A tietue eli A record.  
 
-ANSWER SECTION = Ensimmäisessä sarakkeessa on kysytyn palvelimen nimi.  
-Toisessa sarakkeessa on TTL eli "time to live", joka kertoo aikarajan tietuen päivitykselle.  Kolmas sarake kertoo kyselyn luokan. Neljäs sarake kertoo kyseytyypin ja viides sarake näyttää verkkotunnuksen ip-osoitteen. ANSWER SECTION sisältää siis vastauksen aiempaan QUESTION SECTIONIIN.  
-ANSWER SECTION sisältää esim. ip-osoitteen, jota QUESTION SECTION ei vielä tiedä.  
+**ANSWER SECTION** = Ensimmäisessä sarakkeessa on kysytyn palvelimen nimi.  
+Toisessa sarakkeessa on **TTL** eli "**time to live**", joka kertoo aikarajan tietuen päivitykselle.  
+Kolmas sarake kertoo kyselyn luokan.  
+Neljäs sarake kertoo kyseytyypin ja viides sarake näyttää verkkotunnuksen ip-osoitteen.  
+**ANSWER SECTION** sisältää siis vastauksen aiempaan **QUESTION SECTIONIIN**.  
+**ANSWER SECTION** sisältää esim. ip-osoitteen, jota **QUESTION SECTION** ei vielä tiedä.  
 
-OPT PSEUDOSECTION = Näyttää DNS-tietoja. EDNS (Extension Mechanics for DNS) DNS laajennusjärjestelmä. Flags eli liput,   jotka tarkoittavat lisäasetuksia. UDP (User Datagram Protocol) kertoo suurimman paketin koon, jonka palvelin voi käsitellä.  
-STATISTIC SECTION = Näyttää erilaisia tilastoja. Query time kertoo ajan, joka kului vastauksen saamiseen. Server kertoo,   mistä ip-osoitteesta ja portista vastaus tuli. When kertoo aikaleiman, jolloin komento suoritettiin. MSG SIZE rcvd kertoo   vastausviestin koon dns-palvelimelta tavuina.  
+**OPT PSEUDOSECTION** = Näyttää DNS-tietoja. **EDNS (Extension Mechanics for DNS)** DNS laajennusjärjestelmä. Flags eli liput, jotka tarkoittavat lisäasetuksia. **UDP (User Datagram Protocol)** kertoo suurimman paketin koon, jonka palvelin voi käsitellä.  
+
+**STATISTIC SECTION** = Näyttää erilaisia tilastoja. Query time kertoo ajan, joka kului vastauksen saamiseen.  
+Server kertoo, mistä ip-osoitteesta ja portista vastaus tuli.  
+When kertoo aikaleiman, jolloin komento suoritettiin.  
+
+**MSG SIZE rcvd** kertoo vastausviestin koon dns-palvelimelta tavuina.  
 
 Eroja, joita huomasin dig-komennon tuloksissa eri sivuilla.  
 
 **TTL** = Omilla sivuillani TTL oli selvästi isompi kuin muilla sivuilla, Lyhyin TTL oli namecheap.com-sivulla.  
 
-**IP-osoitteet** = haijaa.fi palautti kaksi eri ip-osoitetta. Muilla sivuilla oli vain yksi ip-osoite. Googlauksen tuloksena kyseessä voisi olla esim. kuormantasaus.  
+**IP-osoitteet** = haijaa.fi palautti kaksi eri ip-osoitetta. Muilla sivuilla oli vain yksi ip-osoite.  
+Googlauksen tuloksena kyseessä voisi olla esim. kuormantasaus.  
 https://www.quora.com/Why-do-I-see-two-different-IP-addresses-for-a-website  
 Ehkä haijaa.fi verkkokaupalla on välillä jotain isoja alennusmyyntejä ja he tarvitsevat tämän vuoksi kaksi ip-osoitetta.  
 
-**Query time** = Vastausaika oli isoin minun sivuillani, seuraavaksi isoin oli haijaa.fi verkkosivuilla. Youtubella ja namecheapilla oli hyvin pieni query time. Erot voivat johtua esim. DNS-välimuistista ja DNS-palvelimen sijainnista. Youtube on iso palvelu, joten sillä on varmaan palvelimia ympäri maailmaa. 
+**Query time** = Vastausaika oli isoin minun sivuillani, seuraavaksi isoin oli haijaa.fi verkkosivuilla.  
+Youtubella ja namecheapilla oli hyvin pieni query time.  
+Erot voivat johtua esim. DNS-välimuistista ja DNS-palvelimen sijainnista.  
+Youtube on iso palvelu, joten sillä on varmaan palvelimia ympäri maailmaa, jotka nopeuttavat querya.  
 
-**MSG SIZE rcvd** = Vastauksen koossa oli myös eroja. Haijaa.fi -verkkokaupan vastaus oli suurin. Todennäköisesti siksi, että sillä oli kaksi ip-osoitetta. Seuraavaksi suurin vastaus oli omilla sivuillani. Kokoon vaikuttaa esim. verkkotunnuksen pituus eli joonalindholm.me oli pidempi osoite, kun esimerkiksi youtube.com. Ilmeisesti myös TTL voi vaikuttaa DNS-paketin kokoon. TTL oli suurin minun sivuillani.  
+**MSG SIZE rcvd** = Vastauksen koossa oli myös eroja. Haijaa.fi -verkkokaupan vastaus oli suurin.  
+Todennäköisesti siksi, että sillä oli kaksi ip-osoitetta. Seuraavaksi suurin vastaus oli omilla sivuillani.  
+Kokoon vaikuttaa esim. verkkotunnuksen pituus eli joonalindholm.me oli pidempi osoite, kun esimerkiksi youtube.com.  
+Ilmeisesti myös TTL voi vaikuttaa DNS-paketin kokoon. TTL oli suurin minun sivuillani.  
 
 ## f) SPF ja DMARC  
 
 Aloitin tehtävän maanantaina klo 13:30.  
-Deadline oli lähestymässä klo 17:40. 
-Tein ensimmäiseksi googlauksen "spf ja dmarc". Löysin hyvän sivun.
+Deadline oli lähestymässä klo 17:40.  
+Tein ensimmäiseksi googlauksen "spf ja dmarc". Löysin hyvän sivun.  
 
 **https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/**  
 
-**SPF** = Sender Policy Framework. Määrittää, mitkä palvelimet saavat lähettää sähköpostia tietyllä verkkotunnuksella ja sen avulla estetään väärentäminen.  
+**SPF** = Sender Policy Framework.  
+Määrittää, mitkä palvelimet saavat lähettää sähköpostia tietyllä verkkotunnuksella ja sen avulla estetään väärentäminen.  
 
-**DMARC** = Domain-based Message Authentication, Reporting and Conformance. Määrittää toimenpiteet, jos SPF epäonnistuu. Raportoi myös epäonnistuneista todennuksista verkkotunnuksen omistajalle.  
+**DMARC** = Domain-based Message Authentication, Reporting and Conformance.  
+Määrittää toimenpiteet, jos SPF epäonnistuu.  
+Raportoi myös epäonnistuneista todennuksista verkkotunnuksen omistajalle.  
+
+Löysin sivun, jolla kerrotiin oikeat komennot tietojen hakemiseen.  
+https://www.clusterednetworks.com/blog/post/how-use-dig-nslookup-check-spf-dkim-and-dmarc-records  
+
+Päätin kokeilla, mitä tuloksia saan google.com osoitteesta.  
+
+Komento: **dig txt google.com**  
+
+Löysin riveiltä ohjeiden mukaisen rivin:  
+
+**"v=spf1 include:_spf.google.com ~all"**  
+Löysin sivun, jolla kerrotiin SPF-tietueesta.  
+
+**https://www.ionos.com/digitalguide/e-mail/e-mail-security/what-is-an-spf-record/**
+
+Ensimmäisenä luki v=versio eli spf versio 1.  
+Tämän jälkeen tulee kohta **include:_spf.google.com** = kaikki Google:n palvelimet ja myös spf tietueessa olevat palvelimet ovat luetettuja ja niiden sähköpostit eivät mene roskapostiksi.
+**~all** = Kaikki muut lähettäjät ovat epäilyttäviä, joita ei ollut spf-tietueessa. Nämä viestit voivat mennä roskapostiksi.  
+
+komento: **dig txt _dmarc.google.com**  
+
+**"v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com"**  
+Selitys riville:  
+**https://www.dmarcly.com/blog/what-is-rua-in-dmarc-dmarc-rua-tag-explained?utm_source=chatgpt.com**  
+
+Ensimmäisenä tuli versio eli **DMARC versio 1**.  
+Seuraavaksi tuli **p=reject**, joka tarkoitti sitä, että kaikki sähköpostit, jotka eivät läpäise DMARC-tarkistusta hylätään.  
+Lopuksi tuli **rua=mailto:mailauth-reports@google.com**, joka oli sähköpostiosoite, johon SMARC-raportit lähetetään.  
+
+Tein tämän viimeisen tehtävän nopealla aikataululla ja syvempi analyysi olisi ollut paikallaan.  
 
 ## Lähdeluettelo  
 
 
-
-
+https://www.ionos.com/digitalguide/e-mail/e-mail-security/what-is-an-spf-record/
+https://www.clusterednetworks.com/blog/post/how-use-dig-nslookup-check-spf-dkim-and-dmarc-records
 https://www.quora.com/Why-do-I-see-two-different-IP-addresses-for-a-website 
 https://phoenixnap.com/kb/linux-dig-command-examples
 **https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**
@@ -505,5 +553,5 @@ https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h4%20-%20Maailma%20k
 https://ioflood.com/blog/install-host-command-linux/  
 https://askubuntu.com/questions/25098/how-do-i-install-dig  
 *https://dev.to/tikam02/configuring-domains-and-sub-domains-in-apache-webserver-1bl1**
-
+**https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/** 
 
