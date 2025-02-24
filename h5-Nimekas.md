@@ -464,14 +464,23 @@ QUESTION SECTION = Ensimmäisessä sarakkeessa on kysytty verkkotunnus. Toisessa
 IN = internet. Kolmannessa sarakkeessa on tietuen (record) tyyppi esim. A tietue eli A record.  
 
 ANSWER SECTION = Ensimmäisessä sarakkeessa on kysytyn palvelimen nimi.  
-Toisessa sarakkeessa on TTL eli "time to live", joka kertoo aikarajan tietuen päivitykselle.  Kolmas sarake kertoo kyselyn luokan. Neljös sarake kertoo kyseytyypin ja viides sarake näyttää verkkotunnuksen ip-osoitteen. ANSWER SECTION sisältää siis vastauksen aiempaan QUESTION SECTIONIIN.  
+Toisessa sarakkeessa on TTL eli "time to live", joka kertoo aikarajan tietuen päivitykselle.  Kolmas sarake kertoo kyselyn luokan. Neljäs sarake kertoo kyseytyypin ja viides sarake näyttää verkkotunnuksen ip-osoitteen. ANSWER SECTION sisältää siis vastauksen aiempaan QUESTION SECTIONIIN.  
 ANSWER SECTION sisältää esim. ip-osoitteen, jota QUESTION SECTION ei vielä tiedä.  
 
 OPT PSEUDOSECTION = Näyttää DNS-tietoja. EDNS (Extension Mechanics for DNS) DNS laajennusjärjestelmä. Flags eli liput,   jotka tarkoittavat lisäasetuksia. UDP (User Datagram Protocol) kertoo suurimman paketin koon, jonka palvelin voi käsitellä.  
 STATISTIC SECTION = Näyttää erilaisia tilastoja. Query time kertoo ajan, joka kului vastauksen saamiseen. Server kertoo,   mistä ip-osoitteesta ja portista vastaus tuli. When kertoo aikaleiman, jolloin komento suoritettiin. MSG SIZE rcvd kertoo   vastausviestin koon dns-palvelimelta tavuina.  
 
+Eroja, joita huomasin dig-komennon tuloksissa eri sivuilla.  
 
+**TTL** = Omilla sivuillani TTL oli selvästi isompi kuin muilla sivuilla, Lyhyin TTL oli namecheap.com-sivulla.  
 
+**IP-osoitteet** = haijaa.fi palautti kaksi eri ip-osoitetta. Muilla sivuilla oli vain yksi ip-osoite. Googlauksen tuloksena kyseessä voisi olla esim. kuormantasaus.  
+https://www.quora.com/Why-do-I-see-two-different-IP-addresses-for-a-website  
+Ehkä haijaa.fi verkkokaupalla on välillä jotain isoja alennusmyyntejä ja he tarvitsevat tämän vuoksi kaksi ip-osoitetta.  
+
+**Query time** = Vastausaika oli isoin minun sivuillani, seuraavaksi isoin oli haijaa.fi verkkosivuilla. Youtubella ja namecheapilla oli hyvin pieni query time. Erot voivat johtua esim. DNS-välimuistista ja DNS-palvelimen sijainnista. Youtube on iso palvelu, joten sillä on varmaan palvelimia ympäri maailmaa. 
+
+**MSG SIZE rcvd** = Vastauksen koossa oli myös eroja. Haijaa.fi -verkkokaupan vastaus oli suurin. Todennäköisesti siksi, että sillä oli kaksi ip-osoitetta. Seuraavaksi suurin vastaus oli omilla sivuillani. Kokoon vaikuttaa esim. verkkotunnuksen pituus eli joonalindholm.me oli pidempi osoite, kun esimerkiksi youtube.com. Ilmeisesti myös TTL voi vaikuttaa DNS-paketin kokoon. TTL oli suurin minun sivuillani.  
 
 
 
@@ -480,7 +489,7 @@ STATISTIC SECTION = Näyttää erilaisia tilastoja. Query time kertoo ajan, joka
 
 
 
-
+https://www.quora.com/Why-do-I-see-two-different-IP-addresses-for-a-website 
 https://phoenixnap.com/kb/linux-dig-command-examples
 
 
