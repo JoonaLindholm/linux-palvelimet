@@ -13,7 +13,7 @@ b) Based. Laita Name Based Virtual Host näkymään uudessa nimessäsi. Kotisvuj
 
 c) Kotisivu. Tee vähintään kolmen erillisen alasivun (esim. index.html, blog.html, projects.html)  
 
-d) Alidomain. Tee kaksi uutta alidomainia, jotka osoittava omaan koneeseesi.  
+d) Alidomain. Tee kaksi uutta alidomainia, jotka osoittavat omaan koneeseesi.  
 
 e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla.  
 
@@ -175,7 +175,7 @@ Kurssi taisi olla johdanto digitaalisiin palveluihin.
 
 <img width="436" alt="image" src="https://github.com/user-attachments/assets/5cc84953-1f2e-4687-b00d-f072babb9b53" />  
 
-Olin siis luonut nyt kansiot ja htm tiedostot alasivuille. Ajattelin, että seuraavaksi kokeilen, mitä sivustolla näkyy.  
+Olin siis luonut nyt kansiot ja html tiedostot alasivuille. Ajattelin, että seuraavaksi kokeilen, mitä sivustolla näkyy.  
 
 <img width="403" alt="image" src="https://github.com/user-attachments/assets/bad65ff0-2c4e-415e-8bae-0bbb2a50f88a" />  
 
