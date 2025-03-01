@@ -175,8 +175,25 @@ Testissä meni noin minuutti tai kaksi ja lopulta avautui tulokset.
 
 <img width="812" alt="image" src="https://github.com/user-attachments/assets/72fe0bd3-111c-4621-8454-929168bf8aef" />  
 
+Tulokset vaikuttivat hyviltä. Sivua alaspäin skrollatessa sai nähdä tarkempia tietoja.  
+Keräsin kaikki kohdat, jotka eivät vaikuttaneet hyviltä, vaikka arvosana sivulle olikin "A".  
 
-<img width="812" alt="image" src="https://github.com/user-attachments/assets/0872b3e7-c069-4d14-b678-4f3620eb9d7e" />  
+<img width="666" alt="image" src="https://github.com/user-attachments/assets/369d133a-d176-45d4-9f14-d40faf4ef030" />  
+
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/c5a2ccac-de1d-4379-a048-0878131a6e2b" />  
+
+Katsellessani oransseja kohtia Cipher Suites tuloksissa huomasin, että niissä kaikissa oli CBC-moodi.  
+Ilmeisesti CBC ei ole enää turvallinen vaihtoehto. CBC ei googlauksen mukaan ollut hyvä padding oracle hyökkäystä kohtaan, jossa käytetään salauksen virheitä CBC-moodia vastaan.  
+
+**https://blog.ise.io/blog/the-dangers-of-cbc-mode**  
+
+Sivuni ei ole myöskään yhteensopiva windows xp:n ja chrome 49 kanssa. Tämä on varmaankin hyvä asia turvallisuuden kannalta.  
+Vanhentuneet ja vähemmän turvalliset selaimet ja käyttöjärjestelmät eivät pääse sivustolleni.  
+
+Palvelimeltani puuttuu myös DNS CAA, joka valvoo, että vain tietyt varmentajat saavat antaa sertifikaatin.  
+Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus päivittää.  
+
+## c) http-weppilomake, jossa on käyttäjätunnus ja salasana sekä liikenteen sieppaus.  
 
 
 
@@ -187,6 +204,7 @@ https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-a
 https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample  
 https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect
 https://www.ssllabs.com/ssltest/
+https://blog.ise.io/blog/the-dangers-of-cbc-mode
 
 
 
