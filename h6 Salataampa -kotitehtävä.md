@@ -202,9 +202,9 @@ Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus pä
 https://letsencrypt.org/how-it-works/  
 https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server  
 https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample  
-https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect
-https://www.ssllabs.com/ssltest/
-https://blog.ise.io/blog/the-dangers-of-cbc-mode
+https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect  
+https://www.ssllabs.com/ssltest/  
+https://blog.ise.io/blog/the-dangers-of-cbc-mode  
 
 
 
