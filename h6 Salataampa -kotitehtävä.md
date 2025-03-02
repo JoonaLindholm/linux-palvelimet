@@ -7,15 +7,24 @@
 
 ## Sisällys  
 
-x) Tiivistelmät  
-Let's Encrypt 2024: How It Works  
-Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
-The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]  
-Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example  
-a) Let's. Hanki ja asenna palvelimellesi ilmainen TLS-sertifikaatti Let's Encryptilta. Osoita, että se toimii.  
-b) A-rating. Testaa oma sivusi TLS jollain yleisellä laadunvarmistustyökalulla, esim. SSLLabs (Käytä vain tavanomaisia tarkistustyökaluja, ei tunkeutumistestausta eikä siihen liittyviä työkaluja)
-c) Vapaaehtoinen: Tee weppilomake, jossa on käyttäjätunnus ja salasana. Käytä salaamatonta http-yhteyttä.  
-Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksia tällä on tietoturvaan?  
+### x) Tiivistelmät  
+**Let's Encrypt 2024: How It Works**  
+
+**Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
+The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]**  
+
+**Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example**  
+
+### Tehtävät  
+
+**a) Let's. Hanki ja asenna palvelimellesi ilmainen TLS-sertifikaatti Let's Encryptilta. Osoita, että se toimii.**  
+
+**b) A-rating. Testaa oma sivusi TLS jollain yleisellä laadunvarmistustyökalulla, esim. SSLLabs (Käytä vain tavanomaisia tarkistustyökaluja, ei tunkeutumistestausta eikä siihen liittyviä työkaluja)**  
+
+**c) Vapaaehtoinen: Tee weppilomake, jossa on käyttäjätunnus ja salasana. Käytä salaamatonta http-yhteyttä.  
+Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksia tällä on tietoturvaan?**  
+
+---
 
 ## Raportti  
 Aloitin tehtävien suorittamisen 28.2. klo 18.  
@@ -34,9 +43,11 @@ Tein tehtäviä 28.2. - 2.3. välisenä aikana.
 
 ![image](https://github.com/user-attachments/assets/7990b8ca-0601-4e51-8877-15d8fc3b5325)  
 
+---
+
 ## x) Tiivistelmät  
 
-**Let's Encrypt 2024: How It Works**  
+### Let's Encrypt 2024: How It Works  
 
 Tarkoituksena hankkia varmenne HTTPS-palvelimen luomiseksi automaattisesti.  
 - Palvelu Let`s Encrypt tunnistaa palvelimen ylläpitäjän julkisen avaimen avulla.  
@@ -46,7 +57,7 @@ Tarkoituksena hankkia varmenne HTTPS-palvelimen luomiseksi automaattisesti.
 - Agentti lähettää peruutuspyynnön, CA merkitsee varmenteen peruutetuksi ja julkaisee tiedon OCSP-palveluun.  
 
 **Agentti** = Ohjelmisto, joka hallinnoi varmenteita palvelimella.  
-Se todistaa domainin hallinnan, pyytää, uusii ja peruuttaa varmenteita (esim. Certbot).  
+Se todistaa domainin hallinnan, pyytää, uusii ja peruuttaa varmenteita (esim. Certbot tai lego).  
 
 **CA (Certificate Authority)** = Varmentajaorganisaatio, joka myöntää, tarkistaa ja peruuttaa varmenteita.  
 Let's Encrypt on yksi CA.  
@@ -56,7 +67,9 @@ Se lisää läpinäkyvyyttä ja estää luvattomia varmenteita.
 
 **OCSP (Online Certificate Status Protocol)** = Protokolla, jolla selaimet ja muut järjestelmät tarkistavat, onko  varmenne peruutettu.  
 
-**Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server**  
+---
+
+### Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
 
 **Varmenne web-palvelimen kautta**: Komento = **lego --email="you@example.com" --domains="example.com" --http run**, varmenteet tallennetaan .lego-kansioon.  
 
@@ -70,9 +83,19 @@ Olemassa olevan CSR:n käyttö: Jos sinulla on jo CSR, voit käyttää sitä --c
 Olemassa olevan web-palvelimen kanssa: Määritä --http.webroot, jotta varmennuksen haaste tallennetaan oikeaan  hakemistoon.  
 
 Skriptin suorittaminen varmenteen hankinnan jälkeen: Käytä --run-hook="./myscript.sh" automatisoimaan sertifikaatin 
- asennus muille palveluille (esim. Postfixille).  
+asennus muille palveluille (esim. Postfixille).  
 
-## a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta  
+---
+
+### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example
+
+# Tiivistelmä tähän!!!!
+
+---
+
+## Raportti tehtävistä  
+
+### a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta  
 
 Aloitin tehtävän lukemalla Tero Karvisen tekemää tehtävänantoa.  
 
