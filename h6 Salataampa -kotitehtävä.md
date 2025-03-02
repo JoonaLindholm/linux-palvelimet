@@ -240,6 +240,55 @@ Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus pä
 
 ### c) http-weppilomake, jossa on käyttäjätunnus ja salasana sekä liikenteen sieppaus.  
 
+Aloitin tehtävän 2.3.2025 klo 10:30.  
+Tehtäväni oli luoda weppilomake, johon kirjaudutaan käyttäjätunnuksella ja salasanalla.  
+Tämän lisäksi pitäisi kaapata liikennettä ja analysoida sitä.  
+
+Aloitin tehtävän googlailemalla, kuinka luodaan weppilomake html-rakenteeseen.  
+Päädyin sivulle:  
+**https://genuineproductdigital.medium.com/how-to-build-a-login-page-using-html-a-step-by-step-guide-9654b4c279d2**  
+
+Kopioin sivun rakenteen oman etusivuni html-tiedostoon.  
+
+<img width="479" alt="image" src="https://github.com/user-attachments/assets/c2ec7163-8852-4cd1-80cf-a08ac593b7b4" />  
+
+Päätin kokeilla tehtävänannossa mainittua ngrep-ohjelmaa verkkoliikenteen tutkimiseen.    
+Komento: **sudo apt-get install ngrep**  
+
+Seuraavaksi minun piti saada konfiguroitua sivuni takaisin http-muotoon.  
+Tallensin https-konfiguraationi notepadiin, että voin myöhemmin palauttaa sen takaisin.  
+
+- Poistin kaikki redirect rivit  
+- Tein komennot sudo a2ensite joonalindholm.me.conf, sudo systemctl restart apache2  
+- Menin puhelimella sivuilleni. Sivut olivat taas not secure.  
+
+Http-säätöjen jälkeen aloin tutkimaan kuinka ngrep toimii.
+Löysin googlaamalla sivun:  
+**https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/**
+
+Kokeilin ohjeessa esiintyvää komentoa: **sudo ngrep port 80**  
+Eli halusin kuunnella porttia 80, jota http-protokolla käyttää.  
+
+Tämän jälkeen odottelin jonkun aikaa kunnes kokeilin itse luoda toimintaa porttiin 80.  
+Kirjoittelin jotain siansaksaa käyttäjänimeeni ja salasanaani, jolloin huomasin, että nämä tiedot olivat selvästi  luettavissa ngrepissa.  
+
+Kokeilin seuraavia tietoja:  
+testikayttaja
+testisalasana
+
+<img width="644" alt="image" src="https://github.com/user-attachments/assets/01b27fe3-a1f9-4f99-9dc1-f40c9d85929e" />  
+
+Kokeilin samaa https-sivuilla testiksi.  
+Korjasin nopeasti konfiguraationi takaisin https-muotoon.  
+
+Komento: **sudo ngrep port 443**  
+
+<img width="647" alt="image" src="https://github.com/user-attachments/assets/104b64ff-f9f6-487f-9bab-601fe29eaf6a" />
+
+Kaikki tiedot olivat salattuja.
+
+Eli, jos hyökkääjä pääsisi verkkooni, se voisi kaapata kirjautumistietoni, jos sivuni olisivat http-muodossa.  
+
 ---
 
 **Lähdeluettelo**  
@@ -256,5 +305,5 @@ https://www.ssllabs.com/ssltest/
 
 https://blog.ise.io/blog/the-dangers-of-cbc-mode  
 
-
+https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/
 
