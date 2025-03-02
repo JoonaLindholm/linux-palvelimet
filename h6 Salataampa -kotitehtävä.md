@@ -1,6 +1,6 @@
 # h6 - Salataampa 
 
-### Raportti h6-kotitehtävistä.  
+### Raportti h6-kotitehtävistä  
 
 **Tehtävänannot:**  
 
