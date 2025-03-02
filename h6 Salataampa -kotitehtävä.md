@@ -22,7 +22,9 @@ The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]**
 **c) Vapaaehtoinen: Tee weppilomake, jossa on käyttäjätunnus ja salasana. Käytä salaamatonta http-yhteyttä.  
 Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksia tällä on tietoturvaan?**  
 
-## x) Tiivistelmät  
+---
+
+### x) Tiivistelmät  
 
 ### Let's Encrypt 2024: How It Works  
 
@@ -42,6 +44,8 @@ Let's Encrypt on yksi CA.
 **CT (Certificate Transparency)** = Julkinen lokijärjestelmä, johon varmenteet tallennetaan.  
 Se lisää läpinäkyvyyttä ja estää luvattomia varmenteita.  
 
+---
+
 **OCSP (Online Certificate Status Protocol)** = Protokolla, jolla selaimet ja muut järjestelmät tarkistavat, onko  varmenne peruutettu.  
 
 ### Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
@@ -60,6 +64,8 @@ Sertifikaattitiedostot sijaitsevat lego/certificates/ kansiossa:
 Wildcard-sertifikaatit (*.example.com) tallentuvat _.example.com.crt -nimellä.  
 
 .crt ja .key tiedostot ovat PEM-muotoisia x509-sertifikaatteja ja yksityisiä avaimia.  
+
+---
 
 ### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example  
 
@@ -83,7 +89,9 @@ Selitykset kohdille:
 - SSLCertificateFile = Viittaa palvelimen sertifikaattiin.  
 - SSLCertificateKeyFile = Viittaa palvelimen yksityiseen avaimeen.  
 
-## Raportti  
+---
+
+### Raportti  
 
 Aloitin tehtävien suorittamisen 28.2. klo 18.  
 Tein tehtäviä 28.2. - 2.3. välisenä aikana.  
@@ -101,7 +109,7 @@ Tein tehtäviä 28.2. - 2.3. välisenä aikana.
 
 ![image](https://github.com/user-attachments/assets/7990b8ca-0601-4e51-8877-15d8fc3b5325)  
 
-## Raportti kotitehtävistä  
+---
 
 ### a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta**  
 
