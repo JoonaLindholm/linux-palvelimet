@@ -44,9 +44,9 @@ Let's Encrypt on yksi CA.
 **CT (Certificate Transparency)** = Julkinen lokijärjestelmä, johon varmenteet tallennetaan.  
 Se lisää läpinäkyvyyttä ja estää luvattomia varmenteita.  
 
----
-
 **OCSP (Online Certificate Status Protocol)** = Protokolla, jolla selaimet ja muut järjestelmät tarkistavat, onko  varmenne peruutettu.  
+
+---
 
 ### Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
 
