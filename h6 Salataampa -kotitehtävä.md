@@ -44,7 +44,7 @@ Let's Encrypt on yksi CA.
 **CT (Certificate Transparency)** = Julkinen lokijärjestelmä, johon varmenteet tallennetaan.  
 Se lisää läpinäkyvyyttä ja estää luvattomia varmenteita.  
 
-**OCSP (Online Certificate Status Protocol)** = Protokolla, jolla selaimet ja muut järjestelmät tarkistavat, onko  varmenne peruutettu.  
+**OCSP (Online Certificate Status Protocol)** = Protokolla, jolla selaimet ja muut järjestelmät tarkistavat, onko  varmenne peruutettu. Peruutettu varmenne voisi olla vaarantunut, vanhentunut tai myönnetty virheellisesti eli tietoturvariski.  
 
 ---
 
@@ -135,10 +135,8 @@ Komento:
 --pem  
 run  
 
-Kävin luomassa lego kansion käyttäjä-kansioon.   
-
-<img width="240" alt="image" src="https://github.com/user-attachments/assets/dea8c989-7ca5-4161-b734-838735e528b9" /> 
-
+Kävin luomassa lego kansion käyttäjä-kansioon.  
+Komento: **mkdir lego** kansiossa **/home/joona/**  
 Kansion luomisen jälkeen ajoin lego-komennon testiympäristössä eli staging-ympäristössä.  
 
 Komento:  
