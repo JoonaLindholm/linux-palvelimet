@@ -10,10 +10,10 @@
 
 **x) Let's Encrypt 2024: How It Works**  
 
-**x)Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
+**x) Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
 The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]**  
 
-**x)Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example**  
+**x) Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example**  
 
 **a) Let's. Hanki ja asenna palvelimellesi ilmainen TLS-sertifikaatti Let's Encryptilta. Osoita, että se toimii.**  
 
@@ -21,6 +21,8 @@ The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]**
 
 **c) Vapaaehtoinen: Tee weppilomake, jossa on käyttäjätunnus ja salasana. Käytä salaamatonta http-yhteyttä.  
 Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksia tällä on tietoturvaan?**  
+
+---
 
 ## x) Tiivistelmät  
 
@@ -44,8 +46,6 @@ Se lisää läpinäkyvyyttä ja estää luvattomia varmenteita.
 
 **OCSP (Online Certificate Status Protocol)** = Protokolla, jolla selaimet ja muut järjestelmät tarkistavat, onko  varmenne peruutettu.  
 
----
-
 ### Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
 
 Sertifikaatti luodaan komennolla (Tiedot korvataan omilla)  
@@ -62,8 +62,6 @@ Sertifikaattitiedostot sijaitsevat lego/certificates/ kansiossa:
 Wildcard-sertifikaatit (*.example.com) tallentuvat _.example.com.crt -nimellä.  
 
 .crt ja .key tiedostot ovat PEM-muotoisia x509-sertifikaatteja ja yksityisiä avaimia.  
-
----
 
 ### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example  
 
@@ -90,6 +88,7 @@ Selitykset kohdille:
 ---
 
 ## Raportti  
+
 Aloitin tehtävien suorittamisen 28.2. klo 18.  
 Tein tehtäviä 28.2. - 2.3. välisenä aikana.  
 
