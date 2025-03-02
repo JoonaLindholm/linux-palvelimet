@@ -289,7 +289,8 @@ Komento: **sudo ngrep port 443**
 Kaikki tiedot olivat salattuja.
 
 Eli, jos hyökkääjä pääsisi verkkooni, se voisi kaapata kirjautumistietoni, jos sivuni olisivat http-muodossa.  
-Hyökkäyksiä, joille olisin haavoittuvainen: Man In The Middle, ARP-spoofing ja pakettien sniffaus esimerkiksi ngrepillä.  
+Hyökkäyksiä, joille olisin haavoittuvainen: Man In The Middle, ARP-spoofing ja pakettien sniffaus esimerkiksi ngrepillä. 
+Vaikutus tietoturvaan on siis suuri.  
 
 **ARP-spoofing**: Hyökkääjä huijaa verkon laitteita, että hänen MAC-osoitteensa kuuluu reitittimelle. Tämän avulla liikenne kulkee hyökkääjän kautta.    
 **Man-in-the-Middle**: Hyökkääjä menee käyttäjän ja palvelimen väliin. Näin hän voi lukea tai muokata salaamatonta liikennettä.  
@@ -316,6 +317,9 @@ https://www.ssllabs.com/ssltest/
 
 CBC -moodin ongelmat  
 https://blog.ise.io/blog/the-dangers-of-cbc-mode  
+
+weppilomake -ohjeet  
+https://genuineproductdigital.medium.com/how-to-build-a-login-page-using-html-a-step-by-step-guide-9654b4c279d2  
 
 Ngrep -ohjeet  
 https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/  
