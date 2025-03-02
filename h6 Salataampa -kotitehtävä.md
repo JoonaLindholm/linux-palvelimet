@@ -288,13 +288,9 @@ Komento: **sudo ngrep port 443**
 
 Kaikki tiedot olivat salattuja.
 
-Eli, jos hyökkääjä pääsisi verkkooni, se voisi kaapata kirjautumistietoni, jos sivuni olisivat http-muodossa.  
-Hyökkäyksiä, joille olisin haavoittuvainen: Man In The Middle, ARP-spoofing ja pakettien sniffaus esimerkiksi ngrepillä. 
+Eli, jos hyökkääjä pääsisi verkkooni, se voisi kaapata arkaluontoista tietoa, koska http ei salaa paketteja.  
+Http-protokolla altistaa varmasti myös monelle muulle hyökkäykselle.  
 Vaikutus tietoturvaan on siis suuri.  
-
-**ARP-spoofing**: Hyökkääjä huijaa verkon laitteita, että hänen MAC-osoitteensa kuuluu reitittimelle. Tämän avulla liikenne kulkee hyökkääjän kautta.    
-**Man-in-the-Middle**: Hyökkääjä menee käyttäjän ja palvelimen väliin. Näin hän voi lukea tai muokata salaamatonta liikennettä.  
-**Pakettien sniffaus**: Ohjelmien (esim. ngrep, tcpdump ja Wireshark) avulla voi seurata verkon liikennettä ja etsiä arkaluontoisia tietoja esim. kirjautusmistietoja.    
 
 ---
 
