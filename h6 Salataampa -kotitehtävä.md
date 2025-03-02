@@ -64,15 +64,15 @@ Wildcard-sertifikaatit (*.example.com) tallentuvat _.example.com.crt -nimellä.
 
 ---
 
-### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example
+### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example  
 
 Konfiguraatio-tiedoston pitää sisältää minimissään seuraavat kohdat:    
 
----
-
 LoadModule ssl_module modules/mod_ssl.so  
+Tämä korvattiin tehtävänannossa komennolla: **sudo a2enmod ssl**  
 
-Listen 443  
+Konfiguraatio -esimerkki:  
+
 <VirtualHost *:443>  
     ServerName www.example.com  
     SSLEngine on  
@@ -80,7 +80,6 @@ Listen 443
     SSLCertificateKeyFile "/path/to/www.example.com.key"  
 </VirtualHost>  
 
----
 Selitykset kohdille:  
 - ServerName = Määrittää verkkosivun nimen.  
 - SSLEngine on = Aktivoi SSL:n.  
