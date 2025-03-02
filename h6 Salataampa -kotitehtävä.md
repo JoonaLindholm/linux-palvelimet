@@ -7,12 +7,12 @@
 
 ## Sisällysluettelo  
 
-**Let's Encrypt 2024: How It Works**  
+**x) Let's Encrypt 2024: How It Works**  
 
-**Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
+**x)Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
 The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]**  
 
-**Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example**  
+**x)Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example**  
 
 **a) Let's. Hanki ja asenna palvelimellesi ilmainen TLS-sertifikaatti Let's Encryptilta. Osoita, että se toimii.**  
 
@@ -47,25 +47,45 @@ Se lisää läpinäkyvyyttä ja estää luvattomia varmenteita.
 
 ### Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
 
-**Varmenne web-palvelimen kautta**: Komento = **lego --email="you@example.com" --domains="example.com" --http run**, varmenteet tallennetaan .lego-kansioon.  
+Sertifikaatti luodaan komennolla (Tiedot korvataan omilla)  
 
-**DNS-palveluntarjoajan kautta**: Jos web-palvelinta ei voi käyttää, varmennus onnistuu DNS-palvelun avulla (esim. 
- Gandi: lego --dns gandi).  
+lego --email="you@example.com" --domains="example.com" --http run  
 
-Usean SOA-alueen tapauksessa: Määritä ulkoinen nimipalvelin **--dns.resolvers-parametrilla**.  
+Sertifikaattitiedostot sijaitsevat lego/certificates/ kansiossa:  
 
-Olemassa olevan CSR:n käyttö: Jos sinulla on jo CSR, voit käyttää sitä --csr-valitsimella.
+- example.com.crt = Palvelimen sertifikaatti (sisältää myös CA:n sertifikaatin)  
+- example.com.key = Yksityinen avain  
+- example.com.issuer.crt = Myöntäjän (CA) sertifikaatti. Esim. Let`s Encrypt  
+- example.com.json = JSON-metatiedot  
+  
+Wildcard-sertifikaatit (*.example.com) tallentuvat _.example.com.crt -nimellä.  
 
-Olemassa olevan web-palvelimen kanssa: Määritä --http.webroot, jotta varmennuksen haaste tallennetaan oikeaan  hakemistoon.  
-
-Skriptin suorittaminen varmenteen hankinnan jälkeen: Käytä --run-hook="./myscript.sh" automatisoimaan sertifikaatin 
-asennus muille palveluille (esim. Postfixille).  
+.crt ja .key tiedostot ovat PEM-muotoisia x509-sertifikaatteja ja yksityisiä avaimia.  
 
 ---
 
 ### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example
 
-# Tiivistelmä tähän!!!!  
+Konfiguraatio-tiedoston pitää sisältää minimissään seuraavat kohdat:    
+
+---
+
+LoadModule ssl_module modules/mod_ssl.so  
+
+Listen 443  
+<VirtualHost *:443>  
+    ServerName www.example.com  
+    SSLEngine on  
+    SSLCertificateFile "/path/to/www.example.com.cert"  
+    SSLCertificateKeyFile "/path/to/www.example.com.key"  
+</VirtualHost>  
+
+---
+Selitykset kohdille:  
+- ServerName = Määrittää verkkosivun nimen.  
+- SSLEngine on = Aktivoi SSL:n.  
+- SSLCertificateFile = Viittaa palvelimen sertifikaattiin.  
+- SSLCertificateKeyFile = Viittaa palvelimen yksityiseen avaimeen.  
 
 ---
 
