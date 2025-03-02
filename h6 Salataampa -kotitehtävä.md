@@ -91,7 +91,7 @@ Selitykset kohdille:
 
 ---
 
-### Raportti  
+### Raportti kotitehtävistä  
 
 Aloitin tehtävien suorittamisen 28.2. klo 18.  
 Tein tehtäviä 28.2. - 2.3. välisenä aikana.  
@@ -111,7 +111,7 @@ Tein tehtäviä 28.2. - 2.3. välisenä aikana.
 
 ---
 
-### a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta**  
+### a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta   
 
 Aloitin tehtävän lukemalla Tero Karvisen tehtävänantoa ja vinkkejä.  
 
