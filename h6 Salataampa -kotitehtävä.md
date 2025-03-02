@@ -22,8 +22,6 @@ The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]**
 **c) Vapaaehtoinen: Tee weppilomake, jossa on käyttäjätunnus ja salasana. Käytä salaamatonta http-yhteyttä.  
 Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksia tällä on tietoturvaan?**  
 
----
-
 ## x) Tiivistelmät  
 
 ### Let's Encrypt 2024: How It Works  
@@ -85,8 +83,6 @@ Selitykset kohdille:
 - SSLCertificateFile = Viittaa palvelimen sertifikaattiin.  
 - SSLCertificateKeyFile = Viittaa palvelimen yksityiseen avaimeen.  
 
----
-
 ## Raportti  
 
 Aloitin tehtävien suorittamisen 28.2. klo 18.  
@@ -105,11 +101,9 @@ Tein tehtäviä 28.2. - 2.3. välisenä aikana.
 
 ![image](https://github.com/user-attachments/assets/7990b8ca-0601-4e51-8877-15d8fc3b5325)  
 
----
-
 ## Raportti kotitehtävistä  
 
-### a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta  
+**a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta**  
 
 Aloitin tehtävän lukemalla Tero Karvisen tehtävänantoa ja vinkkejä.  
 
