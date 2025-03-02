@@ -238,6 +238,8 @@ Vanhentuneet ja vähemmän turvalliset selaimet ja käyttöjärjestelmät eivät
 Palvelimeltani puuttuu myös DNS CAA, joka valvoo, että vain tietyt varmentajat saavat antaa sertifikaatin.  
 Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus päivittää, mutta jos käyttää Let`s Encryptiä niin onko se tarpeen.  
 
+---
+
 ### c) http-weppilomake, jossa on käyttäjätunnus ja salasana sekä liikenteen sieppaus.  
 
 Aloitin tehtävän 2.3.2025 klo 10:30.  
@@ -270,7 +272,7 @@ Kokeilin ohjeessa esiintyvää komentoa: **sudo ngrep port 80**
 Eli halusin kuunnella porttia 80, jota http-protokolla käyttää.  
 
 Tämän jälkeen odottelin jonkun aikaa kunnes kokeilin itse luoda toimintaa porttiin 80.  
-Kirjoittelin jotain siansaksaa käyttäjänimeeni ja salasanaani, jolloin huomasin, että nämä tiedot olivat selvästi  luettavissa ngrepissa.  
+Kirjoittelin jotain siansaksaa käyttäjänimeeni ja salasanaani, jolloin huomasin, että nämä tiedot olivat selvästi luettavissa ngrepissa.  
 
 Kokeilin seuraavia tietoja:  
 testikayttaja
@@ -279,7 +281,7 @@ testisalasana
 <img width="644" alt="image" src="https://github.com/user-attachments/assets/01b27fe3-a1f9-4f99-9dc1-f40c9d85929e" />  
 
 Kokeilin samaa https-sivuilla testiksi.  
-Korjasin nopeasti konfiguraationi takaisin https-muotoon.  
+Korjasin konfiguraationi takaisin https-muotoon.  
 
 Komento: **sudo ngrep port 443**  
 
@@ -288,22 +290,34 @@ Komento: **sudo ngrep port 443**
 Kaikki tiedot olivat salattuja.
 
 Eli, jos hyökkääjä pääsisi verkkooni, se voisi kaapata kirjautumistietoni, jos sivuni olisivat http-muodossa.  
+Hyökkäyksiä, joille olisin haavoittuvainen: Man In The Middle, ARP-spoofing ja pakettien sniffaus esimerkiksi ngrepillä.  
+
+**ARP-spoofing**: Hyökkääjä huijaa verkon laitteita, että hänen MAC-osoitteensa kuuluu reitittimelle. Tämän avulla liikenne kulkee hyökkääjän kautta.    
+**Man-in-the-Middle**: Hyökkääjä menee käyttäjän ja palvelimen väliin. Näin hän voi lukea tai muokata salaamatonta liikennettä.  
+**Pakettien sniffaus**: Ohjelmat (esim. ngrep, tcpdump ja Wireshark) mahdollistavat verkon liikenteen seuraamisen ja arkaluonteisten tietojen etsimisen.  
 
 ---
 
 **Lähdeluettelo**  
 
+Let`s Encryptin esittely  
 https://letsencrypt.org/how-it-works/  
 
-https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server 
+Sertifikaatti -ohjeet  
+https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server  
 
+SSL konfiguraatio -ohjeet  
 https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample  
 
+Http -> Https redirect -ohjeet
 https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect  
 
+SSLLabsin ssl -testi  
 https://www.ssllabs.com/ssltest/  
 
+CBC -moodin ongelmat  
 https://blog.ise.io/blog/the-dangers-of-cbc-mode  
 
-https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/
+Ngrep -ohjeet  
+https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/  
 
