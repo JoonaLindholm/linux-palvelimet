@@ -227,7 +227,7 @@ Keräsin kaikki kohdat, jotka eivät vaikuttaneet hyviltä, vaikka arvosana sivu
 <img width="344" alt="image" src="https://github.com/user-attachments/assets/c5a2ccac-de1d-4379-a048-0878131a6e2b" />  
 
 Katsellessani oransseja kohtia Cipher Suites tuloksissa huomasin, että niissä kaikissa oli CBC-moodi.  
-Ilmeisesti CBC ei ole enää turvallinen vaihtoehto. CBC ei googlauksen mukaan ollut hyvä padding oracle hyökkäystä kohtaan, jossa käytetään salauksen virheitä CBC-moodia vastaan.  
+Ilmeisesti CBC ei ole enää turvallinen vaihtoehto. CBC ei googlauksen mukaan ollut hyvä padding oracle hyökkäystä  kohtaan, jossa käytetään salauksen virheitä CBC-moodia vastaan.  
 
 **https://blog.ise.io/blog/the-dangers-of-cbc-mode**  
 
@@ -235,7 +235,7 @@ Sivuni ei ole myöskään yhteensopiva windows xp:n ja chrome 49 kanssa. Tämä 
 Vanhentuneet ja vähemmän turvalliset selaimet ja käyttöjärjestelmät eivät siis pääse sivustolleni, koska handshake ei onnistu.    
 
 Palvelimeltani puuttuu myös DNS CAA, joka valvoo, että vain tietyt varmentajat saavat antaa sertifikaatin.  
-Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus päivittää, mutta jos käyttää Let`s Encryptiä niin onko se tarpeen.  
+Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä päivittää joskus varmuuden vuoksi. Let`s Encryptin käyttäminen on kuitenkin ilmaista ja turvallista, niin en käyttäisi toista CA:ta, mutta ehkä jotenkin vahingossa voisin käyttää toista tai sitten joku toinen henkilö voisi hakea väärältä CA:lta sertifikaatin.  
 
 ---
 
