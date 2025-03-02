@@ -1,8 +1,9 @@
 # h6 - Salataampa 
 
-## Raportti kotitehtävistä.  
+## Raportti h6-kotitehtävistä.  
 
-**Tehtävänannot:  
+**Tehtävänannot:**  
+
 (https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
 
 ## Sisällysluettelo  
