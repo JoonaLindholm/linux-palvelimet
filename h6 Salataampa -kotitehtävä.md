@@ -1,12 +1,12 @@
 # h6 - Salataampa 
 
-## Raportti h6-kotitehtävistä.  
+### Raportti h6-kotitehtävistä.  
 
 **Tehtävänannot:**  
 
 (https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
 
-## Sisällysluettelo  
+### Sisällysluettelo  
 
 **x) Let's Encrypt 2024: How It Works**  
 
