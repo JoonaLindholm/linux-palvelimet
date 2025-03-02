@@ -309,7 +309,7 @@ https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-a
 SSL konfiguraatio -ohjeet  
 https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample  
 
-Http -> Https redirect -ohjeet
+Http -> Https redirect -ohjeet  
 https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect  
 
 SSLLabsin ssl -testi  
