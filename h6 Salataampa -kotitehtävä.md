@@ -5,9 +5,8 @@
 **Tehtävänannot:  
 (https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
 
-## Sisällys  
+## Sisällysluettelo  
 
-### x) Tiivistelmät  
 **Let's Encrypt 2024: How It Works**  
 
 **Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
@@ -15,35 +14,12 @@ The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official]**
 
 **Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example**  
 
-### Tehtävät  
-
 **a) Let's. Hanki ja asenna palvelimellesi ilmainen TLS-sertifikaatti Let's Encryptilta. Osoita, että se toimii.**  
 
 **b) A-rating. Testaa oma sivusi TLS jollain yleisellä laadunvarmistustyökalulla, esim. SSLLabs (Käytä vain tavanomaisia tarkistustyökaluja, ei tunkeutumistestausta eikä siihen liittyviä työkaluja)**  
 
 **c) Vapaaehtoinen: Tee weppilomake, jossa on käyttäjätunnus ja salasana. Käytä salaamatonta http-yhteyttä.  
 Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksia tällä on tietoturvaan?**  
-
----
-
-## Raportti  
-Aloitin tehtävien suorittamisen 28.2. klo 18.  
-Tein tehtäviä 28.2. - 2.3. välisenä aikana.  
-
-**Tietokoneen resurssit:**  
-
-- Windows 11 pro x64 -käyttöjärjestelmä  
-- B550M-ITX/ac -emolevy  
-- Amd Ryzen 7 5800X3D -prosessori  
-- 32 gb -ram muistia  
-- Noin 2 tb ssd -levytilaa  
-- 3060ti 8GB GDDR6 -näytönohjain  
-
-**VM Linuxin resurssit ja asetukset:**  
-
-![image](https://github.com/user-attachments/assets/7990b8ca-0601-4e51-8877-15d8fc3b5325)  
-
----
 
 ## x) Tiivistelmät  
 
@@ -89,22 +65,44 @@ asennus muille palveluille (esim. Postfixille).
 
 ### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example
 
-# Tiivistelmä tähän!!!!
+# Tiivistelmä tähän!!!!  
 
 ---
 
-## Raportti tehtävistä  
+## Raportti  
+Aloitin tehtävien suorittamisen 28.2. klo 18.  
+Tein tehtäviä 28.2. - 2.3. välisenä aikana.  
+
+**Tietokoneen resurssit:**  
+
+- Windows 11 pro x64 -käyttöjärjestelmä  
+- B550M-ITX/ac -emolevy  
+- Amd Ryzen 7 5800X3D -prosessori  
+- 32 gb -ram muistia  
+- Noin 2 tb ssd -levytilaa  
+- 3060ti 8GB GDDR6 -näytönohjain  
+
+**VM Linuxin resurssit ja asetukset:**  
+
+![image](https://github.com/user-attachments/assets/7990b8ca-0601-4e51-8877-15d8fc3b5325)  
+
+---
+
+## Raportti kotitehtävistä  
 
 ### a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta  
 
-Aloitin tehtävän lukemalla Tero Karvisen tekemää tehtävänantoa.  
+Aloitin tehtävän lukemalla Tero Karvisen tehtävänantoa ja vinkkejä.  
 
 - Potkaise demonia = ok  
 - kokeile, että weppisivut toimivat = ok  
-  
-  Komento: **Sudo apt-get install lego**  
 
-Legon asentamisen jälkeen katselin pitkää lego-komentoa ja huomasin siinä olevat kohdat, jotka tulisi vaihtaa omaan   palvelimeeni sopiviksi.  
+Legon asennus:  
+Komento: **Sudo apt-get install lego**  
+
+Lego oli siis työkalu, joka haki varmeenteen CA:lta eli tässä tapauksessa CA oli Let`s Encrypt.  
+
+Legon asentamisen jälkeen katselin pitkää lego-komentoa ja huomasin siinä olevat kohdat, jotka tulisi vaihtaa omaan  palvelimeeni sopiviksi.  
   
 Komento:    
 --server=https://acme-staging-v02.api.letsencrypt.org/directory  
@@ -117,7 +115,7 @@ Komento:
 run  
 
 Kävin luomassa lego kansion käyttäjä-kansioon.   
-Kansion luomisen jälkeen ajoin lego-komennon testiympäristössä eli staging-ympäristössä.    
+Kansion luomisen jälkeen ajoin lego-komennon testiympäristössä eli staging-ympäristössä.  
 
 Komento:  
 **lego --server=https://acme-staging-v02.api.letsencrypt.org/directory \  
@@ -135,6 +133,7 @@ Staging meni maaliin ja sertifikaatin saaminen onnistui.
 Tämän jälkeen katsoin Teron vinkkejä ja siellä luki, että pitää poistaa testin luoma kansio.  
 **--path="/home/joona/lego/certificates/" \**  
 Käytin komentoa: **rm -rf certificates** lego kansiossa.  
+Tämä komento poisti kansion sisältöineen.  
 
 Tämän jälkeen olin valmis oikeaan komentoon:  
 
@@ -152,14 +151,14 @@ run**
 Sertifikaatin hakeminen onnistui.  
 Katselin tehtävänantoa ja noudatin vinkkejä.  
 
-- ota sertifikaatti käyttöön name based virtual host -asetuksissa (esimerkki alla). Muista potkaista demonia.  
+Tehtävänannossa luki: "ota sertifikaatti käyttöön name based virtual host -asetuksissa (esimerkki alla). Muista potkaista demonia."  
 
  <img width="509" alt="image" src="https://github.com/user-attachments/assets/cefa51ed-78be-4be8-a831-501bf1a22f37" />  
 
-- sudo a2ensite joonalindholm.me.conf = OK  
-- sudo a2enmod ssl = OK  
-- sudo apache2ctl configtest = OK  
-- tee reikä muuriin, 443/tcp = OK  
+- sudo a2ensite joonalindholm.me.conf = OK  / uusi konfiguraatio aktiiviseksi  
+- sudo a2enmod ssl = OK  / SSL asetukset aktiiviseksi  
+- sudo apache2ctl configtest = OK  / Palvelimen testaus  
+- tee reikä muuriin, 443/tcp = OK  / Reikä palomuuriin HTTPS-yhteydelle  
 
 https://www.joonalindholm.me toimi ja sivu oli suojattu.  
 Alisivut eivät kuitenkaan olleet suojattuja, vaan avautuivat perus http-versioina.  
@@ -211,10 +210,10 @@ Ilmeisesti CBC ei ole enää turvallinen vaihtoehto. CBC ei googlauksen mukaan o
 **https://blog.ise.io/blog/the-dangers-of-cbc-mode**  
 
 Sivuni ei ole myöskään yhteensopiva windows xp:n ja chrome 49 kanssa. Tämä on varmaankin hyvä asia turvallisuuden kannalta.  
-Vanhentuneet ja vähemmän turvalliset selaimet ja käyttöjärjestelmät eivät pääse sivustolleni.  
+Vanhentuneet ja vähemmän turvalliset selaimet ja käyttöjärjestelmät eivät siis pääse sivustolleni, koska handshake ei onnistu.    
 
 Palvelimeltani puuttuu myös DNS CAA, joka valvoo, että vain tietyt varmentajat saavat antaa sertifikaatin.  
-Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus päivittää.  
+Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus päivittää, mutta jos käyttää Let`s Encryptiä niin onko se tarpeen.  
 
 ## c) http-weppilomake, jossa on käyttäjätunnus ja salasana sekä liikenteen sieppaus.  
 
@@ -223,10 +222,15 @@ Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus pä
 **Lähdeluettelo**  
 
 https://letsencrypt.org/how-it-works/  
-https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server  
+
+https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server 
+
 https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample  
+
 https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect  
+
 https://www.ssllabs.com/ssltest/  
+
 https://blog.ise.io/blog/the-dangers-of-cbc-mode  
 
 
