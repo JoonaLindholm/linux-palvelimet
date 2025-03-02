@@ -205,6 +205,8 @@ Nyt sivuni toimivat oikein.
 
 <img width="240" alt="image" src="https://github.com/user-attachments/assets/dea8c989-7ca5-4161-b734-838735e528b9" />  
 
+---
+
 ### b) SSLabs  
 Tehtävässä piti testata sivut TLS laadunvarmistustyökalulla.  
 Käytin tehtävänannon työkalua SSLLabs.  
@@ -237,7 +239,6 @@ Palvelimeltani puuttuu myös DNS CAA, joka valvoo, että vain tietyt varmentajat
 Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus päivittää, mutta jos käyttää Let`s Encryptiä niin onko se tarpeen.  
 
 ### c) http-weppilomake, jossa on käyttäjätunnus ja salasana sekä liikenteen sieppaus.  
-
 
 ---
 
