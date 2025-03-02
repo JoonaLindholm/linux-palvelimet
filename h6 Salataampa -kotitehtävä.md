@@ -103,7 +103,7 @@ Tein tehtäviä 28.2. - 2.3. välisenä aikana.
 
 ## Raportti kotitehtävistä  
 
-**a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta**  
+### a) Ilmaisen TLS-sertifikaatin asentaminen Let's Encryptilta**  
 
 Aloitin tehtävän lukemalla Tero Karvisen tehtävänantoa ja vinkkejä.  
 
@@ -197,7 +197,7 @@ Nyt sivuni toimivat oikein.
 
 <img width="240" alt="image" src="https://github.com/user-attachments/assets/dea8c989-7ca5-4161-b734-838735e528b9" />  
 
-## b) SSLabs  
+### b) SSLabs  
 Tehtävässä piti testata sivut TLS laadunvarmistustyökalulla.  
 Käytin tehtävänannon työkalua SSLLabs.  
 **(https://www.ssllabs.com/ssltest/)**  
@@ -228,9 +228,10 @@ Vanhentuneet ja vähemmän turvalliset selaimet ja käyttöjärjestelmät eivät
 Palvelimeltani puuttuu myös DNS CAA, joka valvoo, että vain tietyt varmentajat saavat antaa sertifikaatin.  
 Tämä estää vääriä sertifikaatteja. Tämä olisi varmasti hyvä joskus päivittää, mutta jos käyttää Let`s Encryptiä niin onko se tarpeen.  
 
-## c) http-weppilomake, jossa on käyttäjätunnus ja salasana sekä liikenteen sieppaus.  
+### c) http-weppilomake, jossa on käyttäjätunnus ja salasana sekä liikenteen sieppaus.  
 
 
+---
 
 **Lähdeluettelo**  
 
