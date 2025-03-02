@@ -294,7 +294,7 @@ Vaikutus tietoturvaan on siis suuri.
 
 **ARP-spoofing**: Hyökkääjä huijaa verkon laitteita, että hänen MAC-osoitteensa kuuluu reitittimelle. Tämän avulla liikenne kulkee hyökkääjän kautta.    
 **Man-in-the-Middle**: Hyökkääjä menee käyttäjän ja palvelimen väliin. Näin hän voi lukea tai muokata salaamatonta liikennettä.  
-**Pakettien sniffaus**: Ohjelmat (esim. ngrep, tcpdump ja Wireshark) mahdollistavat verkon liikenteen seuraamisen ja arkaluonteisten tietojen etsimisen.  
+**Pakettien sniffaus**: Ohjelmien (esim. ngrep, tcpdump ja Wireshark) avulla voi seurata verkon liikennettä ja etsiä arkaluontoisia tietoja esim. kirjautusmistietoja.    
 
 ---
 
