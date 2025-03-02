@@ -25,7 +25,7 @@ Sieppaa liikennettä (esim. Wireshark, ngrep). Mitä havaitset? Mitä vaikutuksi
 ## x) Tiivistelmät  
 
 ### Let's Encrypt 2024: How It Works  
---
+
 Tarkoituksena hankkia varmenne HTTPS-palvelimen luomiseksi automaattisesti.  
 - Palvelu Let`s Encrypt tunnistaa palvelimen ylläpitäjän julkisen avaimen avulla.  
 - Agentti luo avainparin ja todistaa hallitsevansa sivustoa DNS-tietueella tai HTTPS- 
@@ -45,7 +45,7 @@ Se lisää läpinäkyvyyttä ja estää luvattomia varmenteita.
 **OCSP (Online Certificate Status Protocol)** = Protokolla, jolla selaimet ja muut järjestelmät tarkistavat, onko  varmenne peruutettu.  
 
 ### Lange 2024: Lego: Obtain a Certificate: Using an existing, running web server  
---
+
 Sertifikaatti luodaan komennolla (Tiedot korvataan omilla)  
 
 lego --email="you@example.com" --domains="example.com" --http run  
@@ -62,7 +62,7 @@ Wildcard-sertifikaatit (*.example.com) tallentuvat _.example.com.crt -nimellä.
 .crt ja .key tiedostot ovat PEM-muotoisia x509-sertifikaatteja ja yksityisiä avaimia.  
 
 ### Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example  
---
+
 Konfiguraatio-tiedoston pitää sisältää minimissään seuraavat kohdat:    
 
 LoadModule ssl_module modules/mod_ssl.so  
