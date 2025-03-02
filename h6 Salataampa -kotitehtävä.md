@@ -136,6 +136,9 @@ Komento:
 run  
 
 Kävin luomassa lego kansion käyttäjä-kansioon.   
+
+<img width="240" alt="image" src="https://github.com/user-attachments/assets/dea8c989-7ca5-4161-b734-838735e528b9" /> 
+
 Kansion luomisen jälkeen ajoin lego-komennon testiympäristössä eli staging-ympäristössä.  
 
 Komento:  
@@ -179,7 +182,7 @@ Tehtävänannossa luki: "ota sertifikaatti käyttöön name based virtual host -
 - sudo a2ensite joonalindholm.me.conf = OK  / uusi konfiguraatio aktiiviseksi  
 - sudo a2enmod ssl = OK  / SSL asetukset aktiiviseksi  
 - sudo apache2ctl configtest = OK  / Palvelimen testaus  
-- tee reikä muuriin, 443/tcp = OK  / Reikä palomuuriin HTTPS-yhteydelle  
+- tee reikä muuriin, sudo ufw allow 443/tcp = OK  / Reikä palomuuriin HTTPS-yhteydelle  
 
 https://www.joonalindholm.me toimi ja sivu oli suojattu.  
 Alisivut eivät kuitenkaan olleet suojattuja, vaan avautuivat perus http-versioina.  
@@ -202,8 +205,6 @@ Nyt sivuni toimivat oikein.
 <img width="443" alt="image" src="https://github.com/user-attachments/assets/c899c275-9e39-4668-b190-938b3dc3daac" />  
 
 <img width="438" alt="image" src="https://github.com/user-attachments/assets/6aa83dc1-ee5b-4436-9dfd-133c9173164f" />  
-
-<img width="240" alt="image" src="https://github.com/user-attachments/assets/dea8c989-7ca5-4161-b734-838735e528b9" />  
 
 ---
 
