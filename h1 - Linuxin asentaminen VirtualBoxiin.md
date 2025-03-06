@@ -349,7 +349,7 @@ Löysin Applications -> Accessories -> Mousepad, johon pystyi kirjoittamaan tai 
 
 Kaikki näytti toimivan.   
 
-## BONUSTEHTÄVÄ
+## Bonustehtävä
 
 Lisätehtävässä pyydettiin tekemään joku yksinkertainen toimenpide haluamallani Linux-ohjelmalla.
 Aiemmin, kun halusin liittää tekstiä isäntäkoneesta virtuaalikoneeseen käyttäen shared clipboardia, niin huomasin etsiväni jotain Wordin kaltaista tekstiohjelmaa.
