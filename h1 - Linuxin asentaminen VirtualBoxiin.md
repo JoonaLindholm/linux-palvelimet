@@ -1,4 +1,5 @@
 *28.1.2025 lisätty lähdeluettelo*
+*6.3.2025 Korjattu kieliasua ja lisätty chatgpt lähteisiin*
 
 # Kotitehtävät h1
 
@@ -10,7 +11,7 @@ https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
 **What is Free Software?**  
 https://www.gnu.org/philosophy/free-sw.html
 
-Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtävä täytyy myös raportoida toisen kotitehtävän mukaisesti.
+Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtävä täytyi myös raportoida toisen kotitehtävän mukaisesti.
 
 # Sisällysluettelo
 
@@ -99,7 +100,7 @@ Komponentteina minulla on:
 
 - 3060ti näytönohjain
   
-Yllä olevat resurssit pitäisi sitten jakaa virtuaalikoneelle.  
+Yllä olevat resurssit täytyi jakaa virtuaalikoneelle.  
 
 Aloitin asentelun Tero Karvisen ohjeiden mukaan:  
 https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual-machine  
@@ -109,7 +110,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 <img width="317" alt="image" src="https://github.com/user-attachments/assets/bee8265d-57a8-4f8e-a373-4139ba8854b4" />
 
-Tietokoneessani on Win 11 pro, joten päädyin lataamaan "Windows hosts" version.
+Tietokoneessani oli Win 11 pro, joten päädyin lataamaan "Windows hosts" version.
 
 Tämän jälkeen siirryin lataamaan Teron ohjeiden mukaan "Debian ISO image" tiedostoa. Versio oli tuolloin 12.9.0.
 
@@ -184,9 +185,9 @@ Lopulta käyttöjärjestelmä avautui.
 
 <img width="635" alt="image" src="https://github.com/user-attachments/assets/1bb3f5e8-8d05-40f3-8ec8-012dedd05922" />
 
-Ohjeissa käsketään seuraavaksi testaamaan, että kaikki toimii.
+Ohjeissa käskettiin seuraavaksi testaamaan, että kaikki toimii.
 
-Hiiri ainakin toimii mainiosti. Menin "Applications" kohtaan ja klikkasin "Web browser".
+Hiiri ainakin toimi mainiosti. Menin "Applications" kohtaan ja klikkasin "Web browser".
 
 <img width="206" alt="image" src="https://github.com/user-attachments/assets/7d892068-a253-4120-83bf-31bbde0c4e8b" />
 
@@ -194,7 +195,7 @@ Skippailin kaikki Firefoxin stepit ja painoin "Start browsing".
 
 <img width="638" alt="image" src="https://github.com/user-attachments/assets/a34163ee-28f1-4996-b0c6-c1d8e071ffd5" />
 
-Kaikki näyttäisi toimivan. Pystyin kirjoittamaan youtuben hakuun "sql".
+Kaikki näytti toimivan. Pystyin kirjoittamaan youtuben hakuun "sql".
 
 <img width="629" alt="image" src="https://github.com/user-attachments/assets/8714f939-e272-461e-8beb-b2e92777836b" />
 
@@ -206,13 +207,13 @@ Aloin tutkimaan VirtualBoxin ylävalikkoa. Sieltä löysin "Input" kohdasta "key
 
 <img width="218" alt="image" src="https://github.com/user-attachments/assets/b31f37e3-59ff-4081-8e3c-c1258465a184" />
 
-Pääsin seuraavaan valikkoon, josta menin "Language" kohtaan. Sieltä ei kuitenkaan löytynyt Suomea :(
+Pääsin seuraavaan valikkoon, josta menin "Language" kohtaan. Sieltä ei kuitenkaan löytynyt Suomea.
 
 <img width="638" alt="image" src="https://github.com/user-attachments/assets/216c2877-9108-4638-bb05-8af6768acdd3" />
 
-Lueskelin ohjeita eteenpäin ja huomasin, että kieli valitaankin vasta myöhemmin Debianin asennuksen yhteydessä. Onneksi tähän ei kulunut paljoa aikaa :)
+Lueskelin ohjeita eteenpäin ja huomasin, että kieli valitaankin vasta myöhemmin Debianin asennuksen yhteydessä. Onneksi tähän ei kulunut paljoa aikaa.
 
-Seuraavaksi asennetaan siis Debian. Kello oli tällöin 13:47. Tunti oli siis kulunut asennuksiin.
+Seuraavaksi asensin Debianin. Kello oli tällöin 13:47. Tunti oli siis kulunut asennuksiin.
 
 <img width="654" alt="image" src="https://github.com/user-attachments/assets/d5e43190-cd03-4e26-867a-01d1df5189dd" />
 
@@ -220,11 +221,11 @@ Klikkasin kuvaketta ja pääsin seuraavaan ruutuun. Valitsin ohjeiden mukaisesti
 
 <img width="637" alt="image" src="https://github.com/user-attachments/assets/94e196b4-5b28-4bb3-bf24-40d4c61a7771" />
 
-Alueeksi laitoin Helsingin.
+Alueeksi valitsin Helsingin.
 
 <img width="517" alt="image" src="https://github.com/user-attachments/assets/f4531b78-6689-46f5-afc6-4fb0e7414070" />
 
-Vihdoin pääsin valitsemaan näppäimistön kielen. Finnish ja default, sitten next.
+Pääsin tämön jälkeen valitsemaan näppäimistön kielen. Painoin Finnish ja default, sitten next.
 
 <img width="837" alt="image" src="https://github.com/user-attachments/assets/b1ce2ab3-4b6b-42d1-9d78-4826da2e4fb5" />
 
@@ -242,7 +243,7 @@ Tämän jälkeen tuli yhteenveto kohta, jossa painoin install.
 
 <img width="632" alt="image" src="https://github.com/user-attachments/assets/23855778-9115-4536-a1f8-9c5d5746171a" />
 
-Lopulta asennus valmistui. Asennukseen meni noin 5 minuuttia. Aika käynnistää kone uudelleen.
+Lopulta asennus valmistui. Asennukseen meni noin 5 minuuttia. Oli aika käynnistää kone uudelleen.
 
 <img width="515" alt="image" src="https://github.com/user-attachments/assets/47b7c884-8926-4470-a9b9-a871a811d92c" />
 
@@ -269,11 +270,11 @@ kirjoitin terminalin kenttään "sudo apt-get update", jonka jälkeen se pyysi s
 
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/8b267d94-741e-49fe-a97e-026351e8b83d" />
 
-Tämän jälkeen terminaaliin päivittyi kaikki mahdolliset päivitykset, jotka voin asentaa.
+Tämän jälkeen terminaaliin päivittyi kaikki mahdolliset päivitykset, jotka pystyi asentamaan.
 
 <img width="598" alt="image" src="https://github.com/user-attachments/assets/42019f61-58a4-4662-afae-fc0327be0fb3" />
 
-Tämän jälkeen asennetaan kaikki päivityksen kuvassa olevalla komennolla.
+Tämän jälkeen asensin kaikki päivitykset kuvassa olevalla komennolla.
 
 <img width="257" alt="image" src="https://github.com/user-attachments/assets/368f9930-c396-49a7-94d1-c3edadee7a06" />
 
@@ -281,27 +282,27 @@ Päivitykset näyttivät onnistuvan.
 
 <img width="580" alt="image" src="https://github.com/user-attachments/assets/884cc58c-21a9-465f-a655-19f30783df02" />
 
-Seuraavaksi ohjeissa asennetaan palomuuri.
+Seuraavaksi ohjeissa asennettiin palomuuri.
 
 <img width="242" alt="image" src="https://github.com/user-attachments/assets/026dbb61-4c10-42b1-b016-c714062957cb" />
 <img width="421" alt="image" src="https://github.com/user-attachments/assets/ea911e1e-9965-4225-864b-9f55f793e955" />
 
-Ja laitetaan se päälle.
+Ja laitettiin palomuuri myös päälle.
 
 <img width="412" alt="image" src="https://github.com/user-attachments/assets/1c2b50d4-3ea1-4e5e-a92c-ad38e87baa12" />
 <img width="464" alt="image" src="https://github.com/user-attachments/assets/301872b6-fcbd-4e21-9ff4-6f90f0841577" />
 
-Tämän jälkeen on rebootin aika.
+Tämän jälkeen oli rebootin aika.
 
 <img width="604" alt="image" src="https://github.com/user-attachments/assets/f73fddfb-ac2d-47bd-b947-7bcea66b561f" />
 <img width="580" alt="image" src="https://github.com/user-attachments/assets/c3bd91f4-096c-4201-a195-a7746a2a7200" />
 
 Tämän jälkeen pääsin taas login valikkoon ja kirjauduin sisään.
 
-Lopuksi ohjeissa mainitaan VirtualBoxin pieni resoluutio. 
-Haluan, että voin kasvattaa ruudun kokoa yms., joten päätän tehdä vielä tämän viimeisen asennuksen.
+Lopuksi ohjeissa mainittiin VirtualBoxin pieni resoluutio. 
+Halusin, että voin kasvattaa ruudun kokoa yms., joten päätän tehdä vielä tämän viimeisen asennuksen.
 
-Ohjeissa avataan yläriviltä "Devices" valikko ja sieltä valitaan "Insert Guest Additions CD image..."
+Ohjeissa avattiin yläriviltä "Devices" valikko ja sieltä valittiin "Insert Guest Additions CD image..."
 
 <img width="166" alt="image" src="https://github.com/user-attachments/assets/0fc031b1-81bf-4e44-baaf-6cfebe52b90a" />
 
@@ -309,11 +310,11 @@ Tämän jälkeen klikkasin Applications valikosta File manager ja pääsin seura
 
 <img width="581" alt="image" src="https://github.com/user-attachments/assets/e8830c1a-9116-4331-a997-869807d55882" />
 
-Tämän jälkeen ohjeissa pyydetää klikkamaan levyn kuvaa ja avaamaan Applications valikosta "Terminal Emulator".
+Seuraavaks ohjeissa pyydettiin klikkamaan levyn kuvaa ja avaamaan Applications valikosta "Terminal Emulator".
 
 <img width="617" alt="image" src="https://github.com/user-attachments/assets/548f72cd-5345-457a-a017-be33213e0ec6" />
 
-Ohjeissa käsketään avaaman levyn kansio ja listata sen sisältö. Käyttämällä seuraavaa komentoa.
+Ohjeissa käskettiin avaaman levyn kansio ja listata sen sisältö. Käyttämällä seuraavaa komentoa.
 
 <img width="169" alt="image" src="https://github.com/user-attachments/assets/220a9332-62ab-4642-a926-dec0e63e1f25" />
 
@@ -321,32 +322,32 @@ Komennon jälkeen terminaaliin ilmestyi seuraavat tiedot.
 
 <img width="610" alt="image" src="https://github.com/user-attachments/assets/dfc31fb7-e91c-4c95-b3eb-876e7c0dbaca" />
 
-Sitten asennetaan.
+Sitten asennettiin.
 
 <img width="623" alt="image" src="https://github.com/user-attachments/assets/abbe98ef-6045-484e-9699-e2cd6cad078e" />
 <img width="596" alt="image" src="https://github.com/user-attachments/assets/ad6521a4-a67f-48e2-a13d-85404752c6b8" />
 
-Asennuksen jälkeen ohjeissa sanotaan, että on aika taas rebootille :)
+Asennuksen jälkeen ohjeissa sanottiin, että on aika taas rebootille.
 
 Kone käynnistyi normaalisti ja kuva skaalautuu hienosti ruudun koon mukaan.
 
 <img width="939" alt="image" src="https://github.com/user-attachments/assets/e2646c8e-788d-4f46-bfdc-8f8eb5d9fb2f" /> 
 
-Laitetaan vielä shared clipboard päälle ja kokeillaan sitä :)
+Laitoin vielä shared clipboardin päälle ja kokeilin sitä.
 
 Ylävalikosta Devices ja shared clipboard (Bidirectional).
 
-Löysin Applications -> Accessories -> Mousepad, johon voi kirjoittaa tai kopioida tekstiä pääkoneesta.
+Löysin Applications -> Accessories -> Mousepad, johon pystyi kirjoittamaan tai kopioimaan tekstiä pääkoneesta.
 
 <img width="197" alt="image" src="https://github.com/user-attachments/assets/87b96141-05d5-47c4-ba98-245b4d293649" />
 
 <img width="1770" alt="image" src="https://github.com/user-attachments/assets/ede84ce9-3d62-4aa3-a886-e14dc1f09df5" />
 
-Näyttäisi kaikki toimivan :)
+Kaikki näytti toimivan.   
 
 ## BONUSTEHTÄVÄ
 
-Lisätehtävässä pyydetään tekemään joku yksinkertainen toimenpide haluamallani Linux-ohjelmalla.
+Lisätehtävässä pyydettiin tekemään joku yksinkertainen toimenpide haluamallani Linux-ohjelmalla.
 Aiemmin, kun halusin liittää tekstiä isäntäkoneesta virtuaalikoneeseen käyttäen shared clipboardia, niin huomasin etsiväni jotain Wordin kaltaista tekstiohjelmaa.
 
 Tästä sain idean tutkia, mitä ohjelmia Linuxille on saatavilla, jotka ajaisivat saman asian kuin Word tai muut Microsoftin ohjelmat.
@@ -355,7 +356,7 @@ Chatgpt ehdotti seuraavaa:
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/6e6d806f-6d61-4a2f-b93c-50b36a1ae966" />
 
-Asennetaan libreoffice käyttäen terminaalia.
+Asensin libreofficen käyttäen terminaalia.
 
 Komento: sudo apt install libreoffice
 
@@ -369,11 +370,11 @@ Painoin y, kun kysyttiin haluanko jatkaa.
 
 <img width="480" alt="image" src="https://github.com/user-attachments/assets/937eac2a-567e-4047-b78e-f40271bfc7cc" />
 
-Applications -> Office, löytyi nyt erilaisia LibreOffice ohjelmia:
+Applications -> Office, löytyi erilaisia LibreOffice ohjelmia:
 
 <img width="945" alt="image" src="https://github.com/user-attachments/assets/e3e4ee89-7293-47a4-b87d-ed3239c7a6e0" />
 
-Kokeillaan draw ohjelmaa.
+Kokeilin draw ohjelmaa.
 
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/a32a3e37-2c0a-4e69-9c50-a744e7e7f665" />
 
@@ -391,16 +392,16 @@ Kokeilin vielä Writer ohjelmaa. Avautui hyvin tutunnäköinen tekstinkäsittely
 
 <img width="938" alt="image" src="https://github.com/user-attachments/assets/be14fbe4-caa9-4612-92ea-0650145db409" />
 
-Pakko vielä kokeilla "Libreoffice Calc", mitäköhän hienoa tällä voi tehdä. Ajattelin nimestä, että aukeaisi laskin, mutta avautuikin taas hyvin tutunnäköinen ruutu ;)
+Pakko vielä kokeilla "Libreoffice Calc", mietin mitäköhän hienoa tällä voi tehdä. Ajattelin nimestä, että aukeaisi laskin, mutta avautuikin taas hyvin tutunnäköinen ruutu.
 
 <img width="909" alt="image" src="https://github.com/user-attachments/assets/2e530af8-470a-49af-9b3b-1d845a18b18b" />
 
-Kyllä, 1+1 on tosiaan 2. Hienoa.
+Kyllä, 1+1 oli tosiaan 2. Hienoa.
 
 <img width="260" alt="image" src="https://github.com/user-attachments/assets/11b55d70-fa62-40cc-87e6-9833b9cd5ab7" />
 
-Täytyy myöntää, että nämä Microsoftin Office-ohjelmien kanssa ulkoasultaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti.  
-On helppoa aloittaa työskentely tutussa ympäristössä.
+Täytyi myöntää, että nämä Microsoftin Office-ohjelmien kanssa ulkoasultaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti.  
+Oli helppoa aloittaa työskentely tutussa ympäristössä.
 
 ## Lähdeluettelo  
 
@@ -415,3 +416,7 @@ https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual
 
 **Virtualbox**  
 https://www.virtualbox.org/wiki/Downloads    
+
+**CHATGPT**
+Kysymys : "Mitä Ms officen kaltaisia ohjelmia on Linuxille?"
+Www.chatgpt.com
