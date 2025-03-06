@@ -477,7 +477,8 @@ Ajattelin, että tämä voisi olla kätevä koulutehtävissä.
 - Micro editor -pluginit  
   https://micro-editor.github.io/plugins.html  
 
-- Chatgpt -komentoja ja hedelmatarinan luominen
+- Chatgpt  
+  hedelmatarinan luominen
   
 
   
