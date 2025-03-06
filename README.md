@@ -3,7 +3,7 @@
 
 
 Tervetuloa katsomaan linux -palvelimet kurssin harjoitustehtäviä!  
-Harjoitukset ovat aika järjestyksessä h1 -> h7.
+Harjoitukset ovat aikajärjestyksessä h1 -> h8.
 
 
 ---
