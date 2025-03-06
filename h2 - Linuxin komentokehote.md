@@ -1,8 +1,8 @@
 *6.3.2025 korjattu kieliasua*  
 
-# Kotitehtävä h2 raportti  
+# h2 - Linuxin komentokehote    
 
-## Sisällys ja tehtävät  
+### Sisällys ja tehtävät  
 
 x) Lue ja tiivistä Karvinen 2020: Command line basics revisited.  
 https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited  
@@ -448,7 +448,9 @@ Avasin micron -> ctrl-e -> komentoriville komento wc
 
 Ajattelin, että tämä voisi olla kätevä koulutehtävissä.  
 
-## Lähdeluettelo  
+---
+
+### Lähdeluettelo  
 
 - Kotitehtävä h2  
   https://terokarvinen.com/linux-palvelimet/#h2-komentaja-pingviini  
