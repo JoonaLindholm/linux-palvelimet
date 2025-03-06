@@ -28,3 +28,15 @@ Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 - h8    
 
 
+**b)** 
+
+- h1  
+
+Lisätty lähdeluettelo  
+
+
+
+- h2  
+
+Korjattu kieliasua  
+
