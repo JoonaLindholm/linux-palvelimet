@@ -1,4 +1,4 @@
-*28.1.2025 lisätty lähdeluettelo*
+*28.1.2025 lisätty lähdeluettelo*  
 *6.3.2025 Korjattu kieliasua ja lisätty chatgpt lähteisiin*
 
 # Kotitehtävät h1
@@ -13,7 +13,9 @@ https://www.gnu.org/philosophy/free-sw.html
 
 Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtävä täytyi myös raportoida toisen kotitehtävän mukaisesti.
 
-# Sisällysluettelo
+---
+
+### Sisällysluettelo  
 
 **Tiivistelmät**  
 - Raportin kirjoittaminen  
@@ -26,9 +28,9 @@ Kotitehtävänä oli myös asentaa virtuaalikone ja siihen Linux. Tämä tehtäv
 **Bonustehtävä**
 - Libreoffice
 
-# Tiivistelmät
+## Tiivistelmät
 
-## Raportin kirjoittaminen
+### Raportin kirjoittaminen
 
 **Raportissa pitää olla seuraavia asioita:**  
 
@@ -82,8 +84,10 @@ Tässä pitää huomioida myös ohjelmistot, jotka liittyvät tai käynnistävä
 - Ohjelmistolla voi olla lisenssi, että muokattu versio jaetaan alkuperäiselle kehittäjälle, mutta se ei voi estää vapauksia.
 - Vapaalla ohjelmistolla ei voi olla vientirajoituksia.
 - Vapaan ohjelmiston ohjeet ja dokumentit ovat myös osa vapaata ohjelmistoa.
+
+---
   
-# Linuxin asentaminen virtuaalikoneelle
+### Linuxin asentaminen virtuaalikoneelle  
 
 Aloitin asentelun 15.1. töiden jälkeen klo 12:40.
 Päätin asentaa virtuaalikoneen itse rakentamaani tietokoneeseen.
@@ -403,7 +407,9 @@ Kyllä, 1+1 oli tosiaan 2. Hienoa.
 Täytyi myöntää, että nämä Microsoftin Office-ohjelmien kanssa ulkoasultaan samankaltaiset ohjelmat auttavat kyllä käyttäjää huomattavasti.  
 Oli helppoa aloittaa työskentely tutussa ympäristössä.
 
-## Lähdeluettelo  
+---
+
+### Lähdeluettelo  
 
 **Raportin kirjoittaminen**  
 https://terokarvinen.com/2006/raportin-kirjoittaminen-4/  
