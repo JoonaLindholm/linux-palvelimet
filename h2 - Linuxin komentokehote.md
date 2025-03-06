@@ -1,3 +1,5 @@
+*6.3.2025 korjattu kieliasua*  
+
 # Kotitehtävä h2 raportti  
 
 ## Sisällys ja tehtävät  
