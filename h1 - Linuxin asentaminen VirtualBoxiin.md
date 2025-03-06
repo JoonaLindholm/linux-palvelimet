@@ -122,7 +122,7 @@ https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/
 
 <img width="716" alt="image" src="https://github.com/user-attachments/assets/a3778afe-2912-47f8-9c9f-a60ca2e27101" />
 
-## ASENNUKSIA
+## Asennuksia
 
 Aloitin asentamalla VirtualBoxin.
 
