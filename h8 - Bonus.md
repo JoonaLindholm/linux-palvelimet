@@ -14,7 +14,8 @@ Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 **a)** 
 
 - h1  
-[Bonustehtävä](h1 - Linuxin asentaminen VirtualBoxiin.md#Bonustehtävä)
+[Bonustehtävä](https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h1%20-%20Linuxin%20asentaminen%20VirtualBoxiin.md#Bonustehtävä)
+
 
 
 - h2  
