@@ -9,9 +9,13 @@ Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 
 ---
 
+[Katso asennusohjeet](ohjeet.md#asennus)
+
 **a)** 
 
 - h1  
+[Bonustehtävä](h1 - Linuxin asentaminen VirtualBoxiin.md#Bonustehtävä)
+
 
 - h2  
 
