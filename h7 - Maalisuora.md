@@ -126,8 +126,71 @@ characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^
 password=$(head /dev/urandom | tr -dc "$characters" | head -c "$length")
 echo "Generated Password: $password"**  
 
-Komennon tarkoituksena oli luoda uusi satunnainen salasana ja tulostaa se komentoriville.  
+Ohjelman selitys:  
+
+length=12   
+Kuinka pitkä salasana luodaan.  
+
+characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()"  
+Mitä kaikkia kirjaimia, numeroita ja symboleita käytetään salasanassa.  
+
+password=$(head /dev/urandom | tr -dc "$characters" | head -c "$length")  
+
+
+Ohjelman tarkoituksena oli luoda uusi satunnainen salasana ja tulostaa se komentoriville.  
 Ohjelman nimeksi tuli tietenkin "Lazy_Online_Locker" eli lyhennettynä L.O.L.  
+
+Loin uuden ohjelman kotikansiooni komennolla:  
+
+**micro Lazy_Online_locker.sh**  
+
+Kopioin koodin microon ja muutin seuraavan rivin ohjelmaan sopivammaksi:  
+
+**echo "Generated L.O.L: $password"**  
+
+Tallensin työn ja poistuin microsta (ctrl-s ja ctrl-q)  
+
+Tämän jälkeen annoin kaikille käyttäjille oikeuden suorittaa tiedoston.  
+Komento:  
+**chmod a+x Lazy_Online_locker.sh**  
+
+Sitten suoritin ohjelman.  
+
+<img width="194" alt="image" src="https://github.com/user-attachments/assets/895d3ea7-aa83-4b40-a9dc-0a3c073ea30f" />  
+
+Ohjelma toimi, mutta halusin kehittää sitä vielä eteenpäin.  
+Etsiessäni shell script ideoita törmäsin ohjelmiin "figlet" ja "lolcat", joka muuttavat tekstit ASCII-taiteeksi.  
+
+**https://www.tomshardware.com/how-to/customize-linux-terminal**  
+
+Komennot:  
+
+**sudo apt-get install figlet
+sudo apt-get install lolcat**
+
+Tämän jälkeen minun piti lisätä näiden ohjelmien suoritus ohjelmaani.  
+Seurasin sivun ohjeita ja käytin pipe | symbolia putkittamiseen.  
+
+Muutin echo riviäni:  
+**echo "Generated L.O.L: $password" | figlet | lolcat**  
+
+<img width="387" alt="image" src="https://github.com/user-attachments/assets/a3710187-0854-4e41-9035-445b85342724" />  
+
+Ajattelin ensin, että tässä ohjelmassa ei ole järkeä, kun on vaikea saada selvää salasanasta.  
+Pohdittuani asiaa hieman vaihdoin mielipidettäni, koska ohjelmahan on loistava vaikka julkisella paikalla tai vaikka työpaikalla.  
+Kukaan ei voi nopeasti nähdä generoitua salasanaa!  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -150,7 +213,10 @@ C++ kielen kääntäminen
 **https://www.ohjelmointiputka.net/oppaat/opas.php?tunnus=cpp_ohj_01**   
 
 Shell scripting  
-https://terokarvinen.com/2007/12/04/shell-scripting-4/  
+**https://terokarvinen.com/2007/12/04/shell-scripting-4/**  
 
 Shell scriping ideoita  
 **https://medium.com/aimonks/50-cool-bash-scripts-and-what-they-do-b38b4e841ba2**  
+
+Figlet ja lolcat
+**https://www.tomshardware.com/how-to/customize-linux-terminal**
