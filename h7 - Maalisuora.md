@@ -129,13 +129,18 @@ echo "Generated Password: $password"**
 Ohjelman selitys:  
 
 length=12   
-Kuinka pitkä salasana luodaan.  
+Määritti kuinka pitkä salasana luodaan.  
 
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()"  
-Mitä kaikkia kirjaimia, numeroita ja symboleita käytetään salasanassa.  
+Määritti mitä kaikkia kirjaimia, numeroita ja symboleita käytetään salasanassa.  
 
 password=$(head /dev/urandom | tr -dc "$characters" | head -c "$length")  
+/dev/urandom oli Linuxiin sisäänrakennettu satunnaisgeneraattori,  
+tr -dc characters poisti satunnaisesta tulosteesta kaikki merkit, jotka eivät kuuluneet characters osioon ja   
+head -c length lyhensi salasanan pituuden aiemmin määriteltyyn 12 merkkiin.  
+Nämä komennot ajettiin putkena | vuorotellen.  
 
+echo tulosti generoidun salasanan komentoriville.  
 
 Ohjelman tarkoituksena oli luoda uusi satunnainen salasana ja tulostaa se komentoriville.  
 Ohjelman nimeksi tuli tietenkin "Lazy_Online_Locker" eli lyhennettynä L.O.L.  
@@ -165,8 +170,8 @@ Etsiessäni shell script ideoita törmäsin ohjelmiin "figlet" ja "lolcat", joka
 
 Komennot:  
 
-**sudo apt-get install figlet
-sudo apt-get install lolcat**
+**sudo apt-get install figlet  
+sudo apt-get install lolcat**  
 
 Tämän jälkeen minun piti lisätä näiden ohjelmien suoritus ohjelmaani.  
 Seurasin sivun ohjeita ja käytin pipe | symbolia putkittamiseen.  
@@ -179,25 +184,6 @@ Muutin echo riviäni:
 Ajattelin ensin, että tässä ohjelmassa ei ole järkeä, kun on vaikea saada selvää salasanasta.  
 Pohdittuani asiaa hieman vaihdoin mielipidettäni, koska ohjelmahan on loistava vaikka julkisella paikalla tai vaikka työpaikalla.  
 Kukaan ei voi nopeasti nähdä generoitua salasanaa!  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Rakensimme tunnilla oman ajettavan komennon ja 
 
 ---
 
