@@ -14,7 +14,7 @@
 
 ### Tehtävät  
 
-**a)** 
+**a) Hello world** 
 
 Aloitin tehtävän lukemalla Tero Karvisen -ohjeita eri kielille.  
 
@@ -128,6 +128,8 @@ echo "Generated Password: $password"**
 
 Ohjelman selitys:  
 
+**https://dev.to/karandaid/how-to-generate-random-passwords-in-bash-using-devurandom-4cp8**  
+
 length=12   
 Määritti kuinka pitkä salasana luodaan.  
 
@@ -181,9 +183,14 @@ Muutin echo riviäni:
 
 <img width="387" alt="image" src="https://github.com/user-attachments/assets/a3710187-0854-4e41-9035-445b85342724" />  
 
+
 Ajattelin ensin, että tässä ohjelmassa ei ole järkeä, kun on vaikea saada selvää salasanasta.  
 Pohdittuani asiaa hieman vaihdoin mielipidettäni, koska ohjelmahan on loistava vaikka julkisella paikalla tai vaikka työpaikalla.  
 Kukaan ei voi nopeasti nähdä generoitua salasanaa!  
+
+## d) Vanha laboratorioharjoitus  
+
+
 
 ---
 
@@ -204,5 +211,10 @@ Shell scripting
 Shell scriping ideoita  
 **https://medium.com/aimonks/50-cool-bash-scripts-and-what-they-do-b38b4e841ba2**  
 
-Figlet ja lolcat
-**https://www.tomshardware.com/how-to/customize-linux-terminal**
+dev/urandom/  
+**https://dev.to/karandaid/how-to-generate-random-passwords-in-bash-using-devurandom-4cp8**    
+
+Figlet ja lolcat  
+**https://www.tomshardware.com/how-to/customize-linux-terminal**  
+
+
