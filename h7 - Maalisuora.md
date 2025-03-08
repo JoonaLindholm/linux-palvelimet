@@ -187,7 +187,7 @@ Pohdittuani asiaa hieman vaihdoin mielipidettäni, koska ohjelmahan on loistava 
 Kukaan ei voi nopeasti nähdä generoitua salasanaa!  
 
 ## Päivitys tehtävään
-**08.03.2025 klo 15:20**
+***08.03.2025 klo 15:20***
 
 Myöhemmin vanhaa laboratorioharjoitusta tehdessäni huomasin,  
 että olin unohtanut kopioida komennon /usr/local/bin/ hakemistoon.  
@@ -204,6 +204,7 @@ Kokeilin vielä voiko uusi käyttäjä ajaa ohjelman.
 Tein uuden käyttäjän ja ajoin ohjelman.  
 
 <img width="377" alt="image" src="https://github.com/user-attachments/assets/dc72dce1-36d0-4801-aeee-f2791fe04d45" />  
+  
 Ohjelma näytti toimivan normaalisti.  
 
 ## d) Vanha laboratorioharjoitus  
@@ -258,11 +259,148 @@ Aktivoin tulimuurin.
 Komento: **Sudo ufw enable**  
 En avannut vielä portteja.  
 
-**d)** Howdy  
+## d) Howdy  
+
+Loin howdy.sh tiedoston kotikansiooni.  
+
+Komento: **nano howdy.sh**  
+
+Laitoin tiedostoon seuraavat tekstit:  
+
+#!/bin/bash  
+
+echo "Hei $(whoami)"
+echo "Tänään on: $(date)"  
+echo "Tietokoneen ip-osoite on: $(hostname -I)"  
+echo "Järjestelmän käyttö: $(uptime)"  
+
+Annoin suoritusoikeudet kaikille ja kopioin komennon /usr/local/bin/ hakemistoon.  
+
+<img width="293" alt="image" src="https://github.com/user-attachments/assets/93237e8b-e9e4-499e-a656-8eeb845f0620" />  
+  
+<img width="403" alt="image" src="https://github.com/user-attachments/assets/c223635c-3fa9-4ab7-8a8d-ecb619d7e489" />  
+
+Komennon suoritus onnistui.  
+
+Loin nopeasti uuden käyttäjän "vieras" ja ajoin ohjelman.  
+
+<img width="349" alt="image" src="https://github.com/user-attachments/assets/232549fc-656e-4ad9-9043-3b24166a3c75" />  
+
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/757827b7-6914-469c-8195-903b1005b339" />  
+
+## e) Python  
+
+Asensin ensin pythonin.  
+
+Sudo apt-get install python3  
+
+Tämän jälkeen loin tiedoston hei_vaan.py, hakemistoon /home/joona/  
+Komento: nano hei_vaan.py  
+Tiedostoon teksti: print("Hei vaan") ja tallennus.  
+Tämän jälkeen terminaaliin komentoriville:  
+python3 hei_vaan.py  
+
+<img width="199" alt="image" src="https://github.com/user-attachments/assets/b10c2320-27e2-47d1-b185-2ac82de525b0" />  
+
+Python toimi normaalisti.  
+
+## Etusivu uusiksi  
+
+Aloitin asentamalla apache2.  
+Komento:  
+**Sudo apt-get install apache2**  
+Apache2 "potkaisu" eli käynnistin web-palvelimen uudelleen.  
+Komento:  
+**sudo systemctl restart apache2**  
+Apache2 status eli katsoin onko se toiminnassa.  
+**sudo systemctl status apache2**  
+
+Sitten kävin luomassa kotikansiooni kansion publicsites ja sinne kansion freespeecheurope.com.  
+Eli polku on sama kuin, mitä tulee konfiguraatioon. Näin apache2 löytää sivuni.  
+
+<img width="289" alt="image" src="https://github.com/user-attachments/assets/48aa53a9-efea-454f-901d-9ad13b72079c" />
+
+Loin freespeecheurope.com kansioon index.html tiedoston.  
+Kirjoitin tiedostoon Free Speech Europe.  
+
+<img width="179" alt="image" src="https://github.com/user-attachments/assets/542b9212-67c2-4d07-bc8e-0405ebd4f059" />
+
+Tämän jälkeen loin ja menin muokkaamaan sivujen conf tiedostoa, jotta apache2 löytää sivuni ja sen asetukset.  
+
+Komento:  
+**sudo nano /etc/apache2/sites-available/freespeecheurope.com.conf**
+
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/8e31ea64-8c13-4fcd-8bed-33fa0f5a23b9" />  
+
+Uuden konfiguraation aktivoiminen.  
+Komento:  
+**sudo a2ensite freespeecheurope.com.conf**  
+Vanhan default-konfiguraation poistaminen käytöstä.  
+Komento:  
+**sudo a2dissite 000-default.conf**  
+Taas "potkaisu", että uudet konfiguraatiot tuilevat aktiiviseksi web-palvelimelle. 
+Komento:  
+**sudo systemctl restart apache2**  
+Avasin tulimuuriin portin 80, jota apache2 käyttää toiminnassaan.  
+**sudo ufw allow 80**
+
+Kävin katsomassa, mitä selain sanoo sivustani.  
+
+<img width="179" alt="image" src="https://github.com/user-attachments/assets/1b86805f-584d-4a42-aa8f-f6b4475842f2" />  
+
+<img width="179" alt="image" src="https://github.com/user-attachments/assets/43ce9acb-ace7-426d-a29b-01464897bc6e" />
+
+Sivuni näkyi hyvin localhostina ja pelkällä ip-osoitteellani.  
+Sivua piti pystyä muokkaamaan ilman sudo oikeuksia.  
+Eli index.html -tiedoston oikeudet pitivät olla kunnossa.  
+
+Index.html -tiedostoa pystyi muokkaamaan normaalina käyttäjänä eli siis ilman suoa, koska se oli tehty pääkäyttäjän kotikansioon. 
+
+Tämä käyttäjä kuului sudo ryhmään ja tiedostolla oli oikeudet:  
+-rw-r--r-- eli rw, kohta koski käyttäjää. Rw tarkoitti luku ja kirjoitusoikeutta.  
+
+## h) Käyttäjät  
+
+Seuraavaksi piti luoda käyttäjät Linuxiin.  
+
+Loin kaikki uudet käyttäjät yksitellen komennolla:  
+sudo adduser "nimi" ja laitoin salasanat sekä oikeat nimet.  
+
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/8c10d179-8a52-44ba-9f7d-b0070853ae51" />  
+  
+<img width="418" alt="image" src="https://github.com/user-attachments/assets/2e534ff9-1c61-47b9-ad78-619a05242e34" />  
+  
+<img width="392" alt="image" src="https://github.com/user-attachments/assets/c80fbb22-9c0c-45b7-9db3-78484e3bafa3" />
+  
+<img width="415" alt="image" src="https://github.com/user-attachments/assets/1e3847a0-4d01-4edb-8ade-a71c6bec74d7" />  
+  
+<img width="536" alt="image" src="https://github.com/user-attachments/assets/ccb98a44-1d7e-4653-a7f5-0d2c56ea3fdc" />  
+
+Lopuksi listasin /home/ -hakemiston käyttäjät ja tarkistin, että kaikki löytyivät sieltä.  
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/80def84d-4926-415a-ad86-7937b11dbbff" />  
+
+Huomioita tehtävästä.  
+Nimi piti laittaa ilman skandeja ja välit korvata _ symbolilla.  
+Nimessä oleva väliviiva sai olla väliviinana -.  
+
+Lopuksi oikea nimi kuitenkin laitettiin oikeassa muodossa käyttäjätietoihin.  
+
+## i) Etänä  
 
 
 
 
+
+
+
+
+
+
+
+
+
+Huom. lähde komennoille whoami jne
 
 ---
 
