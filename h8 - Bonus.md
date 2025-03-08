@@ -15,7 +15,8 @@ Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 
 - h1  
 
-[Bonustehtävä](./h1 - Linuxin asentaminen VirtualBoxiin.md#bonustehtava)
+[Bonustehtävä](./h1%20-%20Linuxin%20asentaminen%20VirtualBoxiin.md#bonustehtava)
+
 
 
 - h2  
