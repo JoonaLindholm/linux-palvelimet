@@ -70,7 +70,7 @@ Tässä pitää huomioida myös ohjelmistot, jotka liittyvät tai käynnistävä
 
 - Vapaan ohjelmiston käyttöä ei tarvitse perustella kenellekkään ja käyttäjä saa käyttää ohjelmistoa miten haluaa välittämättä tekijän 
   alkuperäisestä ohjelmiston käyttötarkoituksesta.
-- Lähdekoodi on saatavilla ja muokattavissa ymmärrettävässä muodossa.
+- Lähdekoodi on saatavilla ja muokattavissa ymmärrett ävässä muodossa.
 - Ohjelmistoon täytyy saada yhdistää moduuleita ja kaikki ohjelmiston muutokset hyväksytään.
 - Mitkään lisenssit eivät saa rajoittaa ohjelmiston käyttöä tai vapaan ohjelmiston vapauksia.
 - Muokattua ohjelmistoa saa käyttää alkuperäisen tilalla.
@@ -229,7 +229,7 @@ Alueeksi valitsin Helsingin.
 
 <img width="517" alt="image" src="https://github.com/user-attachments/assets/f4531b78-6689-46f5-afc6-4fb0e7414070" />
 
-Pääsin tämön jälkeen valitsemaan näppäimistön kielen. Painoin Finnish ja default, sitten next.
+Pääsin tämän jälkeen valitsemaan näppäimistön kielen. Painoin Finnish ja default, sitten next.
 
 <img width="837" alt="image" src="https://github.com/user-attachments/assets/b1ce2ab3-4b6b-42d1-9d78-4826da2e4fb5" />
 
