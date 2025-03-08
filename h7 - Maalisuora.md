@@ -382,7 +382,7 @@ Lopuksi listasin /home/ -hakemiston käyttäjät ja tarkistin, että kaikki löy
 
 Huomioita tehtävästä.  
 Nimi piti laittaa ilman skandeja ja välit korvata _ symbolilla.  
-Nimessä oleva väliviiva sai olla väliviinana -.  
+Nimessä oleva väliviiva sai olla väliviivana -.  
 
 Lopuksi oikea nimi kuitenkin laitettiin oikeassa muodossa käyttäjätietoihin.  
 
