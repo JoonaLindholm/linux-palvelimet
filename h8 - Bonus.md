@@ -1,5 +1,7 @@
 # h8 Bonus  
 
+***osa linkeistä ohjaa väärälle kohtaa raporttia, mutta kaikki lisätehtävät on kuitenkin tehty***
+
 ### Tehtävänanto  
 Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 
