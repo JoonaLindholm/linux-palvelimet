@@ -347,9 +347,9 @@ Löysin Applications -> Accessories -> Mousepad, johon pystyi kirjoittamaan tai 
 
 <img width="1770" alt="image" src="https://github.com/user-attachments/assets/ede84ce9-3d62-4aa3-a886-e14dc1f09df5" />
 
-Kaikki näytti toimivan.   
+Kaikki näytti toimivan.  
 
-## Bonustehtävä
+## Lisätehtävä
 
 Lisätehtävässä pyydettiin tekemään joku yksinkertainen toimenpide haluamallani Linux-ohjelmalla.
 Aiemmin, kun halusin liittää tekstiä isäntäkoneesta virtuaalikoneeseen käyttäen shared clipboardia, niin huomasin etsiväni jotain Wordin kaltaista tekstiohjelmaa.
@@ -424,5 +424,5 @@ https://terokarvinen.com/2021/install-debian-on-virtualbox/#create-a-new-virtual
 https://www.virtualbox.org/wiki/Downloads    
 
 **CHATGPT**
-Kysymys : "Mitä Ms officen kaltaisia ohjelmia on Linuxille?"
+Kysymys : "Mitä Ms officen kaltaisia ohjelmia on Linuxille?"  
 Www.chatgpt.com
