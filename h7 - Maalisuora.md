@@ -16,7 +16,7 @@
 
 **a) Hello world** 
 
-Aloitin tehtävän lukemalla Tero Karvisen -ohjeita eri kielille.  
+Aloitin tehtävän 7.3.2025 lukemalla Tero Karvisen -ohjeita eri kielille.  
 
 https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04/  
 
@@ -190,6 +190,54 @@ Kukaan ei voi nopeasti nähdä generoitua salasanaa!
 
 ## d) Vanha laboratorioharjoitus  
 
+Aloitin tehtävän 8.3.2025. Klo 14 aikoihin.  
+Kävin läpi vanhoja laboratorioharjoituksia Tero Karvisen sivuilla ja päädyin lopulta seuraavaan.  
+
+https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-syksy-linux-palvelimet/?fromSearch=laboratorio
+
+Katselin tehtävänannon läpi ja valitsin tehtävistä ne, jotka vaikuttivat tutuilta.  
+Ohitin djangoon ja tietokantoihin liittyvät tehtävät.  
+
+---
+
+### Valitut tehtävät  
+
+d) 'howdy'
+Tee kaikkien käyttäjien käyttöön komento 'howdy'  
+Tulosta haluamaasi ajankohtaista tietoa, esim päivämäärä, koneen osoite tms  
+Pelkkä "hei maailma" ei riitä  
+Komennon tulee toimia kaikilla käyttäjillä työhakemistosta riippumatta  
+
+e) Python. Osoita "Hei maailma" -ohjelmalla, että Python-kehitysympäristö toimii.  
+
+f) Etusivu uusiksi  
+Asenna Apache-weppipalvelin  
+Tee kerhollemme "Free Speech Europe" kotisivu  
+Kotisivu tulee näkyä koneesi IP-osoitteella suoraan etusivulla  
+Sivua pitää päästä muokkaamaan normaalin käyttäjän oikeuksin (ilman sudoa). Liitä raporttiisi listaus tarvittavien   tiedostojen ja kansioiden oikeuksista.  
+
+h) Käyttäjät. Käyttäjämme tarvitsevat käyttäjät Linuxiin. Tee uudet käyttäjät seuraaville: John Doe, Erik Vähäkäähkä, 
+Akhmad Amun, Päivä Ångström, Maija-Liisa Vähäaho-Virtaoja. Listaa käyttäien salasanat raporttiin report/index.md.  
+
+i) Etänä. Kaikki käyttäjämme haluavat käyttää modernisti etänä SSH:lla. Asenna tarvittavat palvelut. Automatisoi oman käyttäjäsi kirjautuminen julkisella avaimella.  
+
+j) Tee käyttäjille mahdollisuus tehdä kotisivuja. Tee käyttäjille esimerkkikotisivut. (Voit kirjautua kyseisten 
+ käyttäjien tunnuksilla, koska he eivät ole vielä voineet tallentaa henkilökohtaisia tietojaan kotihakemistoonsa).  
+
+---
+
+### Raportti vanhasta laboratotiotehtävästä  
+
+Aloitin tekemällä uuden virtuaalikoneen samalla tavalla kuin kurssin alussa.  
+Samalla tavalla asensin myös debian käyttöjärjestelmän koneelle.  
+
+LINKKI TEHTÄVÄÄN!!  
+
+Asennuksen jälkeen meniin suoraan terminaaliin.  
+Asensin päivitykset ja tulimuurin.  
+Aktivoin tulimuurin.  
+
+
 
 
 ---
@@ -216,5 +264,8 @@ dev/urandom/
 
 Figlet ja lolcat  
 **https://www.tomshardware.com/how-to/customize-linux-terminal**  
+
+Vanha laboratorioharjoitus  
+**https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-syksy-linux-palvelimet/?fromSearch=laboratorio**  
 
 
