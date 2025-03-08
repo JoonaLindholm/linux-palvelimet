@@ -388,6 +388,21 @@ Lopuksi oikea nimi kuitenkin laitettiin oikeassa muodossa käyttäjätietoihin.
 
 ## i) Etänä  
 
+Aloitin tehtävän klo 18 aikoihin.  
+Oli 8.3.2025.  
+
+Tehtävässä piti luoda SSH yhteyteen tarvittavat palvelut ja tehdä julkinen avain.  
+
+Aloitin asentamalla ssh-palvelun.  
+Komento:  
+**Sudo apt-get install openssh-server**  
+
+Tämän jälkeen katsoin oko se aktiivinen.  
+Komento:  
+**sudo systemctl status ssh**  
+
+<img width="482" alt="image" src="https://github.com/user-attachments/assets/3c8a1239-11ce-48d3-925a-86b294fe3a74" />  
+
 
 
 
