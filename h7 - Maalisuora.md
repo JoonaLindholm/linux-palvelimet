@@ -231,7 +231,7 @@ j) Tee käyttäjille mahdollisuus tehdä kotisivuja. Tee käyttäjille esimerkki
 Aloitin tekemällä uuden virtuaalikoneen samalla tavalla kuin kurssin alussa.  
 Samalla tavalla asensin myös debian käyttöjärjestelmän koneelle.  
 
-LINKKI TEHTÄVÄÄN!!  
+**https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h1%20-%20Linuxin%20asentaminen%20VirtualBoxiin.md#asennuksia**
 
 Asennuksen jälkeen meniin suoraan terminaaliin.  
 Asensin päivitykset ja tulimuurin.  
