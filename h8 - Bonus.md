@@ -39,7 +39,12 @@ https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h5%20-%20Nimekas.md#
 
 - h6  
 
-https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h6%20-%20Salataampa.md#c-http-weppilomake-jossa-on-k%C3%A4ytt%C3%A4j%C3%A4tunnus-ja-salasana-sek%C3%A4-liikenteen-sieppaus
+https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h6%20-%20Salataampa.md#c-http-weppilomake-jossa-on-k%C3%A4ytt%C3%A4j%C3%A4tunnus-ja-salasana-sek%C3%A4-liikenteen-sieppaus  
+
+
+https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h6%20-%20Salataampa.md#c-http-weppilomake-jossa-on-k%C3%A4ytt%C3%A4j%C3%A4tunnus-ja-salasana-sek%C3%A4-liikenteen-sieppaus  
+
+
   
 - h7 -> h8    
 
