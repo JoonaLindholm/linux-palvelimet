@@ -196,9 +196,15 @@ Tein tämän komennolla:
 
 **sudo cp /home/joona/Lazy_Online_locker.sh /usr/local/bin/L.O.L**  
 
-<img width="394" alt="image" src="https://github.com/user-attachments/assets/7d85daf2-009f-4a3e-98c7-736bdbf898b8" />
+<img width="394" alt="image" src="https://github.com/user-attachments/assets/7d85daf2-009f-4a3e-98c7-736bdbf898b8" />  
 
 Vaihdoin samalla ajettavaksi nimeksi L.O.L.  
+
+Kokeilin vielä voiko uusi käyttäjä ajaa ohjelman.  
+Tein uuden käyttäjän ja ajoin ohjelman.  
+
+<img width="377" alt="image" src="https://github.com/user-attachments/assets/dc72dce1-36d0-4801-aeee-f2791fe04d45" />  
+Ohjelma näytti toimivan normaalisti.  
 
 ## d) Vanha laboratorioharjoitus  
 
