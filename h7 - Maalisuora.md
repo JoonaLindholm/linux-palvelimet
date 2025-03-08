@@ -182,11 +182,23 @@ Muutin echo riviäni:
 **echo "Generated L.O.L: $password" | figlet | lolcat**  
 
 <img width="387" alt="image" src="https://github.com/user-attachments/assets/a3710187-0854-4e41-9035-445b85342724" />  
-
-
 Ajattelin ensin, että tässä ohjelmassa ei ole järkeä, kun on vaikea saada selvää salasanasta.  
 Pohdittuani asiaa hieman vaihdoin mielipidettäni, koska ohjelmahan on loistava vaikka julkisella paikalla tai vaikka työpaikalla.  
 Kukaan ei voi nopeasti nähdä generoitua salasanaa!  
+
+## Päivitys tehtävään
+**08.03.2025 klo 15:20**
+
+Myöhemmin vanhaa laboratorioharjoitusta tehdessäni huomasin,  
+että olin unohtanut kopioida komennon /usr/local/bin/ hakemistoon.  
+
+Tein tämän komennolla:  
+
+**sudo cp /home/joona/Lazy_Online_locker.sh /usr/local/bin/L.O.L**  
+
+<img width="394" alt="image" src="https://github.com/user-attachments/assets/7d85daf2-009f-4a3e-98c7-736bdbf898b8" />
+
+Vaihdoin samalla ajettavaksi nimeksi L.O.L.  
 
 ## d) Vanha laboratorioharjoitus  
 
@@ -235,7 +247,13 @@ Samalla tavalla asensin myös debian käyttöjärjestelmän koneelle.
 
 Asennuksen jälkeen meniin suoraan terminaaliin.  
 Asensin päivitykset ja tulimuurin.  
+Komento: **Sudo apt-get update ja sudo apt-get install ufw**    
 Aktivoin tulimuurin.  
+Komento: **Sudo ufw enable**  
+En avannut vielä portteja.  
+
+**d)** Howdy  
+
 
 
 
