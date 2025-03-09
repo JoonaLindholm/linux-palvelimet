@@ -1,23 +1,21 @@
 # h8 Bonus  
 
-***Linkit eivät jostain syystä vie oikeaan otsikkoon***
+***Linkit eivät jostain syystä vie oikeaan otsikkoon, vaikka on käytetty ankkureita yms.***   
 
 ### Tehtävänanto  
-Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
+Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi  
 
 **a)** Vapaaehtoiset tehtävät  
 
-**b)** Ristiinarvioinnin jälkeen olennaisesti parannetut tehtävät
+**b)** Ristiinarvioinnin jälkeen olennaisesti parannetut tehtävät  
 
----
+---  
 
-**a)** 
+**a)**  
 
 - h1  
 
-[Lisätehtävä](./h1%20-%20Linuxin%20asentaminen%20VirtualBoxiin.md#lisatehtava)
-
-
+[Lisätehtävä](./h1%20-%20Linuxin%20asentaminen%20VirtualBoxiin.md#lisatehtava)  
 
 - h2  
 
@@ -35,24 +33,20 @@ https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h4%20-%20Maailma%20k
 
 - h5  
 
-https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h5%20-%20Nimekas.md#f-spf-ja-dmarc
+https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h5%20-%20Nimekas.md#f-spf-ja-dmarc  
 
 - h6  
 
 https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h6%20-%20Salataampa.md#c-http-weppilomake-jossa-on-k%C3%A4ytt%C3%A4j%C3%A4tunnus-ja-salasana-sek%C3%A4-liikenteen-sieppaus  
 
-- h7 -> h8    
+- h7 bonustehtävä on tämä tiedosto h8.    
 
 
-**b)** 
+**b)**  
 
-- h1  
+h1-lisätty lähdeluettelo palautteen seurauksena.  
+Kaikkiin raportteihin tehty korjauksia kieliasuun palautteen seurauksena.  
+Kaikkissa raporteissa mietitty ulkoasua ja ensimmäisten raporttien ulkoasua selkeytetty palautteen ansiosta. 
 
-Lisätty lähdeluettelo  
-
-
-
-- h2  
-
-Korjattu kieliasua  
+Kiitos kaikille palautteista :)  
 
