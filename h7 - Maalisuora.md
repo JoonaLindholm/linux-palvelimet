@@ -12,6 +12,19 @@
 
 ---
 
+**Tietokoneen resurssit:**  
+
+- Windows 11 pro x64 -käyttöjärjestelmä  
+- B550M-ITX/ac -emolevy  
+- Amd Ryzen 7 5800X3D -prosessori  
+- 32 gb -ram muistia  
+- Noin 2 tb ssd -levytilaa  
+- 3060ti 8GB GDDR6 -näytönohjain  
+
+**VM Linuxin resurssit ja asetukset:**  
+
+![image](https://github.com/user-attachments/assets/7990b8ca-0601-4e51-8877-15d8fc3b5325)  
+
 ### Tehtävät  
 
 **a) Hello world** 
