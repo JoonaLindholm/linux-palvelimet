@@ -5,8 +5,8 @@
 ### Sisällys ja tehtävät  
 
 x) Lue ja tiivistä Karvinen 2020: Command line basics revisited.  
-https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited  
 
+https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited  
 a) Micro-editorin asennus.  
 
 b) Komentoriviohjelmien asennus apt-get komennolla.  
@@ -63,9 +63,10 @@ Peruskomentoja:
 - /media/ = irrotettavat tallennusvälineet, kuten CD-levyt ja USB-tikut.
 - /var/log/ = järjestelmälokit.  
 
-## a) Micro editorin asennus  
-Aloitin asennuksen 23.1. klo 13:30.  
+---
 
+**Työskentely ympäristö ja resurssit**  
+ 
 Tietokoneen resurssit:  
 - B550M-ITX/ac -emolevy  
 - Amd Ryzen 7 5800X3D -prosessori  
@@ -76,7 +77,8 @@ Tietokoneen resurssit:
 VM Linuxin resurssit ja asetukset:  
 <img width="393" alt="image" src="https://github.com/user-attachments/assets/2338aa07-4497-4842-a83d-3402128cca0f" />  
 
-
+## a) Micro editorin asennus  
+Aloitin asennuksen 23.1. klo 13:30. 
 Virtual linuxin käynnistys -> salasana -> työpöydältä Applications -> Terminal Emulator  
 
 <img width="628" alt="image" src="https://github.com/user-attachments/assets/b1ca6d91-a252-49d6-b6f0-50629a4f2c7b" />  
