@@ -404,17 +404,89 @@ Lopuksi oikea nimi kuitenkin laitettiin oikeassa muodossa käyttäjätietoihin.
 Aloitin tehtävän klo 18 aikoihin.  
 Oli 8.3.2025.  
 
+Käytin lähteenä vanhaa tehtävääni, joka perustui Susanna Lehdon raporttiin:  
+
+**https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h4%20-%20Maailma%20kuulee.md#susanna-lehto-2022-teoriasta-k%C3%A4yt%C3%A4nt%C3%B6%C3%B6n-pilvipalvelimen-avulla**  
+
 Tehtävässä piti luoda SSH yhteyteen tarvittavat palvelut ja tehdä julkinen avain.  
 
 Aloitin asentamalla ssh-palvelun.  
 Komento:  
 **Sudo apt-get install openssh-server**  
 
-Tämän jälkeen katsoin oko se aktiivinen.  
+Tämän jälkeen katsoin oliko ssh aktiivinen.  
 Komento:  
 **sudo systemctl status ssh**  
 
 <img width="482" alt="image" src="https://github.com/user-attachments/assets/3c8a1239-11ce-48d3-925a-86b294fe3a74" />  
+
+SSH oli aktiivinen ja toimi.  
+
+Seuraavaksi avasin portin palomuurista SSH-yhteydelle.  
+
+Komennot:  
+**sudo ufw allow 22/tcp = näin tehtiin reikä  ssh-etäyhteydelle
+sudo ufw enable = näin aktivoitiin palomuuri**  
+
+Tämän jälkeen loin itselleni julkisen avaimen komennolla:  
+**ssh-keygen**  
+
+Sitten painoin 3 kertaa entteriä ja avain oli luotu.  
+
+Tämän jälkeen kävin tarkistamassa, että oikeat ssh -hakemistot ja tiedostot syntyivät kotikansiooni.  
+
+<img width="553" alt="image" src="https://github.com/user-attachments/assets/32642a96-2c7b-4bd9-82ba-12c35e45c6cb" />
+
+Kaikki oli mennyt oikein.  
+
+Avasin tiedoston **id_rsa.pub**, micro-tekstieditorilla ja kopioin sen sisältämän julkisen avaimen authorized_keys tiedostoon, jonka loin nano komennolla samaan kansioon muiden avain-tiedostojen kanssa.  
+
+Kävin sitten muokkaamassa config tiedostoa.  
+Komento:  
+**sudoedit /etc/ssh/sshd_config**  
+
+Otin root kirjautumisen pois päältä:   
+**PermitRootLogin yes -> no**
+ja lisäsin tiedoston alimmalle riville kohdan:  
+**AllowUsers joona**    
+
+Käytin tähän apuna keskustelua, jonka löysin googlailemalla.   
+**https://superuser.com/questions/1018760/connect-with-ssh-to-your-localhost**    
+
+Käynnistin SSH:n uudelleen komennolla:  
+**Sudo systemctl restart ssh**  
+Seuraavaksi yhdistin localhostiin käyttäen ssh-etäyhteyttä.  
+Komento: **ssh joona@localhost**  
+
+Jäi epäselväksi pääsinkö ssh-yhteydellä localhostiin, niin katsoin komennolla:  
+**sudo systemctl status ssh**  
+Mitä statuksessa lukee.  Tämän perusteella ssh-yhteyteni näytti toimivan.  
+
+<img width="634" alt="image" src="https://github.com/user-attachments/assets/aaa9f9fa-4b24-4540-a809-fa3bb2dea91d" />  
+
+Kokeilin vielä komentoa: **exit**, ajattelin, että jos olen ssh-yhteydessä, niin saan jonkun logout ilmoituksen komennon jälkeen.  
+
+<img width="163" alt="image" src="https://github.com/user-attachments/assets/6193a6ba-6679-4d6c-8f5a-17f2c1cde5d4" />
+
+Sain sopivan ilmoituksen.  
+SSH yhteys oli nyt valmisteltu omalle käyttäjälleni.  
+
+## j) Käyttäjien kotisivut  
+
+Tehtävässä piti varmistaa, että jokainen käyttäjä voi luoda itselleen kotisivut.  
+
+Aloitin tehtävän John Doe käyttäjän kotisivuista.  
+kirjauduin hänen käyttäjälleen komennolla:
+**su john_doe** laitoin salasanan.  
+
+Tämän jälkeen navigoin hänen kotikansioonsa ja loin sinne uuden kansion publicsites.  
+Publicsites kansioon loin uuden kansion nimeltään **john_doe.com**  
+Loin tähän uuteen kansioon nanolla html-tiedoston.  
+komennto: **nano index.html**  
+Kirjoitin tiedostoon "Tervetuloa Johnin kotisivuille"  
+Tallensin ja poistuin tiedostosta.  
+
+
 
 
 
@@ -458,4 +530,5 @@ Figlet ja lolcat
 Vanha laboratorioharjoitus  
 **https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-syksy-linux-palvelimet/?fromSearch=laboratorio**  
 
-
+SSH Localhost  
+**https://superuser.com/questions/1018760/connect-with-ssh-to-your-localhost**
