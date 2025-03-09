@@ -476,8 +476,9 @@ SSH yhteys oli nyt valmisteltu omalle käyttäjälleni.
 Tehtävässä piti varmistaa, että jokainen käyttäjä voi luoda itselleen kotisivut.  
 
 Aloitin tehtävän John Doe käyttäjän kotisivuista.  
-kirjauduin hänen käyttäjälleen komennolla:
-**su john_doe** laitoin salasanan.  
+kirjauduin hänen käyttäjälleen komennolla:  
+**su john_doe** 
+ja laitoin salasanan.  
 
 Tämän jälkeen navigoin hänen kotikansioonsa ja loin sinne uuden kansion publicsites.  
 Publicsites kansioon loin uuden kansion nimeltään **john_doe.com**  
@@ -494,24 +495,17 @@ Esimerkki komento Johnin käyttäjälle:
 
 Tämän jälkeen kävin muokkaamassa DNS-konfiguraatiot niin, että kaikkien sivut toimivat.  
 
-<img width="275" alt="image" src="https://github.com/user-attachments/assets/6e95304e-7d06-4349-a421-d34f1fe1fd25" />
+<img width="485" alt="image" src="https://github.com/user-attachments/assets/f894fa4d-ad2e-4bcc-bedd-0190d84af4dd" />  
 
+Laitoin oikeudet niin, että apache2 lähti toimimaan.  
+Ilmeisesti käyttäjäni olivat other-porukassa, koska rajatessani other-käyttäjät ulos oikeuksista, niin sivut lakkasivat toimimasta.  
 
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/e0add93c-8bb5-4da4-9de9-5b4f209c11b3" />  
 
+Jos tekisin tehtävän uudestaan, niin tekisin kaikille käyttäjille oman ryhmän ja antaisin oikeudet tälle ryhmälle sekä apachen käyttämälle www-data  
+käyttäjälle. Nyt tuli annettua ehkä liikaa oikeuksia othersille.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-Huom. lähde komennoille whoami jne
+Kaikkien sivut toimivat, mutta käyttäjät eivät pystyneet muokata niitä itse eli heille pitäisi oikeasti luoda joku oma ryhmä.  
 
 ---
 
