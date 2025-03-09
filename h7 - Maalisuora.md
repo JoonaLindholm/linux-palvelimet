@@ -482,9 +482,20 @@ kirjauduin hänen käyttäjälleen komennolla:
 Tämän jälkeen navigoin hänen kotikansioonsa ja loin sinne uuden kansion publicsites.  
 Publicsites kansioon loin uuden kansion nimeltään **john_doe.com**  
 Loin tähän uuteen kansioon nanolla html-tiedoston.  
-komennto: **nano index.html**  
+komento: **nano index.html**  
 Kirjoitin tiedostoon "Tervetuloa Johnin kotisivuille"  
 Tallensin ja poistuin tiedostosta.  
+
+Tein ylläolevat toiminnot kaikille käyttäjille.  
+
+Tämän jälkeen loin kaikille oman konfiguraation /etc/apache2/sites-available/ kansioon.  
+Esimerkki komento Johnin käyttäjälle:  
+**sudo nano /etc/apache2/sites-available/john_doe.com.conf**  
+
+Tämän jälkeen kävin muokkaamassa DNS-konfiguraatiot niin, että kaikkien sivut toimivat.  
+
+<img width="275" alt="image" src="https://github.com/user-attachments/assets/6e95304e-7d06-4349-a421-d34f1fe1fd25" />
+
 
 
 
