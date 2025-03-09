@@ -86,7 +86,16 @@ Tässä pitää huomioida myös ohjelmistot, jotka liittyvät tai käynnistävä
 - Vapaan ohjelmiston ohjeet ja dokumentit ovat myös osa vapaata ohjelmistoa.
 
 ---
-  
+
+**Tietokoneen resurssit:**  
+
+- Windows 11 pro x64 -käyttöjärjestelmä  
+- B550M-ITX/ac -emolevy  
+- Amd Ryzen 7 5800X3D -prosessori  
+- 32 gb -ram muistia  
+- Noin 2 tb ssd -levytilaa  
+- 3060ti 8GB GDDR6 -näytönohjain  
+
 ### Linuxin asentaminen virtuaalikoneelle  
 
 Aloitin asentelun 15.1. töiden jälkeen klo 12:40.
