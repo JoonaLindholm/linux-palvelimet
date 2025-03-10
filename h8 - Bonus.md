@@ -9,7 +9,7 @@ Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 
 ---  
 
-**a)**  
+**a)**  Vapaaehtoiset tehtävät
 
 - h1  
 
@@ -40,7 +40,7 @@ Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 - h7 bonustehtävä on tämä tiedosto h8.
 
 
-**b)**  
+**b)**  Parannukset
 
 h1-lisätty lähdeluettelo palautteen seurauksena.  
 Kaikkiin raportteihin tehty korjauksia kieliasuun palautteen seurauksena.  
