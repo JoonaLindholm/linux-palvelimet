@@ -1,5 +1,7 @@
 # h8 Bonus  
 
+***10.3.2025, klo 13:10. Omalla koneellani linkit toimivat vain, jos avaan ne uudelle välilehdelle***
+
 ### Tehtävänanto  
 Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi  
 
