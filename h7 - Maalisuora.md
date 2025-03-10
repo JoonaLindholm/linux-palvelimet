@@ -502,11 +502,15 @@ Ilmeisesti käyttäjäni olivat other-porukassa, koska rajatessani other-käytt�
 
 <img width="801" alt="image" src="https://github.com/user-attachments/assets/e0add93c-8bb5-4da4-9de9-5b4f209c11b3" />  
 
-Jos tekisin tehtävän uudestaan, niin tekisin kaikille käyttäjille oman ryhmän ja antaisin oikeudet tälle ryhmälle  
-sekä apachen käyttämälle www-data käyttäjälle.  
-Nyt tuli annettua liikaa oikeuksia othersille.  
+Jos tekisin tehtävän uudestaan, niin yrittäisin tehdä kaikille käyttäjille oman ryhmän ja antaisin oikeudet tälle ryhmälle sekä apachen käyttämälle www-data käyttäjälle.  
+Nyt tuli annettua ehkä liikaa oikeuksia othersille.  
 
-Kaikkien sivut toimivat, mutta käyttäjät eivät pystyneet muokata niitä itse eli heille pitäisi oikeasti luoda joku oma ryhmä.  
+Kaikkien sivut toimivat ja käyttäjät pystyivät itse muokkaamaan index.html tiedostoa.  
+
+Alla John Doe muokkaamassa kotisivujaan ilman sudoa.  
+<img width="284" alt="image" src="https://github.com/user-attachments/assets/24e7abdd-22d4-40ae-ac21-fd8283b23c73" />  
+  
+<img width="323" alt="image" src="https://github.com/user-attachments/assets/39d8333c-6f4d-4c8f-9d0a-f5ba747a4648" />  
 
 ---
 
