@@ -37,11 +37,11 @@ Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi
 
 [Bonustehtävä](https://github.com/JoonaLindholm/linux-palvelimet/blob/main/h6%20-%20Salataampa.md#c-http-weppilomake-jossa-on-k%C3%A4ytt%C3%A4j%C3%A4tunnus-ja-salasana-sek%C3%A4-liikenteen-sieppaus)
 
-- h7  
-Ei ollut bonustehtävää.  
+- h7
+Ei ollut bonustehtävää.
 
-- h8  
-Tämä tiedosto on h8 - bonus.    
+- h8
+Tämä tiedosto on h8 - bonus.
 
 
 **b)**  Parannukset
