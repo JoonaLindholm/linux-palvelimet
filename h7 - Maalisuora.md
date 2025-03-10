@@ -459,8 +459,8 @@ Seuraavaksi yhdistin localhostiin käyttäen ssh-etäyhteyttä.
 Komento: **ssh joona@localhost**  
 
 Jäi epäselväksi pääsinkö ssh-yhteydellä localhostiin, niin katsoin komennolla:  
-**sudo systemctl status ssh**  
-Mitä statuksessa lukee.  Tämän perusteella ssh-yhteyteni näytti toimivan.  
+**sudo systemctl status ssh**, mitä statuksessa lukee.  
+Tämän perusteella näytti siltä, että ssh-yhteyteni toimi.  
 
 <img width="634" alt="image" src="https://github.com/user-attachments/assets/aaa9f9fa-4b24-4540-a809-fa3bb2dea91d" />  
 
@@ -477,8 +477,7 @@ Tehtävässä piti varmistaa, että jokainen käyttäjä voi luoda itselleen kot
 
 Aloitin tehtävän John Doe käyttäjän kotisivuista.  
 kirjauduin hänen käyttäjälleen komennolla:  
-**su john_doe** 
-ja laitoin salasanan.  
+**su john_doe**, ja laitoin salasanan.  
 
 Tämän jälkeen navigoin hänen kotikansioonsa ja loin sinne uuden kansion publicsites.  
 Publicsites kansioon loin uuden kansion nimeltään **john_doe.com**  
