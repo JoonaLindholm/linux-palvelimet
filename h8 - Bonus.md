@@ -1,7 +1,5 @@
 # h8 Bonus  
 
-***Linkit eivät jostain syystä vie oikeaan otsikkoon, vaikka on käytetty ankkureita yms.***   
-
 ### Tehtävänanto  
 Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi  
 
