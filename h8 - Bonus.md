@@ -3,6 +3,7 @@
 ***10.3.2025, klo 13:10. Omalla koneellani linkit toimivat vain, jos avaan ne uudelle välilehdelle***
 
 ### Tehtävänanto  
+https://terokarvinen.com/linux-palvelimet/  
 Vapaaehtoinen: Bonus: luettele ja linkitä tähän tekemäsi  
 
 **a)** Vapaaehtoiset tehtävät  
